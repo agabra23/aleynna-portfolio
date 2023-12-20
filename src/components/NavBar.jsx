@@ -23,7 +23,7 @@ const NavBar = () => {
               cy="28.1814"
               r="25.1814"
               stroke="black"
-              strokeWidth="8"
+              strokeWidth="6"
             />
             <path
               d="M14.6533 35.6958C20.6722 45.5145 36.1104 45.9155 41.7079 35.6958"
