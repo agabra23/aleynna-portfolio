@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="min-h-screen w-full bg-offwhite">
+    <div className="relative overflow-x-hidden min-h-screen w-full bg-offwhite">
       <BrowserRouter>
         <NavBar />
         <Routes>
