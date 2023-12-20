@@ -5,7 +5,7 @@ import { IoClose } from "react-icons/io5";
 const NavBar = () => {
   const [mobileOpened, setMobileOpened] = useState(false);
   return (
-    <nav className=" flex justify-between mx-[30px] md:max-xl:mx-[60px] lg:mx-[130px] font-helvetica py-[30px] md:py-[50px]">
+    <nav className="flex justify-between mx-[30px] md:max-xl:mx-[60px] lg:mx-[130px] font-helvetica py-[30px] md:py-[50px]">
       <div className="text-3xl md:text-5xl flex gap-[8px] md:gap-[12px] relative z-20">
         <h1 className="font-bold">AQ</h1>
         <div className="flex items-center">
@@ -34,7 +34,7 @@ const NavBar = () => {
           </svg>
         </div>
       </div>
-      <ul className="hidden md:flex justify-end items-center gap-10">
+      <ul className="hidden md:flex justify-end items-center gap-10 text-2xl">
         <li className="cursor-pointer">HOME</li>
         <li className="flex items-center gap-2 cursor-pointer">
           <span>PROJECTS</span>
