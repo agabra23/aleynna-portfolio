@@ -6,7 +6,7 @@
   @font-face {
     font-family: "Garamond";
     font-weight: 1 1000;
-    src: url("../public/fonts/EBGaramond-VariableFont_wght.ttf");
+    src: url("./fonts/EBGaramond-VariableFont_wght.ttf");
   }
 }
 

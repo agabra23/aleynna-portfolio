@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
-import { IoClose } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
   const [mobileOpened, setMobileOpened] = useState(false);
+  const navigator = useNavigate(null);
   return (
     <nav className="flex justify-between mx-[30px] md:max-xl:mx-[60px] lg:mx-[130px] font-helvetica py-[30px] md:py-[50px]">
       <div className="text-3xl md:text-5xl flex gap-[8px] md:gap-[12px] relative z-20">
@@ -35,8 +36,16 @@ const NavBar = () => {
         </div>
       </div>
       <ul className="hidden md:flex justify-end items-center gap-10 text-2xl">
-        <li className="cursor-pointer">HOME</li>
-        <li className="flex items-center gap-2 cursor-pointer">
+        <li
+          className="cursor-pointer hover:text-black/60"
+          onClick={() => navigator("/")}
+        >
+          HOME
+        </li>
+        <li
+          className="flex items-center gap-2 cursor-pointer hover:text-black/60"
+          onClick={() => navigator("/")}
+        >
           <span>PROJECTS</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,8 +57,18 @@ const NavBar = () => {
             <path d="M1 1.5L8.5 10.5L16 1.5" stroke="black" strokeWidth="2" />
           </svg>
         </li>
-        <li className="cursor-pointer">ABOUT</li>
-        <li className="cursor-pointer">PLAY</li>
+        <li
+          className="cursor-pointer hover:text-black/60"
+          onClick={() => navigator("/about")}
+        >
+          ABOUT
+        </li>
+        <li
+          className="cursor-pointer hover:text-black/60"
+          onClick={() => navigator("/play")}
+        >
+          PLAY
+        </li>
       </ul>
       <div
         onClick={() => setMobileOpened(!mobileOpened)}
@@ -83,7 +102,7 @@ const NavBar = () => {
       >
         <ul className="flex flex-col justify-start items-center gap-[70px] text-2xl">
           <li className="cursor-pointer">HOME</li>
-          <li className="flex items-center gap-2 cursor-pointer relative">
+          <li className="flex items-center gap-2 cursor-pointer  relative">
             <span>PROJECTS</span>
             <svg
               className="absolute right-0 translate-x-7"
