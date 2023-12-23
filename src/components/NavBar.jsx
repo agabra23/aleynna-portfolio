@@ -5,6 +5,12 @@ import { useNavigate } from "react-router-dom";
 const NavBar = () => {
   const [mobileOpened, setMobileOpened] = useState(false);
   const navigator = useNavigate(null);
+
+  const mobileClickHandler = (path) => {
+    navigator(path);
+    setMobileOpened(!mobileOpened);
+  };
+
   return (
     <nav className="flex justify-between mx-[30px] md:max-xl:mx-[60px] lg:mx-[130px] font-helvetica py-[30px] md:py-[50px]">
       <div className="text-3xl md:text-5xl flex gap-[8px] md:gap-[12px] relative z-20">
@@ -101,8 +107,16 @@ const NavBar = () => {
         } transition-all z-10 h-screen w-full flex flex-col justify-center items-center`}
       >
         <ul className="flex flex-col justify-start items-center gap-[70px] text-2xl">
-          <li className="cursor-pointer">HOME</li>
-          <li className="flex items-center gap-2 cursor-pointer  relative">
+          <li
+            className="cursor-pointer"
+            onClick={() => mobileClickHandler("/")}
+          >
+            HOME
+          </li>
+          <li
+            onClick={() => mobileClickHandler("/")}
+            className="flex items-center gap-2 cursor-pointer  relative"
+          >
             <span>PROJECTS</span>
             <svg
               className="absolute right-0 translate-x-7"
@@ -115,8 +129,18 @@ const NavBar = () => {
               <path d="M1 1.5L8.5 10.5L16 1.5" stroke="black" strokeWidth="2" />
             </svg>
           </li>
-          <li className="cursor-pointer">ABOUT</li>
-          <li className="cursor-pointer">PLAY</li>
+          <li
+            onClick={() => mobileClickHandler("/about")}
+            className="cursor-pointer"
+          >
+            ABOUT
+          </li>
+          <li
+            onClick={() => mobileClickHandler("/play")}
+            className="cursor-pointer"
+          >
+            PLAY
+          </li>
         </ul>
       </div>
     </nav>
