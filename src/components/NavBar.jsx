@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const [mobileOpened, setMobileOpened] = useState(false);
-  const navigator = useNavigate(null);
+  const navigator = useNavigate();
+  const location = useLocation();
+
+  const isLinkActive = (path) => path === location.pathname;
 
   const mobileClickHandler = (path) => {
     navigator(path);
@@ -43,13 +46,17 @@ const NavBar = () => {
       </div>
       <ul className="hidden md:flex justify-end items-center gap-10 text-2xl">
         <li
-          className="cursor-pointer hover:text-black/60"
+          className={`cursor-pointer hover:underline font-thin ${
+            isLinkActive("/") && "underline"
+          }`}
           onClick={() => navigator("/")}
         >
           HOME
         </li>
         <li
-          className="flex items-center gap-2 cursor-pointer hover:text-black/60"
+          className={`flex items-center gap-2 cursor-pointer font-thin hover:underline ${
+            isLinkActive("/beachside-snackshop") && "underline"
+          }`}
           onClick={() => navigator("/")}
         >
           <span>PROJECTS</span>
@@ -64,13 +71,17 @@ const NavBar = () => {
           </svg>
         </li>
         <li
-          className="cursor-pointer hover:text-black/60"
+          className={`cursor-pointer font-thin hover:underline ${
+            isLinkActive("/about") && "underline"
+          }`}
           onClick={() => navigator("/about")}
         >
           ABOUT
         </li>
         <li
-          className="cursor-pointer hover:text-black/60"
+          className={`cursor-pointer font-thin hover:underline ${
+            isLinkActive("/play") && "underline"
+          }`}
           onClick={() => navigator("/play")}
         >
           PLAY
@@ -108,14 +119,16 @@ const NavBar = () => {
       >
         <ul className="flex flex-col justify-start items-center gap-[70px] text-2xl">
           <li
-            className="cursor-pointer"
+            className={`cursor-pointer ${isLinkActive("/play") && "underline"}`}
             onClick={() => mobileClickHandler("/")}
           >
             HOME
           </li>
           <li
             onClick={() => mobileClickHandler("/")}
-            className="flex items-center gap-2 cursor-pointer  relative"
+            className={`flex items-center gap-2 cursor-pointer relative ${
+              isLinkActive("/beachside-snackshop") && "underline"
+            }`}
           >
             <span>PROJECTS</span>
             <svg
@@ -131,13 +144,15 @@ const NavBar = () => {
           </li>
           <li
             onClick={() => mobileClickHandler("/about")}
-            className="cursor-pointer"
+            className={`cursor-pointer ${
+              isLinkActive("/about") && "underline"
+            }`}
           >
             ABOUT
           </li>
           <li
             onClick={() => mobileClickHandler("/play")}
-            className="cursor-pointer"
+            className={`cursor-pointer ${isLinkActive("/play") && "underline"}`}
           >
             PLAY
           </li>
