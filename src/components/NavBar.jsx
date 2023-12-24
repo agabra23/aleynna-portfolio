@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { useNavigate, useLocation } from "react-router-dom";
 
@@ -6,6 +6,9 @@ const NavBar = () => {
   const [mobileOpened, setMobileOpened] = useState(false);
   const navigator = useNavigate();
   const location = useLocation();
+  const popUpRef = useRef(null);
+
+  const [showProjectDetails, setShowProjectDetails] = useState(false);
 
   const isLinkActive = (path) => path === location.pathname;
 
@@ -13,6 +16,24 @@ const NavBar = () => {
     navigator(path);
     setMobileOpened(!mobileOpened);
   };
+
+  const closePopUp = () => {
+    setShowProjectDetails(false);
+  };
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (popUpRef.current && !popUpRef.current.contains(event.target)) {
+        closePopUp();
+      }
+    };
+
+    document.addEventListener("click", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
 
   return (
     <nav className="flex justify-between mx-[30px] md:max-xl:mx-[60px] lg:mx-[130px] font-helvetica py-[30px] md:py-[50px]">
@@ -54,21 +75,43 @@ const NavBar = () => {
           HOME
         </li>
         <li
-          className={`flex items-center gap-2 cursor-pointer font-thin hover:underline ${
+          ref={popUpRef}
+          className={`relative flex items-center gap-2 cursor-pointer font-thin hover:underline ${
             isLinkActive("/beachside-snackshop") && "underline"
-          }`}
-          onClick={() => navigator("/")}
+          } ${isLinkActive("/connection-cafe") && "underline"}`}
         >
-          <span>PROJECTS</span>
+          <span onClick={() => setShowProjectDetails(!showProjectDetails)}>
+            PROJECTS
+          </span>
           <svg
+            className="hover:scale-125 transition-all"
             xmlns="http://www.w3.org/2000/svg"
             width=".8em"
             height=".8em"
             viewBox="0 0 17 13"
             fill="none"
+            onClick={() => setShowProjectDetails(!showProjectDetails)}
           >
             <path d="M1 1.5L8.5 10.5L16 1.5" stroke="black" strokeWidth="2" />
           </svg>
+          <div
+            className={`${
+              showProjectDetails ? "block" : "hidden"
+            } transition-all text-[24px] font-thin absolute shadow-custom top-12 -translate-x-10 z-10 bg-white p-[35px] rounded-[25px]`}
+          >
+            <p
+              onClick={() => navigator("/connection-cafe")}
+              className="uppercase hover:underline cursor-pointer"
+            >
+              Connection Café
+            </p>
+            <p
+              onClick={() => navigator("/beachside-snackshop")}
+              className="uppercase mt-[20px] hover:underline cursor-pointer"
+            >
+              Beachside Snackshop
+            </p>
+          </div>
         </li>
         <li
           className={`cursor-pointer font-thin hover:underline ${

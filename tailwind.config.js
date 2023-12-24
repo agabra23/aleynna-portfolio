@@ -14,6 +14,9 @@ export default {
         candyPink: "#FF63B9",
         blueberry: "#5B9DFF",
       },
+      boxShadow: {
+        custom: "0px 4px 15px 0px rgba(0, 0, 0, 0.15)",
+      },
     },
   },
   plugins: [],
