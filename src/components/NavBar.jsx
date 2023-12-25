@@ -4,6 +4,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const [mobileOpened, setMobileOpened] = useState(false);
+  const [mobileDropdown, setMobileDropdown] = useState(true);
   const navigator = useNavigate();
   const location = useLocation();
   const popUpRef = useRef(null);
@@ -166,11 +167,11 @@ const NavBar = () => {
         )}
       </div>
       <div
-        className={`absolute bg-offwhite top-0 left-0 ${
+        className={`absolute bg-offwhite top-0 left-0 md:hidden ${
           mobileOpened ? "" : "translate-x-full"
-        } transition-all z-10 h-screen w-full flex flex-col justify-center items-center`}
+        } transition-all z-10 h-screen w-full flex flex-col items-center`}
       >
-        <ul className="flex flex-col justify-start items-center gap-[70px] text-2xl">
+        <ul className="flex flex-col justify-start items-center gap-[70px] text-2xl absolute translate-y-40">
           <li
             className={`cursor-pointer ${isLinkActive("/") && "underline"}`}
             onClick={() => mobileClickHandler("/")}
@@ -178,14 +179,16 @@ const NavBar = () => {
             HOME
           </li>
           <li
-            onClick={() => mobileClickHandler("/")}
+            onClick={() => setMobileDropdown(!mobileDropdown)}
             className={`flex items-center gap-2 cursor-pointer relative ${
               isLinkActive("/beachside-snackshop") && "underline"
             } ${isLinkActive("/connection-cafe") && "underline"}`}
           >
             <span>PROJECTS</span>
             <svg
-              className="absolute right-0 translate-x-7 rotate-180"
+              className={`${
+                mobileDropdown ? "rotate-0" : "rotate-180"
+              } absolute right-0 translate-x-7 transition-all`}
               xmlns="http://www.w3.org/2000/svg"
               width=".8em"
               height=".8em"
@@ -194,6 +197,14 @@ const NavBar = () => {
             >
               <path d="M1 1.5L8.5 10.5L16 1.5" stroke="black" strokeWidth="2" />
             </svg>
+          </li>
+          <li
+            className={`flex md:hidden flex-col gap-[70px] justify-start items-center text-2xl ${
+              mobileDropdown ? "h-full flex" : "h-0 hidden"
+            } overflow-hidden`}
+          >
+            <p className="uppercase">Connection Café</p>
+            <p className="uppercase">Beachside Snackshop</p>
           </li>
           <li
             onClick={() => mobileClickHandler("/about")}
