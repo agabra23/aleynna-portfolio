@@ -84,7 +84,7 @@ const NavBar = () => {
             PROJECTS
           </span>
           <svg
-            className="hover:scale-125 transition-all"
+            className="hover:scale-125 transition-transform"
             xmlns="http://www.w3.org/2000/svg"
             width=".8em"
             height=".8em"
@@ -96,17 +96,23 @@ const NavBar = () => {
           </svg>
           <div
             className={`${
-              showProjectDetails ? "block" : "hidden"
-            } transition-all text-[24px] font-thin absolute shadow-custom top-12 -translate-x-10 z-10 bg-white p-[35px] rounded-[25px]`}
+              showProjectDetails ? "visible opacity-100" : "invisible opacity-0"
+            } transition-all duration-300 ease-in-out text-[24px] font-thin absolute shadow-custom top-12 -translate-x-10 z-10 bg-white p-[35px] rounded-[25px]`}
           >
             <p
-              onClick={() => navigator("/connection-cafe")}
+              onClick={() => {
+                navigator("/connection-cafe");
+                setShowProjectDetails(false);
+              }}
               className="uppercase hover:underline cursor-pointer"
             >
               Connection Café
             </p>
             <p
-              onClick={() => navigator("/beachside-snackshop")}
+              onClick={() => {
+                navigator("/beachside-snackshop");
+                setShowProjectDetails(false);
+              }}
               className="uppercase mt-[20px] hover:underline cursor-pointer"
             >
               Beachside Snackshop
