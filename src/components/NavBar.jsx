@@ -104,7 +104,9 @@ const NavBar = () => {
                 navigator("/connection-cafe");
                 setShowProjectDetails(false);
               }}
-              className="uppercase hover:underline cursor-pointer"
+              className={`uppercase hover:underline cursor-pointer ${
+                isLinkActive("/connection-cafe") && "underline"
+              }`}
             >
               Connection Café
             </p>
@@ -113,7 +115,9 @@ const NavBar = () => {
                 navigator("/beachside-snackshop");
                 setShowProjectDetails(false);
               }}
-              className="uppercase mt-[20px] hover:underline cursor-pointer"
+              className={`uppercase mt-[20px] hover:underline cursor-pointer ${
+                isLinkActive("/beachside-snackshop") && "underline"
+              }`}
             >
               Beachside Snackshop
             </p>
@@ -168,7 +172,7 @@ const NavBar = () => {
       >
         <ul className="flex flex-col justify-start items-center gap-[70px] text-2xl">
           <li
-            className={`cursor-pointer ${isLinkActive("/play") && "underline"}`}
+            className={`cursor-pointer ${isLinkActive("/") && "underline"}`}
             onClick={() => mobileClickHandler("/")}
           >
             HOME
@@ -177,11 +181,11 @@ const NavBar = () => {
             onClick={() => mobileClickHandler("/")}
             className={`flex items-center gap-2 cursor-pointer relative ${
               isLinkActive("/beachside-snackshop") && "underline"
-            }`}
+            } ${isLinkActive("/connection-cafe") && "underline"}`}
           >
             <span>PROJECTS</span>
             <svg
-              className="absolute right-0 translate-x-7"
+              className="absolute right-0 translate-x-7 rotate-180"
               xmlns="http://www.w3.org/2000/svg"
               width=".8em"
               height=".8em"
