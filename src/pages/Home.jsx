@@ -36,13 +36,15 @@ const Home = () => {
         </div>
       </section>
       <section className="font-garamond pt-[100px] lg:pb-[150px] pb-[100px] border-b border-b-black/40">
-        <div className="flex flex-col-reverse lg:flex-row-reverse justify-start items-center gap-[30px] lg:gap-[65px] mb-[75px] lg:mb-[145px]">
+        <div className="flex flex-col-reverse lg:flex-row-reverse justify-center items-center gap-[30px] lg:gap-[65px] mb-[75px] lg:mb-[145px]">
           <div className="text-center md:text-left flex items-center lg:items-start flex-col gap-[10px] lg:gap-[15px]">
             <h6 className="text-center md:text-left font-thin font-helvetica text-[20px] lg:text-[24px]">
               ACADEMIC PROJECT
             </h6>
             <h3 className="text-center md:text-left leading-none font-helvetica text-[30px] lg:text-[64px] font-bold">
-              Connection Café
+              Connection
+              <br />
+              Café
             </h3>
             <p className="text-center md:text-left text-[24px] lg:text-[24px] font-thin">
               Write Something Else
@@ -64,7 +66,7 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col-reverse lg:flex-row justify-start items-center gap-[30px] lg:gap-[65px]">
+        <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-[30px] lg:gap-[65px]">
           <div className="flex items-center lg:items-start flex-col gap-[10px] lg:gap-[15px]">
             <h6 className="text-center md:text-left font-thin font-helvetica text-[20px] lg:text-[24px]">
               ACADEMIC PROJECT

@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const [mobileOpened, setMobileOpened] = useState(false);
-  const [mobileDropdown, setMobileDropdown] = useState(true);
+  const [mobileDropdown, setMobileDropdown] = useState(false);
   const navigator = useNavigate();
   const location = useLocation();
   const popUpRef = useRef(null);
@@ -66,7 +66,7 @@ const NavBar = () => {
           </svg>
         </div>
       </div>
-      <ul className="hidden md:flex justify-end items-center gap-10 text-2xl">
+      <ul className="hidden md:flex justify-end items-center gap-10 text-xl">
         <li
           className={`cursor-pointer hover:underline font-thin ${
             isLinkActive("/") && "underline"
@@ -98,7 +98,7 @@ const NavBar = () => {
           <div
             className={`${
               showProjectDetails ? "visible opacity-100" : "invisible opacity-0"
-            } transition-all duration-300 ease-in-out text-[24px] font-thin absolute shadow-custom top-12 -translate-x-10 z-10 bg-white p-[35px] rounded-[25px]`}
+            } transition-all duration-300 ease-in-out text-xl font-thin absolute shadow-custom top-12 -translate-x-10 z-10 bg-white p-[35px] rounded-[25px]`}
           >
             <p
               onClick={() => {
@@ -171,7 +171,7 @@ const NavBar = () => {
           mobileOpened ? "" : "translate-x-full"
         } transition-all z-10 h-screen w-full flex flex-col items-center`}
       >
-        <ul className="flex flex-col justify-start items-center gap-[70px] text-2xl absolute translate-y-40">
+        <ul className="flex flex-col justify-start items-center gap-[70px] font-thin text-xl absolute translate-y-32">
           <li
             className={`cursor-pointer ${isLinkActive("/") && "underline"}`}
             onClick={() => mobileClickHandler("/")}
@@ -199,7 +199,7 @@ const NavBar = () => {
             </svg>
           </li>
           <li
-            className={`flex md:hidden flex-col gap-[70px] justify-start items-center text-2xl ${
+            className={`flex md:hidden flex-col gap-[70px] justify-start items-center text-xl ${
               mobileDropdown ? "h-full flex" : "h-0 hidden"
             } overflow-hidden`}
           >
