@@ -3,8 +3,10 @@ import Beach2 from "../assets/Beach2.png";
 import Beach1 from "../assets/Beach1.png";
 import HomeImg from "../assets/Home.png";
 import MatchImg from "../assets/Match.png";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigator = useNavigate();
   return (
     <div className="mx-[50px] md:mx-[130px] lg:mx-[200px] 2xl:mx-[340px] font-garamond max-w-full">
       <section className="font-garamond pt-[75px] lg:pb-[150px] pb-[100px] border-b border-b-black/40">
@@ -49,7 +51,10 @@ const Home = () => {
             <p className="text-center md:text-left text-[24px] lg:text-[24px] font-thin">
               Write Something Else
             </p>
-            <button className="font-helvetica font-normal px-12 py-3 rounded-full border-2 border-solid border-black">
+            <button
+              onClick={() => navigator("/connection-cafe")}
+              className="hover:bg-black hover:text-offwhite transition-colors duration-200 font-helvetica font-normal px-12 py-3 rounded-full border-2 border-solid border-black"
+            >
               Learn More
             </button>
           </div>
@@ -79,7 +84,10 @@ const Home = () => {
             <p className="text-center md:text-left text-[24px] lg:text-[24px] font-thin">
               Write Something Else
             </p>
-            <button className="font-helvetica font-normal px-12 py-3 rounded-full border-2 border-solid border-black">
+            <button
+              onClick={() => navigator("/beachside-snackshop")}
+              className="hover:bg-black hover:text-offwhite transition-colors duration-200  font-helvetica font-normal px-12 py-3 rounded-full border-2 border-solid border-black"
+            >
               Learn More
             </button>
           </div>

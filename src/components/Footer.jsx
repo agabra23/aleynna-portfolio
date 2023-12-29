@@ -2,8 +2,22 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flex justify-between mx-[30px] md:max-xl:mx-[60px] lg:mx-[130px] font-helvetica py-[30px] md:py-[50px]">
-      <div>Footer</div>
+    <footer className="flex justify-between items-center mx-[30px] md:max-xl:mx-[60px] lg:mx-[130px] font-helvetica py-[30px] md:py-[50px]">
+      <div className="flex flex-col gap-5">
+        <h6 className="text-xl font-medium">Let's Connect!</h6>
+        <ul className="flex justify-start gap-[45px]">
+          <li className="underline">
+            <a className="text-inherit no-underline" href="/">
+              LinkedIn
+            </a>
+          </li>
+          <li className="underline">
+            <a href="/" className="text-inherit no-underline">
+              Email
+            </a>
+          </li>
+        </ul>
+      </div>
       <div className="text-3xl md:text-5xl flex gap-[8px] md:gap-[12px]">
         <h1 className="font-bold">AQ</h1>
         <div className="flex items-center">

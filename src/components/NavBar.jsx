@@ -171,7 +171,7 @@ const NavBar = () => {
           mobileOpened ? "" : "translate-x-full"
         } transition-all z-10 h-screen w-full flex flex-col items-center`}
       >
-        <ul className="flex flex-col justify-start items-center gap-[70px] font-thin text-xl absolute translate-y-32">
+        <ul className="flex flex-col justify-start items-center gap-10 font-thin text-xl absolute translate-y-32">
           <li
             className={`cursor-pointer ${isLinkActive("/") && "underline"}`}
             onClick={() => mobileClickHandler("/")}
@@ -199,12 +199,32 @@ const NavBar = () => {
             </svg>
           </li>
           <li
-            className={`flex md:hidden flex-col gap-[70px] justify-start items-center text-xl ${
+            className={`flex md:hidden flex-col gap-10 justify-start items-center text-xl ${
               mobileDropdown ? "h-full flex" : "h-0 hidden"
             } overflow-hidden`}
           >
-            <p className="uppercase">Connection Café</p>
-            <p className="uppercase">Beachside Snackshop</p>
+            <p
+              onClick={() => {
+                mobileClickHandler("/connection-cafe");
+                setMobileDropdown(false);
+              }}
+              className={`uppercase ${
+                isLinkActive("/connection-cafe") && "underline"
+              }`}
+            >
+              Connection Café
+            </p>
+            <p
+              onClick={() => {
+                mobileClickHandler("/beachside-snackshop");
+                setMobileDropdown(false);
+              }}
+              className={`uppercase ${
+                isLinkActive("/beachside-snackshop") && "underline"
+              }`}
+            >
+              Beachside Snackshop
+            </p>
           </li>
           <li
             onClick={() => mobileClickHandler("/about")}
