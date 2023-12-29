@@ -38,7 +38,7 @@ const NavBar = () => {
 
   return (
     <nav className="flex justify-between mx-[30px] md:max-xl:mx-[60px] lg:mx-[130px] font-helvetica py-[30px] md:py-[50px]">
-      <div className="text-3xl md:text-5xl flex gap-[8px] md:gap-[12px] relative z-20">
+      <div className="text-3xl md:text-5xl flex gap-[8px] md:gap-[12px] relative z-30">
         <h1 className="font-bold">AQ</h1>
         <div className="flex items-center">
           <svg
@@ -143,7 +143,7 @@ const NavBar = () => {
       </ul>
       <div
         onClick={() => setMobileOpened(!mobileOpened)}
-        className="md:hidden flex items-center text-2xl cursor-pointer relative z-20"
+        className="md:hidden flex items-center text-2xl cursor-pointer relative z-30"
       >
         {mobileOpened ? (
           <span className="">
@@ -169,7 +169,7 @@ const NavBar = () => {
       <div
         className={`absolute bg-offwhite top-0 left-0 md:hidden ${
           mobileOpened ? "" : "translate-x-full"
-        } transition-all z-10 h-screen w-full flex flex-col items-center`}
+        } transition-all z-20 h-screen w-full flex flex-col items-center`}
       >
         <ul className="flex flex-col justify-start items-center gap-10 font-thin text-xl absolute translate-y-32">
           <li
@@ -208,7 +208,7 @@ const NavBar = () => {
                 mobileClickHandler("/connection-cafe");
                 setMobileDropdown(false);
               }}
-              className={`uppercase ${
+              className={`uppercase text-sm ${
                 isLinkActive("/connection-cafe") && "underline"
               }`}
             >
@@ -219,7 +219,7 @@ const NavBar = () => {
                 mobileClickHandler("/beachside-snackshop");
                 setMobileDropdown(false);
               }}
-              className={`uppercase ${
+              className={`uppercase text-sm ${
                 isLinkActive("/beachside-snackshop") && "underline"
               }`}
             >

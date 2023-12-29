@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
   const navigator = useNavigate();
   return (
-    <div className="mx-[50px] md:mx-[130px] lg:mx-[200px] 2xl:mx-[340px] font-garamond max-w-full">
+    <div className="relative z-10 mx-[50px] md:mx-[130px] lg:mx-[200px] 2xl:mx-[340px] font-garamond max-w-full">
       <section className="font-garamond pt-[75px] lg:pb-[150px] pb-[100px] border-b border-b-black/40">
         <h2 className="font-helvetica md:text-5xl text-4xl lg:text-8xl font-bold text-center">
           Aleynna Quinones
