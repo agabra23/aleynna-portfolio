@@ -98,7 +98,7 @@ const NavBar = () => {
           <div
             className={`${
               showProjectDetails ? "visible opacity-100" : "invisible opacity-0"
-            } transition-all duration-300 ease-in-out text-xl font-thin absolute shadow-custom top-12 -translate-x-10 z-10 bg-white p-[35px] rounded-[25px]`}
+            } transition-all duration-300 ease-in-out text-xl font-thin absolute z-40 shadow-custom top-12 -translate-x-10 bg-white p-[35px] rounded-[25px]`}
           >
             <p
               onClick={() => {
@@ -208,7 +208,7 @@ const NavBar = () => {
                 mobileClickHandler("/connection-cafe");
                 setMobileDropdown(false);
               }}
-              className={`uppercase text-sm ${
+              className={`uppercase text-lg ${
                 isLinkActive("/connection-cafe") && "underline"
               }`}
             >
@@ -219,7 +219,7 @@ const NavBar = () => {
                 mobileClickHandler("/beachside-snackshop");
                 setMobileDropdown(false);
               }}
-              className={`uppercase text-sm ${
+              className={`uppercase text-lg ${
                 isLinkActive("/beachside-snackshop") && "underline"
               }`}
             >

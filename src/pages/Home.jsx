@@ -14,9 +14,15 @@ const Home = () => {
           Aleynna Quinones
         </h2>
         <p className="text-xl lg:text-4xl mt-5 lg:mt-12">
-          Is a UX Designer dedicated to solving problems through the creation of
-          digital experiences that seamlessly integrate innovation, empathy, and
-          intuitive design.
+          Is a UX Designer{" "}
+          <span className="lg:border-b-2 border-b border-b-black inline-block leading-5 lg:leading-9">
+            dedicated to solving problems
+          </span>{" "}
+          through the creation of digital experiences that seamlessly integrate{" "}
+          <span className="lg:border-b-2 border-b border-b-black inline-block leading-5 lg:leading-9">
+            innovation, empathy, and intuitive design
+          </span>
+          .
         </p>
         <div className="flex flex-col md:flex-row gap-[15px] md:gap-28 mt-12 lg:mt-16">
           <div className="md:max-w-[300px]">
