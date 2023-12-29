@@ -37,7 +37,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="flex justify-between mx-[30px] md:max-xl:mx-[60px] lg:mx-[130px] font-helvetica py-[30px] md:py-[50px]">
+    <nav className="relative z-10 flex justify-between mx-[30px] md:max-xl:mx-[60px] lg:mx-[130px] font-helvetica py-[30px] md:py-[50px]">
       <div className="text-3xl md:text-5xl flex gap-[8px] md:gap-[12px] relative z-30">
         <h1 className="font-bold">AQ</h1>
         <div className="flex items-center">
@@ -98,7 +98,7 @@ const NavBar = () => {
           <div
             className={`${
               showProjectDetails ? "visible opacity-100" : "invisible opacity-0"
-            } transition-all duration-300 ease-in-out text-xl font-thin absolute z-40 shadow-custom top-12 -translate-x-10 bg-white p-[35px] rounded-[25px]`}
+            } transition-all duration-300 ease-in-out text-xl font-thin absolute shadow-custom top-12 -translate-x-10 bg-white p-[35px] rounded-[25px]`}
           >
             <p
               onClick={() => {
