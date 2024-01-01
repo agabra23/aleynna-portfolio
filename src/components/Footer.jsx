@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="relative z-10 flex justify-between items-center mx-[30px] md:max-xl:mx-[60px] lg:mx-[130px] font-helvetica py-[30px] md:py-[50px]">
+    <footer className="relative z-0 flex justify-between items-center mx-[30px] md:max-xl:mx-[60px] lg:mx-[130px] font-helvetica py-[30px] md:py-[50px]">
       <div className="flex flex-col gap-5">
         <h6 className="text-xl font-medium">Let's Connect!</h6>
         <ul className="flex justify-start gap-[45px]">

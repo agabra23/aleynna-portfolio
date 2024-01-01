@@ -35,7 +35,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-      <div className="-z-10 absolute top-0 left-0 bottom-0 right-0 max-h-full overflow-hidden">
+      <div className="-z-20 absolute top-0 left-0 bottom-0 right-0 max-h-full overflow-hidden">
         <div className="opacity-50 absolute -top-20 -left-36 w-96 h-96 filter blur-2xl bg-pumpkin rounded-full"></div>
         <div className="opacity-50 absolute -bottom-60 -right-48 w-96 h-96 filter blur-2xl bg-pumpkin rounded-full"></div>
         <div className="opacity-50 absolute top-80 -right-56 w-96 h-96 filter blur-2xl bg-blueberry rounded-full"></div>
