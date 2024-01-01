@@ -4,7 +4,7 @@ import selfies from "../assets/selfies.png";
 
 const About = () => {
   return (
-    <div className="py-[50px] md:py-[110px] relative z-0 mx-[50px] md:mx-[130px] lg:mx-[200px] 2xl:mx-[340px] font-garamond max-w-full flex flex-col md:flex-row-reverse md:gap-[55px] gap-[30px] items-center">
+    <div className="py-[50px] md:py-[110px] mx-[50px] md:mx-[130px] lg:mx-[200px] 2xl:mx-[340px] font-garamond max-w-full flex flex-col md:flex-row-reverse md:gap-[55px] gap-[30px] items-center">
       <div className="flex justify-center items-center min-w-[90px] max-w-[200px] md:max-w-[350px]">
         <img className=" h-auto" src={selfies} alt="Aleynna 3" />
       </div>
