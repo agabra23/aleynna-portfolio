@@ -38,7 +38,10 @@ const NavBar = () => {
 
   return (
     <nav className="z-10 flex justify-between mx-[30px] md:max-xl:mx-[60px] lg:mx-[130px] font-helvetica py-[30px] md:py-[50px]">
-      <div className="text-3xl md:text-5xl flex gap-[8px] md:gap-[12px] relative z-30">
+      <div
+        onClick={() => navigator("/")}
+        className="text-3xl md:text-5xl flex gap-[8px] md:gap-[12px] relative z-30 cursor-pointer"
+      >
         <h1 className="font-bold">AQ</h1>
         <div className="flex items-center">
           <svg
@@ -85,7 +88,9 @@ const NavBar = () => {
             PROJECTS
           </span>
           <svg
-            className="hover:scale-125 transition-transform"
+            className={`hover:scale-125 transition-all ${
+              showProjectDetails ? "rotate-0" : "rotate-180"
+            }`}
             xmlns="http://www.w3.org/2000/svg"
             width=".8em"
             height=".8em"
