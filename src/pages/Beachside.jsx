@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
+import { useLayoutEffect } from "react";
 
 const Beachside = () => {
-  return (
-    <div>Beachside</div>
-  )
-}
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
+  return <div>Beachside</div>;
+};
 
-export default Beachside
+export default Beachside;

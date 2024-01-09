@@ -1,4 +1,5 @@
 import React from "react";
+import { useLayoutEffect } from "react";
 
 import DS_1 from "../assets/DS1.png";
 import DS_2 from "../assets/DS2.png";
@@ -11,6 +12,9 @@ import IMH from "../assets/IMH.png";
 import IC from "../assets/IC.png";
 
 const Play = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="py-[135px] md:py-[110px] mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-helvetica max-w-full flex flex-col gap-[75px] md:gap-[110px] items-center">
       <div className="flex-col flex items-center gap-[185px]">

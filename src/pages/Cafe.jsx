@@ -1,4 +1,5 @@
 import React from "react";
+import { useLayoutEffect } from "react";
 import HomeImg from "../assets/Home.png";
 import MatchImg from "../assets/Match.png";
 import FoundMatch from "../assets/FoundMatch.png";
@@ -16,6 +17,9 @@ import ScreenDescription from "../components/ScreenDescription";
 import UserPersona from "../components/UserPersona";
 
 const Cafe = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="relative -z-10 mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full">
       <section className="font-garamond pt-[75px] lg:pb-[110px] pb-[50px] border-b border-b-black/40 max-w-full">

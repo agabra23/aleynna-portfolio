@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
+import { useLayoutEffect } from "react";
 
 const ErrorPage = () => {
-  return (
-    <div>404 Error</div>
-  )
-}
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
+  return <div>404 Error</div>;
+};
 
-export default ErrorPage
+export default ErrorPage;

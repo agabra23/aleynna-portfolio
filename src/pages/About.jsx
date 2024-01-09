@@ -1,10 +1,14 @@
 import React from "react";
 import Blobs from "../assets/BLOBS.png";
 import Resume from "../assets/Aleynna-Quinones-Resume-2024.pdf";
+import { useLayoutEffect } from "react";
 
 import selfies from "../assets/selfies.png";
 
 const About = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="py-[50px] md:py-[110px] mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full flex flex-col md:flex-row-reverse md:gap-[55px] gap-[30px] items-center">
       <div className="relative flex justify-center items-center min-w-[90px] max-w-[200px] md:max-w-[350px]">

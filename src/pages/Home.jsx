@@ -4,9 +4,14 @@ import Beach1 from "../assets/Beach1.png";
 import HomeImg from "../assets/Home.png";
 import MatchImg from "../assets/Match.png";
 import { useNavigate } from "react-router-dom";
+import { useLayoutEffect } from "react";
+
 
 const Home = () => {
   const navigator = useNavigate();
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="relative -z-10 mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full">
       <section className="font-garamond pt-[75px] lg:pb-[150px] pb-[100px] border-b border-b-black/40">
