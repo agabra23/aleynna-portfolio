@@ -61,9 +61,9 @@ const Cafe = () => {
           </li>
         </ul>
       </section>
-      <section className="font-garamond pt-[50px] lg:pb-[150px] pb-[50px] border-b border-b-black/40 flex flex-col gap-[30px]">
+      <section className="font-garamond pt-[50px] lg:pb-[150px] pb-[50px] border-b border-b-black/40 flex flex-col gap-[30px] md:flex-row md:gap-[50px]">
         <div>
-          <h6 className="font-thin font-helvetica text-[20px] lg:text-[24px]">
+          <h6 className="font-thin font-helvetica text-[20px] lg:text-[24px] md:w-max">
             Project Overview
           </h6>
         </div>
