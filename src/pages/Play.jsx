@@ -25,19 +25,19 @@ const Play = () => {
             </h6>
           </div>
           <div className="flex-col flex gap-[20px] basis-[300px]">
-            <img src={DS_1} alt="" />
+            <img className="object-cover" src={DS_1} alt="" />
             <h6 className="uppercase text-[16px] font-thin text-center">
               Dear Somebody #1
             </h6>
           </div>
           <div className="flex-col flex gap-[20px] basis-[300px]">
-            <img src={GC} alt="" />
+            <img className="object-cover" src={GC} alt="" />
             <h6 className="uppercase text-[16px] font-thin text-center">
               Guilty Conscience
             </h6>
           </div>
           <div className="flex-col flex gap-[20px] basis-[300px]">
-            <img src={MG} alt="" />
+            <img className="object-cover" src={MG} alt="" />
             <h6 className="uppercase text-[16px] font-thin text-center">
               The Male Gaze
             </h6>
