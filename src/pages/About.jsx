@@ -1,5 +1,6 @@
 import React from "react";
 import Blobs from "../assets/BLOBS.png";
+import Resume from "../assets/Aleynna-Quinones-Resume-2024.pdf";
 
 import selfies from "../assets/selfies.png";
 
@@ -49,9 +50,11 @@ const About = () => {
           with a methodical approach, creating meaningful and user-friendly
           experiences.
         </p>
-        <button className="border-2 border-black rounded-full py-2 px-8 hover:bg-black hover:text-offwhite cursor-pointer transition-colors duration-200 md:text-xl">
-          My Resumé
-        </button>
+        <a href={Resume} target="_blank">
+          <button className="border-2 border-black rounded-full py-2 px-8 hover:bg-black hover:text-offwhite cursor-pointer transition-colors duration-200 md:text-xl">
+            My Resumé
+          </button>
+        </a>
       </div>
     </div>
   );
