@@ -10,7 +10,10 @@ import Connect from "../assets/Connect.png";
 import Populate from "../assets/Populate.png";
 import MatchProfile from "../assets/MatchProfile.png";
 import Meeting from "../assets/Meeting.png";
+import MattAvatar from "../assets/MattAvatar.png";
+import KatAvatar from "../assets/KatAvatar.png";
 import ScreenDescription from "../components/ScreenDescription";
+import UserPersona from "../components/UserPersona";
 
 const Cafe = () => {
   return (
@@ -283,8 +286,8 @@ const Cafe = () => {
           </div>
         </div>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col gap-[50px]">
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] md:mb-[60px]">
+      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col">
+        <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
             What did we find?
           </h4>
@@ -349,12 +352,48 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:mb-5 md:col-span-1 place-self-end">
             User Personas
           </h4>
-          <h6 className="text-2xl font-medium font-helvetica mb-[20px]">
+          <h6 className="text-2xl w-max font-medium font-helvetica mb-[20px] justify-self-start md:mb-5 md:col-span-3">
             Meet Matt and Kat
           </h6>
+        </div>
+        <div className="flex flex-col gap-12 md:gap-10">
+          <UserPersona
+            avatar={MattAvatar}
+            name={"Matt"}
+            alias={"the motivated professional"}
+            occupation={"Engineer, remote"}
+            frustrations={[
+              "Feels like he doesn’t have time to connect with others because he is constantly focused on work",
+            ]}
+            goals={[
+              "Maintain work life balance",
+              "Excel in his career while also taking care of his mental and emotional well-being",
+            ]}
+            age={"44"}
+            description={
+              "Matt listens to motivational podcasts during his free time to refocus his energy.  He engages with podcast communities online, sharing his favorite episodes and seeking recommendations from like-minded listeners."
+            }
+          />
+          <UserPersona
+            avatar={KatAvatar}
+            name={"Kat"}
+            alias={"the curious sharer"}
+            occupation={"Business analyst"}
+            frustrations={[
+              "Wants to share what she learns through podcasts but people in her life don’t care",
+            ]}
+            goals={[
+              "Socialize with people who have the same interests as her",
+              "Discover new podcasts that constantly keep her engaged and stimulated",
+            ]}
+            age={"32"}
+            description={
+              "A naturally curious individual with a passion for learning. Kat is always eager to share any new findings she learns with the people in her life, but sometimes they aren’t interested or don't care."
+            }
+          />
         </div>
       </section>
     </div>
