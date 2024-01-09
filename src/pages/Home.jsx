@@ -55,7 +55,8 @@ const Home = () => {
               Café
             </h3>
             <p className="text-center md:text-left text-[24px] lg:text-[24px] font-thin">
-              Write Something Else
+              Encouraging in-person and digital interactions through a love for
+              podcasts.
             </p>
             <button
               onClick={() => navigator("/connection-cafe")}
@@ -88,7 +89,8 @@ const Home = () => {
               SnackShop
             </h3>
             <p className="text-center md:text-left text-[24px] lg:text-[24px] font-thin">
-              Write Something Else
+              Order food online and track your delivery in real-time for a
+              simple and efficient dining experience.
             </p>
             <button
               onClick={() => navigator("/beachside-snackshop")}
