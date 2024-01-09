@@ -12,7 +12,7 @@ import IC from "../assets/IC.png";
 
 const Play = () => {
   return (
-    <div className="py-[135px] md:py-[110px] mx-[50px] md:mx-[130px] lg:mx-[200px] 2xl:mx-[340px] font-helvetica max-w-full flex flex-col gap-[75px] md:gap-[110px] items-center">
+    <div className="py-[135px] md:py-[110px] mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-helvetica max-w-full flex flex-col gap-[75px] md:gap-[110px] items-center">
       <div className="flex-col flex items-center gap-[185px]">
         <div className=" flex flex-wrap gap-x-[175px] gap-y-[75px] justify-center">
           <div className="relative flex-col flex gap-[20px] basis-[300px]">

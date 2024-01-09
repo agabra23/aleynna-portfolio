@@ -1,13 +1,20 @@
 import React from "react";
 import HomeImg from "../assets/Home.png";
 import MatchImg from "../assets/Match.png";
+import FoundMatch from "../assets/FoundMatch.png";
+import MatchExample from "../assets/MatchExample.png";
 import Mockup1 from "../assets/Mockup1.png";
 import Mockup2 from "../assets/Mockup2.png";
 import Mockup3 from "../assets/Mockup3.png";
+import Connect from "../assets/Connect.png";
+import Populate from "../assets/Populate.png";
+import MatchProfile from "../assets/MatchProfile.png";
+import Meeting from "../assets/Meeting.png";
+import ScreenDescription from "../components/ScreenDescription";
 
 const Cafe = () => {
   return (
-    <div className="relative -z-10 mx-[50px] md:mx-[130px] lg:mx-[200px] 2xl:mx-[340px] font-garamond max-w-full">
+    <div className="relative -z-10 mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full">
       <section className="font-garamond pt-[75px] lg:pb-[150px] pb-[50px] border-b border-b-black/40 max-w-full">
         <div className="flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[65px] max-w-full">
           <div className="flex justify-center gap-[15px] lg:max-w-[calc(100%-415px)] max-w-full mb-[30px]">
@@ -107,16 +114,16 @@ const Cafe = () => {
           </div>
         </div>
       </section>
-      <section className="font-garamond pt-[50px] lg:pb-[150px] pb-[50px] border-b border-b-black/40 flex flex-col gap-[30px] md:flex-row md:gap-[50px]">
-        <div className="md:grid md:grid-cols-4 md:gap-x-[40px]">
+      <section className="font-garamond pt-[50px] lg:pb-[150px] pb-[50px] border-b border-b-black/40 flex flex-col gap-[30px] md:block">
+        <div className="md:grid md:grid-cols-4 md:gap-x-[40px] md:mb-[60px]">
           <h6 className="uppercase font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px]">
             Our Solution
           </h6>
           <div className="mb-[20px] col-span-3">
-            <h4 className="mb-[10px] text-2xl font-medium font-helvetica">
+            <h4 className="mb-[10px] text-2xl md:text-3xl font-medium font-helvetica">
               The Connection Café physical space
             </h4>
-            <p className="font-thin text-[16px]">
+            <p className="font-thin text-[16px] md:text-2xl">
               A versatile space where{" "}
               <span className="font-semibold">
                 digital interaction meets in-person interaction.
@@ -142,10 +149,10 @@ const Cafe = () => {
           </div>
           <div></div>
           <div className="mb-[30px] col-span-3">
-            <h4 className="mb-[10px] text-2xl font-medium font-helvetica">
+            <h4 className="mb-[10px] md:mb-[20px] text-3xl font-medium font-helvetica">
               Visitors can...
             </h4>
-            <ul className="list-disc list-inside pl-3">
+            <ul className="list-disc list-inside pl-3 text-2xl">
               <li className="leading-7">
                 <span className="font-semibold">
                   Check in to the café using the QR code
@@ -172,6 +179,41 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
+        </div>
+
+        <h4 className="mb-[20px] text-center text-2xl md:text-3xl font-medium font-helvetica">
+          The Connection Café App
+        </h4>
+        <div className="flex flex-col gap-10 items-center">
+          <ScreenDescription
+            imageSrc1={Connect}
+            imageSrc2={Populate}
+            cap1="Connect to listening platforms"
+            cap2="Unique population of podcasts"
+            p1="Upon check-in or sign-up, users are directed to the initial screen where
+        they can link their preferred podcast platforms, redirecting outside the
+        app upon selection."
+            p2="After successful connections, the subsequent screen displays a
+        consolidated list of their podcasts from all linked platforms, allowing
+        users to pick their top 5 for display on their profile when connecting
+        with others."
+          />
+          <ScreenDescription
+            imageSrc1={FoundMatch}
+            imageSrc2={MatchExample}
+            cap1="Your match confirmation"
+            cap2="Your match"
+            p1="After choosing their top 5 podcasts, the app uses the list to match the user with others in the café."
+            p2="Although the app can potentially match the user with multiple people, for simplicity, it displays a single match, like Angela, whom users can learn more about on a dedicated page from the previous screen."
+          />
+          <ScreenDescription
+            imageSrc1={MatchProfile}
+            imageSrc2={Meeting}
+            cap1="Your match profile"
+            cap2="Meeting confirmation"
+            p1="Upon selecting to learn more, users access their match's profile, featuring a brief bio, favorite podcast genres, and top 5 podcasts."
+            p2="The pivotal aspect of this interaction is the personal connection; users can either meet their match immediately at the café or initiate communication through the app, with the option to be directed to a designated table for in-person conversation."
+          />
         </div>
       </section>
     </div>
