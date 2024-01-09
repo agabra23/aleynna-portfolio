@@ -213,7 +213,7 @@ const NavBar = () => {
                 mobileClickHandler("/connection-cafe");
                 setMobileDropdown(false);
               }}
-              className={`uppercase text-lg ${
+              className={`uppercase text-lg text-charcoal ${
                 isLinkActive("/connection-cafe") && "underline"
               }`}
             >
@@ -224,7 +224,7 @@ const NavBar = () => {
                 mobileClickHandler("/beachside-snackshop");
                 setMobileDropdown(false);
               }}
-              className={`uppercase text-lg ${
+              className={`uppercase text-lg text-charcoal ${
                 isLinkActive("/beachside-snackshop") && "underline"
               }`}
             >

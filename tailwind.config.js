@@ -9,6 +9,7 @@ export default {
       },
       colors: {
         offwhite: "#F3F0EC",
+        charcoal: "#575757",
         mustard: "#FFD43C",
         pumpkin: "#FF852C",
         candyPink: "#FF63B9",
