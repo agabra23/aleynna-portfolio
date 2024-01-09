@@ -15,7 +15,7 @@ import ScreenDescription from "../components/ScreenDescription";
 const Cafe = () => {
   return (
     <div className="relative -z-10 mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full">
-      <section className="font-garamond pt-[75px] lg:pb-[150px] pb-[50px] border-b border-b-black/40 max-w-full">
+      <section className="font-garamond pt-[75px] lg:pb-[110px] pb-[50px] border-b border-b-black/40 max-w-full">
         <div className="flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[65px] max-w-full">
           <div className="flex justify-center gap-[15px] lg:max-w-[calc(100%-415px)] max-w-full mb-[30px]">
             <img
@@ -45,7 +45,7 @@ const Cafe = () => {
           </div>
         </div>
       </section>
-      <section className="font-garamond pt-[50px] lg:p-[110px] pb-[50px] border-b border-b-black/40">
+      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40">
         <ul className="grid grid-cols-2 gap-y-[40px] md:flex md:justify-evenly md:gap-[50px]">
           <li>
             <h6 className="font-helvetica font-normal text-2xl mb-2">Role</h6>
@@ -71,9 +71,9 @@ const Cafe = () => {
           </li>
         </ul>
       </section>
-      <section className="font-garamond pt-[50px] lg:pb-[150px] pb-[50px] border-b border-b-black/40 flex flex-col gap-[30px] md:flex-row md:gap-[50px]">
+      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col gap-[30px] md:flex-row md:gap-[50px]">
         <div>
-          <h6 className="uppercase font-thin font-helvetica text-[20px] lg:text-[24px] md:w-max">
+          <h6 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] md:w-max">
             Project Overview
           </h6>
         </div>
@@ -82,7 +82,7 @@ const Cafe = () => {
             <h4 className="font-helvetica font-normal text-2xl mb-[10px]">
               The Spoken Word On-Demand Audio Space
             </h4>
-            <p className="text-[16px] font-thin">
+            <p className="text-[16px] font-thin md:text-lg">
               This project aims to find and address a problem in the Spoken Word
               On-Demand Audio space, with a specific focus on improving the
               overall experience for adult podcast listeners.
@@ -92,7 +92,7 @@ const Cafe = () => {
             <h4 className="font-helvetica font-normal text-2xl mb-[10px]">
               Increase human connection between adult podcast listeners
             </h4>
-            <p className="text-[16px] font-thin">
+            <p className="text-[16px] font-thin md:text-lg">
               We discovered that adult podcast listeners seek human connection
               and fresh perspectives. They desire a way to share their favorite
               podcasts and newfound knowledge beyond their phones, and connect
@@ -103,7 +103,7 @@ const Cafe = () => {
             <h4 className="font-helvetica font-normal text-2xl mb-[10px]">
               The Connection Café
             </h4>
-            <p className="text-[16px] font-thin">
+            <p className="text-[16px] font-thin md:text-lg">
               The proposed solution, the Connection Café, provides a seamless
               integration of the physical and digital world. Its goal is to
               improve community mental health by facilitating in-person
@@ -114,9 +114,9 @@ const Cafe = () => {
           </div>
         </div>
       </section>
-      <section className="font-garamond pt-[50px] lg:pb-[150px] pb-[50px] border-b border-b-black/40 flex flex-col gap-[30px] md:block">
-        <div className="md:grid md:grid-cols-4 md:gap-x-[40px] md:mb-[60px]">
-          <h6 className="uppercase font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px]">
+      <section className="font-garamond pt-[50px] lg:pt-[110px] lg:pb-[150px] pb-[50px] border-b border-b-black/40 flex flex-col gap-[30px] md:block">
+        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] md:mb-[60px]">
+          <h6 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px]">
             Our Solution
           </h6>
           <div className="mb-[20px] col-span-3">
@@ -214,6 +214,147 @@ const Cafe = () => {
             p1="Upon selecting to learn more, users access their match's profile, featuring a brief bio, favorite podcast genres, and top 5 podcasts."
             p2="The pivotal aspect of this interaction is the personal connection; users can either meet their match immediately at the café or initiate communication through the app, with the option to be directed to a designated table for in-person conversation."
           />
+        </div>
+      </section>
+      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col gap-5 md:gap-10 justify-center items-center">
+        <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-2xl font-thin text-center">
+          Want to learn more about our process?
+        </p>
+        <h4 className="font-helvetica text-3xl font-medium text-center md:text-5xl">
+          Let’s dig deeper...
+        </h4>
+        <svg
+          className="md:w-6"
+          width="20px"
+          height="auto"
+          viewBox="0 0 23 31"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            id="Arrow 1"
+            d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
+            fill="black"
+          />
+        </svg>
+      </section>
+      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col gap-8 md:flex-row">
+        <div>
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] md:w-max">
+            Our starting point
+          </h4>
+        </div>
+        <div className="flex flex-col gap-[30px]">
+          <div>
+            <h6 className="text-2xl font-medium max-w-[85%] mb-[10px] font-helvetica">
+              What do we want to target in the podcast space?
+            </h6>
+            <p className="text-16px font-thin md:text-lg">
+              As a team, we decided to hone in on a specific area of the podcast
+              space:{" "}
+              <span className="font-semibold">
+                adult podcast listeners and their listening experience.
+              </span>
+            </p>
+          </div>
+          <div>
+            <h6 className="text-2xl font-medium max-w-[85%] mb-[10px] font-helvetica">
+              What do we want to learn?
+            </h6>
+            <p className="text-16px font-thin md:text-lg">
+              How their listening experience{" "}
+              <span className="font-semibold">
+                affects their overall mental health.
+              </span>
+            </p>
+          </div>
+          <div>
+            <h6 className="text-2xl font-medium max-w-[85%] mb-[10px] font-helvetica">
+              Plan of attack
+            </h6>
+            <p className="text-16px font-thin md:text-lg">
+              Conduct{" "}
+              <span className="font-semibold">
+                secondary research and 1-on-1 interviews
+              </span>{" "}
+              to gather insights, challenges, and pain-points for our potential
+              users.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col gap-[50px]">
+        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] md:mb-[60px]">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+            What did we find?
+          </h4>
+          <div className="mb-[50px] md:col-span-3">
+            <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+              Secondary and primary research key findings
+            </h6>
+            <ul className="list-disc list-inside pl-3">
+              <li className="text-[16px] font-thin leading-7">
+                Podcast listeners search for a way to connect with others
+                through podcasts.
+              </li>
+              <li className="text-[16px] font-thin leading-7">
+                Podcast listening is a chance to build community.
+              </li>
+              <li className="text-[16px] font-thin leading-7">
+                Adults need a way to disconnect from real life that continues to
+                stimulate them.
+              </li>
+              <li className="text-[16px] font-thin leading-7">
+                Adults need an engaging way to discuss podcast content with
+                friends.
+              </li>
+            </ul>
+          </div>
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+            Say What?
+          </h4>
+          <div className="mb-[50px] md:col-span-3">
+            <h6 className="text-2xl font-medium font-helvetica mb-[20px]">
+              What our users have to say
+            </h6>
+            <ul className="flex flex-col gap-[15px]">
+              <li className="text-[16px] font-thin leading-7">
+                “When people consume content independently but can discuss it
+                later, it{" "}
+                <span className="font-semibold">helps build community</span> in
+                a low-stakes, relaxed fashion.” Lindsay Harris Friel, The
+                Podcast Host
+              </li>
+              <li className="text-[16px] font-thin leading-7">
+                “I’m with other people who I know won’t be as interested,{" "}
+                <span className="font-semibold">
+                  I’ll choose a podcast more catered to general entertainment
+                </span>
+                .” Logan, 26 yrs old
+              </li>
+              <li className="text-[16px] font-thin leading-7">
+                “I like to discuss with people but{" "}
+                <span className="font-semibold">
+                  sometimes people don’t care.
+                </span>
+                ” Pam, 53 yr old
+              </li>
+              <li className="text-[16px] font-thin leading-7">
+                “...podcasts are a social experience... most listeners say they
+                recommend podcasts to someone else, [and]{" "}
+                <span className="font-semibold">
+                  discuss the content they hear with others
+                </span>
+                ...” Pew Research
+              </li>
+            </ul>
+          </div>
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+            User Personas
+          </h4>
+          <h6 className="text-2xl font-medium font-helvetica mb-[20px]">
+            Meet Matt and Kat
+          </h6>
         </div>
       </section>
     </div>
