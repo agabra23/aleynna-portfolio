@@ -14,11 +14,11 @@ const Home = () => {
   return (
     <div className="relative -z-10 mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full">
       <section className="font-garamond pt-[75px] lg:pb-[150px] pb-[100px] border-b border-b-black/40">
-        <h2 className="font-helvetica md:text-5xl text-4xl lg:text-7xl font-bold">
-          Aleynna Quiñones
+        <h2 className="font-helvetica md:text-5xl text-4xl lg:text-[64px] font-bold">
+          Hi! I’m Aleynna Quiñones.
         </h2>
         <p className="text-xl lg:text-3xl mt-5 lg:mt-12">
-          Is a UX Designer{" "}
+          I'm a UX Designer{" "}
           <span className="font-semibold  break-words">
             dedicated to solving problems
           </span>{" "}
@@ -28,18 +28,16 @@ const Home = () => {
           </span>
           .
         </p>
-        <div className="flex flex-col md:flex-row gap-[15px] md:gap-28 mt-12 lg:mt-16">
-          <div className="md:max-w-[300px]">
-            <h5 className="font-helvetica text-xl lg:text-2xl font-normal">
-              SHE ALSO LOVES...
-            </h5>
+        <div className="flex flex-col  gap-[15px] mt-12 lg:mt-16">
+          <div className="text-xl lg:text-2xl font-thin">
+            <h5 className="font-helvetica">I ALSO LOVE...</h5>
             <p className="mt-3 text-[16px] lg:text-xl">
               painting, lifting heavy weights, and hanging out with her two
               cats.
             </p>
           </div>
-          <div className="md:max-w-[300px]">
-            <h5 className="font-helvetica text-xl lg:text-2xl">CURRENTLY...</h5>
+          <div className="text-xl lg:text-2xl font-thin">
+            <h5 className="font-helvetica">CURRENTLY...</h5>
             <p className="mt-3 text-[16px] lg:text-xl">
               a senior at Lesley University seeking Summer 2024 internship
               opportunities, lets chat.
@@ -58,13 +56,13 @@ const Home = () => {
               <br />
               Café
             </h3>
-            <p className="text-center md:text-left text-[24px] lg:text-[24px] font-thin">
+            <p className="text-center md:text-left text-2xl font-thin">
               Encouraging in-person and digital interactions through a love for
               podcasts.
             </p>
             <button
               onClick={() => navigator("/connection-cafe")}
-              className="hover:bg-black hover:text-offwhite transition-colors duration-200 font-helvetica font-normal px-12 py-3 rounded-full border-2 border-solid border-black"
+              className="text-[16px] hover:bg-black hover:text-offwhite transition-colors duration-200 font-helvetica font-normal px-12 py-3 rounded-full border-2 border-solid border-black"
             >
               Learn More
             </button>
@@ -98,7 +96,7 @@ const Home = () => {
             </p>
             <button
               onClick={() => navigator("/beachside-snackshop")}
-              className="hover:bg-black hover:text-offwhite transition-colors duration-200  font-helvetica font-normal px-12 py-3 rounded-full border-2 border-solid border-black"
+              className="text-[16px] hover:bg-black hover:text-offwhite transition-colors duration-200  font-helvetica font-normal px-12 py-3 rounded-full border-2 border-solid border-black"
             >
               Learn More
             </button>
