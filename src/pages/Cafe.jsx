@@ -13,6 +13,16 @@ import MatchProfile from "../assets/MatchProfile.png";
 import Meeting from "../assets/Meeting.png";
 import MattAvatar from "../assets/MattAvatar.png";
 import KatAvatar from "../assets/KatAvatar.png";
+import Ideas1 from "../assets/Ideas1.png";
+import Ideas2 from "../assets/Ideas2.png";
+import Ideas3 from "../assets/Ideas3.png";
+import Ideas4 from "../assets/Ideas4.png";
+import Sticky1 from "../assets/Sticky1.png";
+import Sticky2 from "../assets/Sticky2.png";
+import CafeSketch1 from "../assets/CafeSketch1.jpg";
+import CafeSketch2 from "../assets/CafeSketch2.jpg";
+import CafeSketch3 from "../assets/CafeSketch3.jpg";
+import PodcastChat from "../assets/PodcastChat.jpg";
 import ScreenDescription from "../components/ScreenDescription";
 import UserPersona from "../components/UserPersona";
 
@@ -130,7 +140,7 @@ const Cafe = () => {
             <h4 className="mb-[10px] text-2xl md:text-3xl font-medium font-helvetica">
               The Connection Café physical space
             </h4>
-            <p className="font-thin text-[16px] md:text-2xl">
+            <p className="font-thin text-[16px] md:text-lg">
               A versatile space where{" "}
               <span className="font-semibold">
                 digital interaction meets in-person interaction.
@@ -300,18 +310,18 @@ const Cafe = () => {
               Secondary and primary research key findings
             </h6>
             <ul className="list-disc list-inside pl-3">
-              <li className="text-[16px] font-thin leading-7">
+              <li className="text-[16px] md:text-lg font-thin leading-7">
                 Podcast listeners search for a way to connect with others
                 through podcasts.
               </li>
-              <li className="text-[16px] font-thin leading-7">
+              <li className="text-[16px] md:text-lg font-thin leading-7">
                 Podcast listening is a chance to build community.
               </li>
-              <li className="text-[16px] font-thin leading-7">
+              <li className="text-[16px] md:text-lg font-thin leading-7">
                 Adults need a way to disconnect from real life that continues to
                 stimulate them.
               </li>
-              <li className="text-[16px] font-thin leading-7">
+              <li className="text-[16px] md:text-lg font-thin leading-7">
                 Adults need an engaging way to discuss podcast content with
                 friends.
               </li>
@@ -325,28 +335,28 @@ const Cafe = () => {
               What our users have to say
             </h6>
             <ul className="flex flex-col gap-[15px]">
-              <li className="text-[16px] font-thin leading-7">
+              <li className=" md:text-lg font-thin leading-7">
                 “When people consume content independently but can discuss it
                 later, it{" "}
                 <span className="font-semibold">helps build community</span> in
                 a low-stakes, relaxed fashion.” Lindsay Harris Friel, The
                 Podcast Host
               </li>
-              <li className="text-[16px] font-thin leading-7">
+              <li className="text-[16px] md:text-lg font-thin leading-7">
                 “I’m with other people who I know won’t be as interested,{" "}
                 <span className="font-semibold">
                   I’ll choose a podcast more catered to general entertainment
                 </span>
                 .” Logan, 26 yrs old
               </li>
-              <li className="text-[16px] font-thin leading-7">
+              <li className="text-[16px] md:text-lg font-thin leading-7">
                 “I like to discuss with people but{" "}
                 <span className="font-semibold">
                   sometimes people don’t care.
                 </span>
                 ” Pam, 53 yr old
               </li>
-              <li className="text-[16px] font-thin leading-7">
+              <li className="text-[16px] md:text-lg font-thin leading-7">
                 “...podcasts are a social experience... most listeners say they
                 recommend podcasts to someone else, [and]{" "}
                 <span className="font-semibold">
@@ -399,6 +409,189 @@ const Cafe = () => {
             }
           />
         </div>
+      </section>
+      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col">
+        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-3">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+            The emerging problem
+          </h4>
+          <div className="mb-[50px] md:col-span-3">
+            <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+              Adult podcast enthusiasts have few opportunities to engage in
+              in-person interactions with fellow listeners who have common
+              interests.
+            </h6>
+            <ul className="flex flex-col gap-[15px]">
+              <li className="text-[16px] md:text-lg font-thin">
+                After a taxing day at work, adult podcast listeners are seeking
+                a hassle-free and relaxed way to engage with fellow listeners
+                beyond their phone screens, in hopes of diverting their minds
+                from work stress.
+              </li>
+            </ul>
+          </div>
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+            Thus, we asked
+          </h4>
+          <div className="mb-[50px] md:col-span-3">
+            <h6 className="text-2xl font-medium font-helvetica mb-[20px]">
+              How can we provide adult podcast listeners with a means to unwind
+              after a busy day while maintaining a sense of connection with
+              others?
+            </h6>
+          </div>
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+            Ideation
+          </h4>
+          <div className="md:mb-[20px] md:col-span-3">
+            <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+              Brainstorming and affinity maps
+            </h6>
+            <ul className="flex flex-col gap-[15px]">
+              <li className="text-[16px] md:text-lg font-thin">
+                After brainstorming over 100 solutions to our problem via
+                brainwriting and mash-ups techniques, my team and I honed in on
+                two we thought were best.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="grid grid-cols-2 grid-rows-2 bg-white rounded-3xl gap-2 p-9">
+          <img src={Ideas1} alt="Ideation" />
+          <img src={Ideas2} alt="Ideation" />
+          <img src={Ideas3} alt="Ideation" />
+          <img src={Ideas4} alt="Ideation" />
+        </div>
+        <div className="grid grid-cols-2 mt-4 md:mt-8 gap-y-3 md:gap-y-7 gap-x-5 md:gap-x-36 mb-[50px]">
+          <svg
+            className="md:w-8 place-self-center"
+            width="20px"
+            height="auto"
+            viewBox="0 0 23 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="Arrow 1"
+              d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
+              fill="black"
+            />
+          </svg>
+          <svg
+            className="md:w-8 place-self-center"
+            width="20px"
+            height="auto"
+            viewBox="0 0 23 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="Arrow 1"
+              d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
+              fill="black"
+            />
+          </svg>
+          <img src={Sticky1} alt="Sticky Note 1" />
+          <img src={Sticky2} alt="Sticky Note 2" />
+        </div>
+        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-3">
+          <div></div>
+          <div className="md:mb-[50px] mb-[10px] md:col-span-3">
+            <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+              Visualizing our solutions
+            </h6>
+            <ul className="flex flex-col gap-[15px]">
+              <li className="text-lg md:text-lg font-thin">
+                After selecting our two best ideas, we moved on to creating
+                gallery sketches.{" "}
+                <span className="font-semibold">
+                  This step aimed to provide a visual representation of what our
+                  solutions might entail and facilitated the collection of user
+                  feedback.
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div className="md:col-span-4 bg-white p-9 rounded-3xl flex flex-col md:flex-row gap-5 md:gap-[90px] items-center mb-[50px]">
+            <div>
+              <p className="uppercase text-center font-helvetica font-thin text-[16px]">
+                Podcast Chat
+              </p>
+              <img src={PodcastChat} alt="Podcast Chat Sketches" />
+            </div>
+            <div>
+              <p className="uppercase text-center font-helvetica font-thin text-[16px]">
+                Connection Café
+              </p>
+              <div className="flex gap-1 justify-center max-w-full">
+                <div className="max-w-[100px] md:max-w-[150px] h-auto">
+                  <img src={CafeSketch1} alt="Cafe Sketch 1" />
+                </div>
+                <div className="max-w-[100px] md:max-w-[150px] h-auto">
+                  <img src={CafeSketch2} alt="Cafe Sketch 2" />
+                </div>
+                <div className="max-w-[100px] md:max-w-[150px] h-auto">
+                  <img src={CafeSketch3} alt="Cafe Sketch 3" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+            Say What?
+          </h4>
+          <div className="md:col-span-3">
+            <h6 className="text-2xl font-medium font-helvetica mb-[20px]">
+              What our users have to say
+            </h6>
+            <ul className="flex flex-col gap-[15px] md:gap-10">
+              <li className=" md:text-lg font-thin leading-7">
+                “I really liked the Connection Café and I feel like{" "}
+                <span className="font-semibold">
+                  it’s the idea that would be most useful to me
+                </span>
+                . I could definitely see myself visiting one” Logan, 26 yrs old
+              </li>
+              <li className="text-[16px] md:text-lg font-thin leading-7">
+                “I think the combination of a having a place that serves food
+                but also hosts social activities is the{" "}
+                <span className="font-semibold">
+                  perfect combination of the things I loves the most
+                </span>
+                .” Emily, 26 yrs old
+              </li>
+              <li className="text-[16px] md:text-lg font-thin leading-7">
+                “I think the Connection Café is a good idea... to have even{" "}
+                <span className="font-semibold">
+                  a tertiary encounter where two people exchange an inside-joke
+                  or catchphrase
+                </span>{" "}
+                with one another would be really fun.” Gareth, 39 yrs old
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col gap-5 md:gap-10 justify-center items-center">
+        <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-2xl font-thin text-center">
+          If you’ve made it this far, thank you!
+        </p>
+        <h4 className="font-helvetica text-3xl font-medium text-center md:text-5xl">
+          Let’s wrap this up...
+        </h4>
+        <svg
+          className="md:w-6"
+          width="20px"
+          height="auto"
+          viewBox="0 0 23 31"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            id="Arrow 1"
+            d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
+            fill="black"
+          />
+        </svg>
       </section>
     </div>
   );
