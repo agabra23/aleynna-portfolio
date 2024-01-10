@@ -15,7 +15,7 @@ const About = () => {
         <img
           className="relative z-10 h-auto"
           src={selfies}
-          alt="Aleynna Quinones Selfies"
+          alt="Aleynna Quiñones Selfies"
         />
         <img
           className="absolute scale-150 z-0 h-auto"
