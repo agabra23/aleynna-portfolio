@@ -243,7 +243,7 @@ const Cafe = () => {
         <svg
           className="md:w-6"
           width="20px"
-          height="auto"
+          height="100%"
           viewBox="0 0 23 31"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -466,7 +466,7 @@ const Cafe = () => {
           <svg
             className="md:w-8 place-self-center"
             width="20px"
-            height="auto"
+            height="100%"
             viewBox="0 0 23 31"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -480,7 +480,7 @@ const Cafe = () => {
           <svg
             className="md:w-8 place-self-center"
             width="20px"
-            height="auto"
+            height="100%"
             viewBox="0 0 23 31"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -581,7 +581,7 @@ const Cafe = () => {
         <svg
           className="md:w-6"
           width="20px"
-          height="auto"
+          height="100%"
           viewBox="0 0 23 31"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
