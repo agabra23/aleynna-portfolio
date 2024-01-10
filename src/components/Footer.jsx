@@ -12,7 +12,10 @@ const Footer = () => {
             </a>
           </li>
           <li className="underline">
-            <a href="/" className="text-inherit no-underline">
+            <a
+              href="mailto:aleynnaquinones@gmail.com"
+              className="text-inherit no-underline"
+            >
               Email
             </a>
           </li>
