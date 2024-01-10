@@ -25,6 +25,7 @@ import CafeSketch3 from "../assets/CafeSketch3.jpg";
 import PodcastChat from "../assets/PodcastChat.jpg";
 import ScreenDescription from "../components/ScreenDescription";
 import UserPersona from "../components/UserPersona";
+import AutoplayCarousel from "../components/AutoplayCarousel";
 
 const Cafe = () => {
   useLayoutEffect(() => {
@@ -626,7 +627,7 @@ const Cafe = () => {
 
           {/* Carousel */}
           <div className="col-span-4 mb-11 md:mb-[50px] bg-white">
-            <p>carousel</p>
+            <AutoplayCarousel />
           </div>
 
           <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
@@ -691,13 +692,13 @@ const Cafe = () => {
             cy="13.6875"
             r="12.6875"
             stroke="black"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <path
             d="M7.93005 17.3369C10.8534 22.1057 18.3514 22.3005 21.0701 17.3369"
             stroke="black"
-            stroke-width="2"
-            stroke-linecap="square"
+            strokeWidth="2"
+            strokeLinecap="square"
           />
         </svg>
       </section>

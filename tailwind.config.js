@@ -3,6 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        slider: {
+          "0%": { left: 0 },
+          "100%": { left: "-100%" },
+        },
+      },
       fontFamily: {
         helvetica: ["Helvetica", "sans-serif"],
         garamond: ["Garamond", "serif"],
@@ -17,6 +23,9 @@ export default {
       },
       boxShadow: {
         custom: "0px 4px 15px 0px rgba(0, 0, 0, 0.15)",
+      },
+      animation: {
+        slider: "slider 20s linear infinite",
       },
     },
   },
