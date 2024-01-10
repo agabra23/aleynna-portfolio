@@ -19,7 +19,24 @@ import LofiCheckout from "../assets/LofiCheckout.png";
 import LofiConfirmation from "../assets/LofiConfirmation.png";
 import LofiTracking from "../assets/LofiTracking.png";
 import LofiDriver from "../assets/LofiDriver.png";
+import PinkLogin from "../assets/PinkLogin.png";
+import PinkMenu from "../assets/PinkMenu.png";
+import PinkDetails from "../assets/PinkDetails.png";
+import PinkCart from "../assets/PinkCart.png";
+import PinkCheckout from "../assets/PinkCheckout.png";
+import PinkConfirmation from "../assets/PinkConfirmation.png";
+import PinkDriver from "../assets/PinkDriver.png";
+import PinkTracking from "../assets/PinkTracking.png";
+import BlueLogin from "../assets/BlueLogin.png";
+import BlueMenu from "../assets/BlueMenu.png";
+import BlueDetails from "../assets/BlueDetails.png";
+import BlueCart from "../assets/BlueCart.png";
+import BlueCheckout from "../assets/BlueCheckout.png";
+import BlueConfirmation from "../assets/BlueConfirmation.png";
+import BlueDriver from "../assets/BlueDriver.png";
+import BlueTracking from "../assets/BlueTracking.png";
 import BeachsideScreenDescription from "../components/BeachsideScreenDescription";
+import BeachsideComparisons from "../components/BeachsideComparisons";
 
 const Beachside = () => {
   useLayoutEffect(() => {
@@ -84,6 +101,82 @@ const Beachside = () => {
       I don’t want to do all that.” - Jasmine
     </p>
   );
+
+  const pinkImages1 = [
+    {
+      src: PinkLogin,
+      alt: "Old Login Screen",
+    },
+    {
+      src: PinkMenu,
+      alt: "Old Menu Screen",
+    },
+    {
+      src: PinkDetails,
+      alt: "Old Details Screen",
+    },
+    {
+      src: PinkCart,
+      alt: "Old Cart Screen",
+    },
+  ];
+
+  const blueImages1 = [
+    {
+      src: BlueLogin,
+      alt: "New Login Screen",
+    },
+    {
+      src: BlueMenu,
+      alt: "New Menu Screen",
+    },
+    {
+      src: BlueDetails,
+      alt: "New Details Screen",
+    },
+    {
+      src: BlueCart,
+      alt: "New Cart Screen",
+    },
+  ];
+
+  const pinkImages2 = [
+    {
+      src: PinkCheckout,
+      alt: "Old Checkout Screen",
+    },
+    {
+      src: PinkConfirmation,
+      alt: "Old Confirmation Screen",
+    },
+    {
+      src: PinkDriver,
+      alt: "Old Driver Screen",
+    },
+    {
+      src: PinkTracking,
+      alt: "Old Tracking Screen",
+    },
+  ];
+
+  const blueImages2 = [
+    {
+      src: BlueCheckout,
+      alt: "New Checkout Screen",
+    },
+    {
+      src: BlueConfirmation,
+      alt: "New Confirmation Screen",
+    },
+    {
+      src: BlueDriver,
+      alt: "New Driver Screen",
+    },
+    {
+      src: BlueTracking,
+      alt: "New Tracking Screen",
+    },
+  ];
 
   return (
     <div className="relative -z-10 mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full">
@@ -514,6 +607,208 @@ const Beachside = () => {
             reverse={false}
           />
         </div>
+      </section>
+      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40">
+        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-3">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+            Usability Study #2
+          </h4>
+          <div className="md:col-span-3 flex flex-col gap-[30px]">
+            <div className="mb-[30px] md:mb-[60px]">
+              <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+                Initial Mockups vs final mockups
+              </h6>
+              <p className="text-[16px] md:text-lg font-thin">
+                After completing the first iteration of high-fidelity mockups, I
+                facilitated another round of user testing. I discovered that...
+              </p>
+              <ol className="leading-7 list-decimal list-inside pl-3 mb-[10px] md:mb-10">
+                <li className="text-[16px] md:text-lg font-thin">
+                  Design elements were way too{" "}
+                  <span className="font-semibold">crowded</span>
+                </li>
+                <li className="text-[16px] md:text-lg font-thin">
+                  There was <span className="font-semibold">inconsistency</span>{" "}
+                  with spacing, button and icon sizes, and placement of design
+                  elements
+                </li>
+                <li className="text-[16px] md:text-lg font-thin">
+                  The color palette and typography were{" "}
+                  <span className="font-semibold">distracting</span>
+                </li>
+                <li className="text-[16px] md:text-lg font-thin">
+                  Certain page layouts were{" "}
+                  <span className="font-semibold">confusing</span> and crowded
+                </li>
+              </ol>
+              <p className="text-[16px] md:text-lg font-thin">
+                I decided to make some changes:
+              </p>
+              <ol className="leading-7 list-decimal list-inside pl-3">
+                <li className="text-[16px] md:text-lg font-thin">
+                  Consistent sizing and placement of design elements using auto
+                  layout
+                </li>
+                <li className="text-[16px] md:text-lg font-thin">
+                  Choose a cohesive color palette that offers a sense of
+                  approachability
+                </li>
+                <li className="text-[16px] md:text-lg font-thin">
+                  Simplify typography with clean typeface choices
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col gap-5 md:gap-[25px] md:flex-row">
+          <BeachsideComparisons
+            pinkImages={pinkImages1}
+            blueImages={blueImages1}
+          />
+          <BeachsideComparisons
+            pinkImages={pinkImages2}
+            blueImages={blueImages2}
+          />
+        </div>
+      </section>
+      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col gap-5 md:gap-10 justify-center items-center">
+        <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-2xl font-thin text-center">
+          If you’ve made it this far, thank you!
+        </p>
+        <h4 className="font-helvetica text-3xl font-medium text-center md:text-5xl">
+          Let’s wrap this up...
+        </h4>
+        <svg
+          className="md:w-6"
+          width="20px"
+          height="100%"
+          viewBox="0 0 23 31"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            id="Arrow 1"
+            d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
+            fill="black"
+          />
+        </svg>
+      </section>
+      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40">
+        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-3">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+            The End
+          </h4>
+          <div className="mb-10 md:mb-[60px] md:col-span-3">
+            <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+              BeachSide SnackShop mobile app
+            </h6>
+            <ul className="flex flex-col gap-[15px]">
+              <li className="text-[16px] md:text-lg font-thin">
+                Connection Café is a community initiative designed to connect
+                people who share an interest in podcasts. Its goal is to improve
+                community mental health by facilitating in-person interactions
+                in today’s technology-focused world.
+              </li>
+            </ul>
+          </div>
+
+          <div className="col-span-4 flex gap-5 md:gap-[60px] justify-center mb-10 md:mb-[60px]">
+            {/* Video */}
+            <div className="max-w-80 flex flex-col justify-center">
+              <img src={Beach1} alt="Beachside Snackshop Login Screen" />
+            </div>
+
+            <div className="grid grid-cols-3 gap-x-[10px] gap-y-[15px] md:gap-y-0">
+              <img src={BeachsideMenu} alt="Snackshop Menu" />
+              <img src={BeachsideDetails} alt="Snackshop Item Details" />
+              <img src={BeachsideCheckout} alt="Snackshop Checkout" />
+              <img
+                className="self-end"
+                src={BeachsideConfirmation}
+                alt="Order Confirmation"
+              />
+              <img
+                className="self-end"
+                src={BeachsideTracking1}
+                alt="Order Tracking 1"
+              />
+              <img
+                className="self-end"
+                src={BeachsideTracking2}
+                alt="Order Tracking 2"
+              />
+            </div>
+          </div>
+
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+            What did I learn?
+          </h4>
+          <div className="mb-[50px] md:col-span-3">
+            <h6 className="text-2xl font-medium font-helvetica mb-[20px]">
+              Screens are scrollable and consistency in design elements is key
+            </h6>
+            <ul className="flex flex-col gap-[15px]">
+              <li className="text-[16px] md:text-lg font-thin">
+                When I designed my first high-fidelity mockup, I was unfamiliar
+                with auto layout. After experimenting with it, I learned how
+                helpful it was in creating consistent and well spaced out
+                layouts. I also realized that I can design screens that are
+                scrollable, meaning there was no need for me to cram every
+                element into a fixed size screen.
+              </li>
+            </ul>
+          </div>
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+            What’s next?
+          </h4>
+          <div className="md:mb-[20px] md:col-span-3">
+            <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+              Accessibility considerations and refining the UI
+            </h6>
+            <ul className="list-disc list-inside pl-3 text-[16px] md:text-lg font-thin">
+              <li className="leading-7">
+                Prepare designs to meet WCAG guidelines
+              </li>
+              <li className="leading-7">
+                Consider different accessibility features: different language
+                options and how the design can be optimized for screen readers
+              </li>
+              <li className="leading-7">
+                Conduct a third usability test to pinpoint any features that may
+                be missing or existing features that could be improved upon
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col gap-2 md:gap-10 justify-center items-center">
+        <h4 className="font-helvetica text-2xl font-medium text-center md:text-5xl">
+          Thank you for sticking around!
+        </h4>
+        <svg
+          className="md:w-10"
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="100%"
+          viewBox="0 0 29 28"
+          fill="none"
+        >
+          <circle cx="10.3025" cy="10.2196" r="1.6425" fill="black" />
+          <circle cx="18.5151" cy="10.2196" r="1.6425" fill="black" />
+          <circle
+            cx="14.5"
+            cy="13.6875"
+            r="12.6875"
+            stroke="black"
+            stroke-width="2"
+          />
+          <path
+            d="M7.93005 17.3369C10.8534 22.1057 18.3514 22.3005 21.0701 17.3369"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="square"
+          />
+        </svg>
       </section>
     </div>
   );
