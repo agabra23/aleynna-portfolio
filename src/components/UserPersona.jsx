@@ -10,6 +10,8 @@ const UserPersona = ({
   frustrations,
   goals,
 }) => {
+
+
   return (
     <div className="bg-white rounded-3xl p-[35px] text-[16px] md:grid md:grid-cols-[1.5fr_1fr] gap-x-11">
       <div className="md:grid md:grid-cols-[1fr_1.5fr] gap-x-9 mb-[45px] md:mb-0">
@@ -38,7 +40,7 @@ const UserPersona = ({
           </div>
         </div>
 
-        <p className="col-span-2">{description}</p>
+        {description}
       </div>
       <div className="flex flex-col gap-5 md:text-xl font-thin">
         <div>

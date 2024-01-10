@@ -30,6 +30,22 @@ const Cafe = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
+
+  const mattDescriptionElement = (
+    <p className="col-span-2 text-[16px] md:text-lg">
+      Matt listens to motivational podcasts during his free time to refocus his
+      energy. He engages with podcast communities online, sharing his favorite
+      episodes and seeking recommendations from like-minded listeners.
+    </p>
+  );
+  const katDescriptionElement = (
+    <p className="col-span-2 text-[16px] md:text-lg">
+      A naturally curious individual with a passion for learning. Kat is always
+      eager to share any new findings she learns with the people in her life,
+      but sometimes they aren’t interested or don't care.
+    </p>
+  );
+
   return (
     <div className="relative -z-10 mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full">
       <section className="font-garamond pt-[75px] lg:pb-[110px] pb-[50px] border-b border-b-black/40 max-w-full">
@@ -387,9 +403,7 @@ const Cafe = () => {
               "Excel in his career while also taking care of his mental and emotional well-being",
             ]}
             age={"44"}
-            description={
-              "Matt listens to motivational podcasts during his free time to refocus his energy.  He engages with podcast communities online, sharing his favorite episodes and seeking recommendations from like-minded listeners."
-            }
+            description={mattDescriptionElement}
           />
           <UserPersona
             avatar={KatAvatar}
@@ -404,9 +418,7 @@ const Cafe = () => {
               "Discover new podcasts that constantly keep her engaged and stimulated",
             ]}
             age={"32"}
-            description={
-              "A naturally curious individual with a passion for learning. Kat is always eager to share any new findings she learns with the people in her life, but sometimes they aren’t interested or don't care."
-            }
+            description={katDescriptionElement}
           />
         </div>
       </section>
