@@ -660,6 +660,35 @@ const Cafe = () => {
           </div>
         </div>
       </section>
+      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col gap-2 md:gap-10 justify-center items-center">
+        <h4 className="font-helvetica text-2xl font-medium text-center md:text-5xl">
+          Thank you for diving in!
+        </h4>
+        <svg
+          className="md:w-10"
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="100%"
+          viewBox="0 0 29 28"
+          fill="none"
+        >
+          <circle cx="10.3025" cy="10.2196" r="1.6425" fill="black" />
+          <circle cx="18.5151" cy="10.2196" r="1.6425" fill="black" />
+          <circle
+            cx="14.5"
+            cy="13.6875"
+            r="12.6875"
+            stroke="black"
+            stroke-width="2"
+          />
+          <path
+            d="M7.93005 17.3369C10.8534 22.1057 18.3514 22.3005 21.0701 17.3369"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="square"
+          />
+        </svg>
+      </section>
     </div>
   );
 };
