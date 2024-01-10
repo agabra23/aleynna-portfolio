@@ -19,11 +19,11 @@ const Home = () => {
         </h2>
         <p className="text-xl lg:text-3xl mt-5 lg:mt-12">
           Is a UX Designer{" "}
-          <span className="lg:border-b-2 border-b border-b-black leading-5 lg:leading-9 break-words">
+          <span className="font-semibold  break-words">
             dedicated to solving problems
           </span>{" "}
           through the creation of digital experiences that seamlessly integrate{" "}
-          <span className="lg:border-b-2 border-b border-b-black leading-5 lg:leading-9 break-words">
+          <span className="font-semibold  break-words">
             innovation, empathy, and intuitive design
           </span>
           .
