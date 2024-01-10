@@ -7,7 +7,11 @@ const Footer = () => {
         <h6 className="text-xl font-medium">Let's Connect!</h6>
         <ul className="flex justify-start gap-[45px]">
           <li className="underline">
-            <a className="text-inherit no-underline" href="/">
+            <a
+              href="https://www.linkedin.com/in/aleynna-quinones"
+              target="_blank"
+              className="text-inherit no-underline"
+            >
               LinkedIn
             </a>
           </li>
