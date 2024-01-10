@@ -593,6 +593,73 @@ const Cafe = () => {
           />
         </svg>
       </section>
+      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40">
+        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-3">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+            The End
+          </h4>
+          <div className="mb-[50px] md:col-span-3">
+            <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+              The Connection Café
+            </h6>
+            <ul className="flex flex-col gap-[15px]">
+              <li className="text-[16px] md:text-lg font-thin">
+                Connection Café is a community initiative designed to connect
+                people who share an interest in podcasts. Its goal is to improve
+                community mental health by facilitating in-person interactions
+                in today’s technology-focused world.
+              </li>
+            </ul>
+          </div>
+
+          {/* Carousel */}
+          <div className="col-span-4 mb-11 md:mb-[50px] bg-white">
+            <p>carousel</p>
+          </div>
+
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+            What did I learn?
+          </h4>
+          <div className="mb-[50px] md:col-span-3">
+            <h6 className="text-2xl font-medium font-helvetica mb-[20px]">
+              UX Research is cool and people yearn for in-person interaction
+            </h6>
+            <ul className="flex flex-col gap-[15px]">
+              <li className="text-[16px] md:text-lg font-thin">
+                Although we live in a social media driven world, people don’t
+                necessarily feel the desire to foster more digital interactions
+                and relationships. People appreciate and yearn for in-person
+                interaction. I believe utilizing that fact, along with the
+                technology we are so lucky to have access to, can help to
+                provide many more solutions for people outside of the podcast
+                space.
+              </li>
+            </ul>
+          </div>
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+            What’s next?
+          </h4>
+          <div className="md:mb-[20px] md:col-span-3">
+            <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+              User Testing and Implementation
+            </h6>
+            <ul className="list-disc list-inside pl-3 text-[16px] md:text-lg font-thin">
+              <li className="leading-7">
+                Does our physical space prototype provide the best options to
+                facilitate in-person interaction?
+              </li>
+              <li className="leading-7">
+                What can be improved upon in our app? What accessibility
+                features can we take into account?
+              </li>
+              <li className="leading-7">
+                What would the income generating model entail for a solution
+                like this?
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
