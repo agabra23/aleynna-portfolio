@@ -25,7 +25,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="text-3xl md:text-5xl flex gap-[8px] md:gap-[12px]">
+      <div className="text-3xl md:text-4xl flex gap-[8px] md:gap-[12px]">
         <h1 className="font-bold">AQ</h1>
         <div className="flex items-center">
           <svg

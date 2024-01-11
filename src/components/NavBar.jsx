@@ -40,7 +40,7 @@ const NavBar = () => {
     <nav className="z-10 flex justify-between mx-[30px] md:max-xl:mx-[60px] lg:mx-[130px] font-helvetica py-[30px] md:py-[50px]">
       <div
         onClick={() => navigator("/")}
-        className="text-3xl md:text-5xl flex gap-[8px] md:gap-[12px] relative z-30 cursor-pointer"
+        className="text-3xl md:text-4xl flex gap-[8px] md:gap-[12px] relative z-30 cursor-pointer"
       >
         <h1 className="font-bold">AQ</h1>
         <div className="flex items-center">
@@ -69,7 +69,7 @@ const NavBar = () => {
           </svg>
         </div>
       </div>
-      <ul className="hidden md:flex justify-end items-center gap-10 text-xl">
+      <ul className="hidden md:flex justify-end items-center gap-10 text-lg">
         <li
           className={`cursor-pointer hover:underline font-thin ${
             isLinkActive("/") && "underline"
@@ -176,7 +176,7 @@ const NavBar = () => {
           mobileOpened ? "" : "translate-x-full"
         } transition-all z-20 h-screen w-full flex flex-col items-center`}
       >
-        <ul className="flex flex-col justify-start items-center gap-10 font-thin text-xl absolute translate-y-32">
+        <ul className="flex flex-col justify-start items-center gap-10 font-thin text-[16px] absolute translate-y-32">
           <li
             className={`cursor-pointer ${isLinkActive("/") && "underline"}`}
             onClick={() => mobileClickHandler("/")}
@@ -213,7 +213,7 @@ const NavBar = () => {
                 mobileClickHandler("/connection-cafe");
                 setMobileDropdown(false);
               }}
-              className={`uppercase text-lg text-charcoal ${
+              className={`uppercase text-[16px] text-charcoal ${
                 isLinkActive("/connection-cafe") && "underline"
               }`}
             >
@@ -224,7 +224,7 @@ const NavBar = () => {
                 mobileClickHandler("/beachside-snackshop");
                 setMobileDropdown(false);
               }}
-              className={`uppercase text-lg text-charcoal ${
+              className={`uppercase text-[16px] text-charcoal ${
                 isLinkActive("/beachside-snackshop") && "underline"
               }`}
             >

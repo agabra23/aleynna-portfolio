@@ -53,67 +53,81 @@ const Cafe = () => {
         <div className="flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[65px] max-w-full">
           <div className="flex justify-center gap-[15px] lg:max-w-[calc(100%-415px)] max-w-full mb-[30px]">
             <img
-              className="min-w-[90px] max-w-[200px] h-auto"
+              className="min-w-[90px] max-w-[200px] h-auto scale-110"
               src={HomeImg}
               alt="Cafe Home"
             />
             <img
-              className="min-w-[90px] max-w-[200px] h-auto"
+              className="min-w-[90px] max-w-[200px] h-auto scale-110"
               src={MatchImg}
               alt="Cafe Menu"
             />
           </div>
           <div className="text-center md:text-left flex items-center md:items-start flex-col gap-[10px] lg:gap-[15px]">
-            <h6 className="uppercase text-center md:text-left font-thin font-helvetica text-[20px] lg:text-[24px]">
+            <h6 className="uppercase text-center md:text-left font-thin font-helvetica text-[16px] md:text-lg">
               ACADEMIC PROJECT
             </h6>
-            <h3 className="text-center md:text-left leading-none font-helvetica text-[30px] lg:text-[64px] font-bold">
-              Connection
-              <br />
-              Café
+            <h3 className="text-center md:text-left leading-none font-helvetica text-[30px] lg:text-4xl font-bold">
+              Connection Café
             </h3>
-            <p className="text-center md:text-left text-[16px] lg:text-[24px] font-thin">
+            <p className="text-center md:text-left text-[16px] md:text-lg font-thin">
               Encouraging in-person and digital interactions through a love for
               podcasts.
             </p>
           </div>
         </div>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40">
+      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40">
         <ul className="grid grid-cols-2 gap-y-[40px] md:flex md:justify-evenly md:gap-[50px]">
           <li>
-            <h6 className="font-helvetica font-normal text-2xl mb-2">Role</h6>
-            <p className="text-lg font-garamond font-thin">UX Researcher</p>
-            <p className="text-lg font-garamond font-thin">UX Designer</p>
+            <h6 className="font-helvetica font-normal text-xl md:text-2xl mb-2">
+              Role
+            </h6>
+            <p className="text-[16px] md:text-lg font-garamond font-thin">
+              UX Researcher
+            </p>
+            <p className="text-[16px] md:text-lg font-garamond font-thin">
+              UX Designer
+            </p>
           </li>
-          <li className="text-right md:text-left md:max-w-[300px] md:min-w-[150px]">
-            <h6 className="font-helvetica font-normal text-2xl mb-2">Team</h6>
-            <p className="text-lg font-garamond font-thin">
+          <li className="text-right md:text-left  md:max-w-[250px] md:min-w-[150px] flex flex-col items-end md:block">
+            <h6 className="font-helvetica font-normal text-xl md:text-2xl mb-2 place-self-end">
+              Team
+            </h6>
+            <p className="text-[16px] md:text-lg font-garamond font-thin max-w-[250px]">
               Aleynna Quiñones, Alexa Sciacca, Elizabeth Leifheit, Amine Mena
             </p>
           </li>
           <li>
-            <h6 className="font-helvetica font-normal text-2xl mb-2">
+            <h6 className="font-helvetica font-normal text-xl md:text-2xl mb-2">
               Timeline
             </h6>
-            <p className="text-lg font-garamond font-thin">8 Weeks</p>
+            <p className="text-[16px] md:text-lg font-garamond font-thin">
+              8 Weeks
+            </p>
           </li>
           <li className="text-right md:text-left">
-            <h6 className="font-helvetica font-normal text-2xl mb-2">Tools</h6>
-            <p className="text-lg font-garamond font-thin">Figma</p>
-            <p className="text-lg font-garamond font-thin">GetFloorPlan</p>
+            <h6 className="font-helvetica font-normal text-xl md:text-2xl mb-2">
+              Tools
+            </h6>
+            <p className="text-[16px] md:text-lg font-garamond font-thin">
+              Figma
+            </p>
+            <p className="text-[16px] md:text-lg font-garamond font-thin">
+              GetFloorPlan
+            </p>
           </li>
         </ul>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col gap-[30px] md:flex-row md:gap-[50px]">
+      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-[30px] md:flex-row md:gap-[50px]">
         <div>
-          <h6 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] md:w-max">
+          <h6 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max">
             Project Overview
           </h6>
         </div>
         <div className="flex flex-col gap-[30px]">
           <div>
-            <h4 className="font-helvetica font-normal text-2xl mb-[10px]">
+            <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
               The Spoken Word On-Demand Audio Space
             </h4>
             <p className="text-[16px] font-thin md:text-lg">
@@ -123,7 +137,7 @@ const Cafe = () => {
             </p>
           </div>
           <div>
-            <h4 className="font-helvetica font-normal text-2xl mb-[10px]">
+            <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
               Increase human connection between adult podcast listeners
             </h4>
             <p className="text-[16px] font-thin md:text-lg">
@@ -134,7 +148,7 @@ const Cafe = () => {
             </p>
           </div>
           <div>
-            <h4 className="font-helvetica font-normal text-2xl mb-[10px]">
+            <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
               The Connection Café
             </h4>
             <p className="text-[16px] font-thin md:text-lg">
@@ -148,13 +162,13 @@ const Cafe = () => {
           </div>
         </div>
       </section>
-      <section className="font-garamond pt-[50px] lg:pt-[110px] lg:pb-[150px] pb-[50px] border-b border-b-black/40 flex flex-col gap-[30px] md:block">
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] md:mb-[60px]">
-          <h6 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px]">
+      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-[30px] md:block">
+        <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
+          <h6 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px]">
             Our Solution
           </h6>
           <div className="mb-[20px] col-span-3">
-            <h4 className="mb-[10px] text-2xl md:text-3xl font-medium font-helvetica">
+            <h4 className="mb-[10px] text-xl md:text-2xl font-medium font-helvetica">
               The Connection Café physical space
             </h4>
             <p className="font-thin text-[16px] md:text-lg">
@@ -164,7 +178,7 @@ const Cafe = () => {
               </span>
             </p>
           </div>
-          <div className="md:col-span-4 md:flex-row bg-white p-9 rounded-3xl flex flex-col gap-5 mb-[20px]">
+          <div className="md:col-span-4 md:flex-row bg-white p-9 rounded-3xl flex flex-col gap-5 mb-[30px]">
             <img
               className="object-cover md:max-w-[325px] md:min-w-[100px] h-auto"
               src={Mockup1}
@@ -183,10 +197,10 @@ const Cafe = () => {
           </div>
           <div></div>
           <div className="mb-[30px] col-span-3">
-            <h4 className="mb-[10px] md:mb-[20px] text-3xl font-medium font-helvetica">
+            <h4 className="mb-[10px]  text-xl md:text-2xl font-medium font-helvetica">
               Visitors can...
             </h4>
-            <ul className="list-disc list-inside pl-3 text-2xl">
+            <ul className="list-disc list-inside pl-3 text-[16px] md:text-lg">
               <li className="leading-7">
                 <span className="font-semibold">
                   Check in to the café using the QR code
@@ -213,11 +227,12 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
+          <div></div>
+          <h4 className="md:mb-[20px] mb-[10px] text-xl md:text-2xl font-medium font-helvetica col-span-3">
+            The Connection Café App
+          </h4>
         </div>
 
-        <h4 className="mb-[20px] text-center text-2xl md:text-3xl font-medium font-helvetica">
-          The Connection Café App
-        </h4>
         <div className="flex flex-col gap-10 items-center">
           <ScreenDescription
             imageSrc1={Connect}
@@ -250,8 +265,8 @@ const Cafe = () => {
           />
         </div>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col gap-5 md:gap-10 justify-center items-center">
-        <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-2xl font-thin text-center">
+      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-5 md:gap-10 justify-center items-center">
+        <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-lg font-thin text-center">
           Want to learn more about our process?
         </p>
         <h4 className="font-helvetica text-3xl font-medium text-center md:text-5xl">
@@ -272,9 +287,9 @@ const Cafe = () => {
           />
         </svg>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col gap-8 md:flex-row">
+      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-8 md:flex-row">
         <div>
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] md:w-max">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max">
             Our starting point
           </h4>
         </div>
@@ -283,7 +298,7 @@ const Cafe = () => {
             <h6 className="text-2xl font-medium max-w-[85%] mb-[10px] font-helvetica">
               What do we want to target in the podcast space?
             </h6>
-            <p className="text-16px font-thin md:text-lg">
+            <p className="text-[16px] font-thin md:text-lg">
               As a team, we decided to hone in on a specific area of the podcast
               space:{" "}
               <span className="font-semibold">
@@ -317,9 +332,9 @@ const Cafe = () => {
           </div>
         </div>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col">
+      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col">
         <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             What did we find?
           </h4>
           <div className="mb-[50px] md:col-span-3">
@@ -344,7 +359,7 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             Say What?
           </h4>
           <div className="mb-[50px] md:col-span-3">
@@ -383,7 +398,7 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:mb-5 md:col-span-1 place-self-end">
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:mb-5 md:col-span-1 place-self-end">
             User Personas
           </h4>
           <h6 className="text-2xl w-max font-medium font-helvetica mb-[20px] justify-self-start md:mb-5 md:col-span-3">
@@ -423,9 +438,9 @@ const Cafe = () => {
           />
         </div>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col">
+      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col">
         <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-3">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             The emerging problem
           </h4>
           <div className="mb-[50px] md:col-span-3">
@@ -443,7 +458,7 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             Thus, we asked
           </h4>
           <div className="mb-[50px] md:col-span-3">
@@ -453,7 +468,7 @@ const Cafe = () => {
               others?
             </h6>
           </div>
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             Ideation
           </h4>
           <div className="md:mb-[20px] md:col-span-3">
@@ -549,7 +564,7 @@ const Cafe = () => {
               </div>
             </div>
           </div>
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             Say What?
           </h4>
           <div className="md:col-span-3">
@@ -584,7 +599,7 @@ const Cafe = () => {
           </div>
         </div>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col gap-5 md:gap-10 justify-center items-center">
+      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-5 md:gap-10 justify-center items-center">
         <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-2xl font-thin text-center">
           If you’ve made it this far, thank you!
         </p>
@@ -606,9 +621,9 @@ const Cafe = () => {
           />
         </svg>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40">
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-3">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40">
+        <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             The End
           </h4>
           <div className="mb-[50px] md:col-span-3">
@@ -630,7 +645,7 @@ const Cafe = () => {
             <AutoplayCarousel />
           </div>
 
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             What did I learn?
           </h4>
           <div className="mb-[50px] md:col-span-3">
@@ -649,10 +664,10 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             What’s next?
           </h4>
-          <div className="md:mb-[20px] md:col-span-3">
+          <div className=" md:col-span-3">
             <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
               User Testing and Implementation
             </h6>
@@ -673,7 +688,7 @@ const Cafe = () => {
           </div>
         </div>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col gap-2 md:gap-10 justify-center items-center">
+      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-2 md:gap-10 justify-center items-center">
         <h4 className="font-helvetica text-2xl font-medium text-center md:text-5xl">
           Thank you for diving in!
         </h4>

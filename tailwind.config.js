@@ -22,7 +22,7 @@ export default {
         blueberry: "#5B9DFF",
       },
       boxShadow: {
-        custom: "0px 4px 15px 0px rgba(0, 0, 0, 0.15)",
+        custom: "0px 4px 20px 0px rgba(0, 0, 0, 0.05)",
       },
       animation: {
         slider: "slider 20s linear infinite",
