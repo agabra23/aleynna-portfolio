@@ -139,11 +139,11 @@ const NavBar = () => {
         </li>
         <li
           className={`cursor-pointer font-thin hover:underline ${
-            isLinkActive("/play") && "underline"
+            isLinkActive("/art") && "underline"
           }`}
-          onClick={() => navigator("/play")}
+          onClick={() => navigator("/art")}
         >
-          PLAY
+          ART
         </li>
       </ul>
       <div
@@ -240,10 +240,10 @@ const NavBar = () => {
             ABOUT
           </li>
           <li
-            onClick={() => mobileClickHandler("/play")}
-            className={`cursor-pointer ${isLinkActive("/play") && "underline"}`}
+            onClick={() => mobileClickHandler("/art")}
+            className={`cursor-pointer ${isLinkActive("/art") && "underline"}`}
           >
-            PLAY
+            ART
           </li>
         </ul>
       </div>
