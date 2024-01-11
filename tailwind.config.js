@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -11,7 +12,7 @@ export default {
       },
       fontFamily: {
         helvetica: ["Helvetica", "sans-serif"],
-        garamond: ["Garamond", "serif"],
+        garamond: ["EB Garamond", "serif"],
       },
       colors: {
         offwhite: "#F3F0EC",
