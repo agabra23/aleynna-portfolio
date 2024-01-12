@@ -10,7 +10,7 @@ const About = () => {
     window.scrollTo(0, 0);
   });
   return (
-    <div className="py-[50px] mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full flex flex-col md:flex-row-reverse md:gap-[50px] gap-[30px] items-center">
+    <div className="pb-[50px] pt-[75px] mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full flex flex-col md:flex-row-reverse md:gap-[50px] gap-[30px] items-center">
       <div className="relative flex justify-center items-center min-w-[90px] md:min-w-[200px] max-w-[200px] md:max-w-[350px]">
         <img
           className="relative z-10 "

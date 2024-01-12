@@ -16,7 +16,7 @@ const Art = () => {
     window.scrollTo(0, 0);
   });
   return (
-    <div className="p7-[75px] pb-[50px] md:py-[110px] mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-helvetica max-w-full">
+    <div className="pb-[50px] pt-[75px] mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-helvetica max-w-full">
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-[175px]">
         <h4 className="md:col-span-2 mb-10 text-center md:text-left leading-none font-helvetica text-[30px] lg:text-4xl font-semibold">
           Acrylic Painting
