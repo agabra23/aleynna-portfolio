@@ -423,7 +423,7 @@ const Cafe = () => {
             Meet Matt and Kat
           </h6>
         </div>
-        <div className="flex flex-col gap-12 md:gap-10">
+        <div className="flex flex-col gap-12 md:gap-10 items-center">
           <UserPersona
             avatar={MattAvatar}
             name={"Matt"}
