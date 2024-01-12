@@ -19,9 +19,9 @@ import Ideas3 from "../assets/Ideas3.png";
 import Ideas4 from "../assets/Ideas4.png";
 import Sticky1 from "../assets/Sticky1.png";
 import Sticky2 from "../assets/Sticky2.png";
-import CafeSketch1 from "../assets/CafeSketch1.jpg";
-import CafeSketch2 from "../assets/CafeSketch2.jpg";
-import CafeSketch3 from "../assets/CafeSketch3.jpg";
+import CafeSketch1 from "../assets/CafeSketch1.png";
+import CafeSketch2 from "../assets/CafeSketch2.png";
+import CafeSketch3 from "../assets/CafeSketch3.png";
 import PodcastChat from "../assets/PodcastChat.jpg";
 import ScreenDescription from "../components/ScreenDescription";
 import UserPersona from "../components/UserPersona";
@@ -678,10 +678,12 @@ const Cafe = () => {
                 Although we live in a social media driven world, people don’t
                 necessarily feel the desire to foster more digital interactions
                 and relationships. People appreciate and yearn for in-person
-                interaction. I believe utilizing that fact, along with the
-                technology we are so lucky to have access to, can help to
-                provide many more solutions for people outside of the podcast
-                space.
+                interaction.{" "}
+                <span className="font-semibold">
+                  I believe utilizing that fact, along with the technology we
+                  are so lucky to have access to, can help to provide many more
+                  solutions for people outside of the podcast space.
+                </span>
               </li>
             </ul>
           </div>
