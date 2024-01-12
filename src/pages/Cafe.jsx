@@ -188,7 +188,7 @@ const Cafe = () => {
               </span>
             </p>
           </div>
-          <div className="md:col-span-4 md:flex-row md:justify-center bg-white p-9 rounded-3xl flex flex-col gap-5 mb-[30px] md:max-w-[1000px]">
+          <div className="md:col-span-4 md:flex-row md:justify-center bg-white p-9 rounded-3xl flex flex-col gap-5 mb-[30px] md:max-w-[1000px] justify-self-center">
             <img
               className="object-cover md:max-w-[325px] md:min-w-[100px] h-auto"
               src={Mockup1}
