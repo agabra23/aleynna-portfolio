@@ -40,7 +40,7 @@ function App() {
         <div className="opacity-50 absolute -bottom-60 -right-48 w-96 h-96 filter blur-2xl bg-pumpkin rounded-full overflow-visible"></div>
         <div className="opacity-50 absolute top-80 -right-56 w-96 h-96 filter blur-2xl bg-blueberry rounded-full"></div>
         <div className="opacity-50 absolute -bottom-80 -left-48 w-96 h-96 filter blur-2xl bg-blueberry rounded-full"></div>
-        <div className="opacity-50 absolute top-32 -right-24 w-96 h-96 filter blur-2xl bg-candyPink rounded-full"></div>
+        <div className="opacity-50 absolute top-32 -right-24 w-96 h-96 filter blur-2xl bg-candyPink rounded-full m-1"></div>
       </div>
     </div>
   );
