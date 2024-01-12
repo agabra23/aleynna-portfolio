@@ -18,7 +18,7 @@ const ScreenDescription = ({ imageSrc1, imageSrc2, cap1, cap2, p1, p2 }) => {
         </p>
       </div>
       <div className="md:flex-1">
-        <p className="text-[16px] md:text-lg font-thin mb-[15px]">{p1}</p>
+        <p className="text-[16px] md:text-lg font-thin mb-[10px]">{p1}</p>
         <p className="text-[16px] md:text-lg font-thin">{p2}</p>
       </div>
     </div>

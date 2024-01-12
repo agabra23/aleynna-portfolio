@@ -42,7 +42,7 @@ const UserPersona = ({
       </div>
       <div className="flex flex-col gap-5 md:text-lg text-[16px] font-thin">
         <div>
-          <p className="font-helvetica mb-0 font-thin text-[16px] text-lg">
+          <p className="font-helvetica mb-0 font-thin md:text-lg text-[16px] ">
             FRUSTRATIONS:
           </p>
           <ul className="list-disc list-inside">
@@ -52,7 +52,7 @@ const UserPersona = ({
           </ul>
         </div>
         <div>
-          <p className="font-helvetica mb-0 font-thin text-[16px] text-lg">
+          <p className="font-helvetica mb-0 font-thin md:text-lg text-[16px] ">
             GOALS:
           </p>
           <ul className="list-disc list-inside">

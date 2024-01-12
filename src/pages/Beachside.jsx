@@ -182,7 +182,7 @@ const Beachside = () => {
     <div className="relative -z-10 mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full">
       <section className="font-garamond pt-[75px] lg:pb-[110px] pb-[50px] border-b border-b-black/40 max-w-full">
         <div className="flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[65px] max-w-full">
-          <div className="flex justify-center gap-[15px] lg:max-w-[calc(100%-415px)] max-w-full mb-[30px]">
+          <div className="flex justify-center gap-[15px] lg:max-w-[calc(100%-415px)] max-w-full mb-[30px] md:mb-0">
             <img
               className="min-w-[90px] max-w-[200px] h-auto"
               src={Beach1}
@@ -195,52 +195,66 @@ const Beachside = () => {
             />
           </div>
           <div className="text-center md:text-left flex items-center md:items-start flex-col gap-[10px] lg:gap-[15px]">
-            <h6 className="uppercase text-center md:text-left font-thin font-helvetica text-[20px] lg:text-[24px]">
+            <h6 className="uppercase text-center md:text-left font-thin font-helvetica text-[16px] md:text-lg">
               GOOGLE UX CERTIFICATE PROJECT
             </h6>
-            <h3 className="text-center md:text-left leading-none font-helvetica text-[30px] lg:text-[64px] font-bold">
-              Beachside
-              <br />
-              Snackshop
+            <h3 className="text-center md:text-left leading-none font-helvetica text-[30px] md:text-4xl font-bold">
+              Beachside Snackshop
             </h3>
-            <p className="text-center md:text-left text-[16px] lg:text-[24px] font-thin">
+            <p className="text-center md:text-left text-[16px] md:text-lg font-thin">
               Order food online and track your delivery in real-time for a
               simple and efficient dining experience.
             </p>
           </div>
         </div>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40">
+      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40">
         <ul className="grid grid-cols-2 gap-y-[40px] md:flex md:justify-evenly md:gap-[50px]">
           <li>
-            <h6 className="font-helvetica font-normal text-2xl mb-2">Role</h6>
-            <p className="text-lg font-garamond font-thin">UX Researcher</p>
-            <p className="text-lg font-garamond font-thin">UX Designer</p>
+            <h6 className="font-helvetica font-normal md:text-2xl text-[20px] mb-2">
+              Role
+            </h6>
+            <p className="text-[16px] md:text-lg font-garamond font-thin">
+              UX Researcher
+            </p>
+            <p className="text-[16px] md:text-lg font-garamond font-thin">
+              UX Designer
+            </p>
           </li>
           <li className="text-right md:text-left md:max-w-[300px] md:min-w-[150px]">
-            <h6 className="font-helvetica font-normal text-2xl mb-2">Team</h6>
-            <p className="text-lg font-garamond font-thin">Aleynna Quiñones</p>
+            <h6 className="font-helvetica font-normal md:text-2xl text-[20px] mb-2">
+              Team
+            </h6>
+            <p className="text-[16px] md:text-lg font-garamond font-thin">
+              Aleynna Quiñones
+            </p>
           </li>
           <li>
-            <h6 className="font-helvetica font-normal text-2xl mb-2">
+            <h6 className="font-helvetica font-normal md:text-2xl text-[20px] mb-2">
               Timeline
             </h6>
-            <p className="text-lg font-garamond font-thin">6 months</p>
+            <p className="text-[16px] md:text-lg font-garamond font-thin">
+              6 months
+            </p>
           </li>
           <li className="text-right md:text-left">
-            <h6 className="font-helvetica font-normal text-2xl mb-2">Tools</h6>
-            <p className="text-lg font-garamond font-thin">Figma</p>
+            <h6 className="font-helvetica font-normal md:text-2xl text-[20px] mb-2">
+              Tools
+            </h6>
+            <p className="text-[16px] md:text-lg font-garamond font-thin">
+              Figma
+            </p>
           </li>
         </ul>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40">
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-3">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+      <section className="font-garamond py-[50px] border-b border-b-black/40">
+        <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:mb-0 md:col-span-1">
             Project Overview
           </h4>
           <div className="md:col-span-3 flex flex-col gap-[30px]">
             <div>
-              <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+              <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
                 Design a food delivery tracking app for BeachSide SnackShop, a
                 local oceanside restaurant.
               </h6>
@@ -254,7 +268,7 @@ const Beachside = () => {
               </ul>
             </div>
             <div>
-              <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+              <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
                 Busy adults need a quick and efficient way to order and track
                 online food orders.
               </h6>
@@ -269,7 +283,7 @@ const Beachside = () => {
               </ul>
             </div>
             <div>
-              <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+              <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
                 BeachSide SnackShop mobile app
               </h6>
               <ul className="flex flex-col gap-[15px]">
@@ -285,22 +299,18 @@ const Beachside = () => {
           </div>
         </div>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40">
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-3 md:mb-[60px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+      <section className="font-garamond py-[50px]  border-b border-b-black/40">
+        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-[10px]">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] mb-[30px] md:mb-0 md:text-lg md:col-span-1">
             My solution
           </h4>
-          <h6 className="text-2xl font-medium font-helvetica md:col-span-3">
+          <h6 className="text-xl md:text-2xl font-medium font-helvetica md:col-span-3">
             BeachSide SnackShop mobile app final mock ups
           </h6>
         </div>
         <div className="flex flex-col md:flex-row gap-[30px] md:gap-[60px]">
-          <div className="flex md:flex-col justify-center">
-            <img
-              className="max-w-80"
-              src={Beach1}
-              alt="Beachside Snackshop Login Screen"
-            />
+          <div className="max-w-80 flex md:flex-col justify-center">
+            <img src={Beach1} alt="Beachside Snackshop Login Screen" />
           </div>
           <div className="grid grid-cols-3 gap-x-[10px] gap-y-[15px]">
             <img src={BeachsideMenu} alt="Snackshop Menu" />
@@ -324,15 +334,14 @@ const Beachside = () => {
           </div>
         </div>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col gap-5 md:gap-10 justify-center items-center">
-        <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-2xl font-thin text-center">
+      <section className="font-garamond py-[50px]  border-b border-b-black/40 flex flex-col gap-5 md:gap-[30px] justify-center items-center">
+        <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-lg font-thin text-center">
           Want to learn more about our process?
         </p>
-        <h4 className="font-helvetica text-3xl font-medium text-center md:text-5xl">
+        <h4 className="font-helvetica text-xl md:text-2xl font-medium text-center">
           Let’s dig deeper...
         </h4>
         <svg
-          className="md:w-6"
           width="20px"
           height="100%"
           viewBox="0 0 23 31"
@@ -346,14 +355,14 @@ const Beachside = () => {
           />
         </svg>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40">
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-3">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+      <section className="font-garamond py-[50px]  border-b border-b-black/40">
+        <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:col-span-1 mb-[30px] md:mb-0">
             The Starting Point
           </h4>
           <div className="md:col-span-3 flex flex-col gap-[30px]">
             <div>
-              <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+              <h6 className="md:text-2xl text-[20px] font-medium font-helvetica mb-[10px]">
                 Who is the target audience?
               </h6>
               <ul className="flex flex-col gap-[15px]">
@@ -365,7 +374,7 @@ const Beachside = () => {
               </ul>
             </div>
             <div>
-              <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+              <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
                 What do I want to learn from the users?
               </h6>
               <ul className="flex flex-col gap-[15px]">
@@ -378,7 +387,7 @@ const Beachside = () => {
               </ul>
             </div>
             <div>
-              <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+              <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
                 Plan of attack
               </h6>
               <ul className="flex flex-col gap-[15px]">
@@ -391,14 +400,14 @@ const Beachside = () => {
           </div>
         </div>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40">
+      <section className="font-garamond py-[50px]  border-b border-b-black/40">
         <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-3">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:mb-0 md:col-span-1">
             What Did we Find?
           </h4>
-          <div className="md:col-span-3 flex flex-col gap-[30px] mb-[50px] md:mb-[60px]">
+          <div className="md:col-span-3 flex flex-col gap-[30px] mb-[50px]">
             <div>
-              <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+              <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
                 Uber Eats and DoorDash
               </h6>
               <ul className="flex flex-col gap-[15px]">
@@ -414,7 +423,7 @@ const Beachside = () => {
               </ul>
             </div>
             <div>
-              <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+              <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
                 Pain points
               </h6>
               <ul className="list-disc list-inside pl-3 text-[16px] md:text-lg font-thin">
@@ -432,14 +441,14 @@ const Beachside = () => {
               </ul>
             </div>
           </div>
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:mb-5 md:col-span-1 place-self-end">
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:mb-0 md:col-span-1 place-self-end">
             User Personas
           </h4>
-          <h6 className="text-2xl w-max font-medium font-helvetica mb-[20px] justify-self-start md:mb-5 md:col-span-3">
+          <h6 className="text-xl md:text-2xl w-max font-medium font-helvetica mb-[10px] justify-self-start md:col-span-3">
             Meet Lisa and José
           </h6>
         </div>
-        <div className="flex flex-col gap-12 md:gap-10">
+        <div className="flex flex-col gap-12 md:gap-[30px]">
           <UserPersona
             avatar={LisaAvatar}
             name={"Lisa"}
@@ -470,13 +479,13 @@ const Beachside = () => {
           />
         </div>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40">
+      <section className="font-garamond py-[50px]  border-b border-b-black/40">
         <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             The emerging problem
           </h4>
           <div className="md:col-span-3 mb-[50px]">
-            <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+            <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
               Online food ordering systems are confusing and overwhelming.
             </h6>
             <ul className="flex flex-col gap-[15px]">
@@ -488,35 +497,35 @@ const Beachside = () => {
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             Thus, we asked
           </h4>
-          <h6 className="text-2xl font-medium font-helvetica mb-[60px] md:col-span-3">
+          <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[50px] md:col-span-3">
             How can we design an intuitive mobile app for BeachSide SnackShop
             that provides a seamless online ordering system and accurate
             real-time tracking?
           </h6>
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:col-span-1">
             Ideation
           </h4>
-          <h6 className="text-2xl font-medium font-helvetica mb-[10px] md:col-span-3">
+          <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px] md:col-span-3">
             Low-fidelity Prototype
           </h6>
           <div className="md:bg-white md:rounded-3xl md:p-9 mb-[50px] md:col-span-4">
             <img src={LofiFlow} alt="Low Fidelity Flow" />
           </div>
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             Usability study
           </h4>
-          <div className="md:col-span-3 mb-[50px]">
-            <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+          <div className="md:col-span-3 mb-[10px]">
+            <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
               Refining my wireframes utilizing user feedback
             </h6>
-            <p className="text-[16px] md:text-lg mb-2">
+            <p className="text-[16px] md:text-lg">
               After my initial low-fidelity prototype testing I discovered 3
               insights:
             </p>
-            <ol className="list-decimal list-inside pl-3 text-[16px] md:text-lg font-thin mb-[10px]">
+            <ol className="list-decimal list-inside pl-3 text-[16px] md:text-lg font-thin mb-[30px]">
               <li className="text-[16px] md:text-lg font-thin leading-7">
                 Users need a more{" "}
                 <span className="font-semibold">
@@ -539,10 +548,10 @@ const Beachside = () => {
                 .
               </li>
             </ol>
-            <p className="text-[16px] md:text-lg mb-2">
+            <p className="text-[16px] md:text-lg">
               To improve the user experience, I...
             </p>
-            <ol className="list-decimal list-inside pl-3 text-[16px] md:text-lg font-thin mb-[10px]">
+            <ol className="list-decimal list-inside pl-3 text-[16px] md:text-lg font-thin">
               <li className="text-[16px] md:text-lg font-thin leading-7">
                 Increased{" "}
                 <span className="font-semibold">
@@ -567,7 +576,7 @@ const Beachside = () => {
             </ol>
           </div>
         </div>
-        <div className="flex flex-col gap-[10px] md:gap-10">
+        <div className="flex flex-col gap-[10px] md:gap-[30px]">
           <BeachsideScreenDescription
             imageSrc1={LofiHome1}
             imageSrc2={LofiHome2}
@@ -608,21 +617,21 @@ const Beachside = () => {
           />
         </div>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40">
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-3">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+      <section className="font-garamond py-[50px]  border-b border-b-black/40">
+        <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             Usability Study #2
           </h4>
           <div className="md:col-span-3 flex flex-col gap-[30px]">
-            <div className="mb-[30px] md:mb-[60px]">
-              <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+            <div className="mb-[30px]">
+              <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
                 Initial Mockups vs final mockups
               </h6>
               <p className="text-[16px] md:text-lg font-thin">
                 After completing the first iteration of high-fidelity mockups, I
                 facilitated another round of user testing. I discovered that...
               </p>
-              <ol className="leading-7 list-decimal list-inside pl-3 mb-[10px] md:mb-10">
+              <ol className="leading-7 list-decimal list-inside pl-3 mb-[10px] md:mb-[30px]">
                 <li className="text-[16px] md:text-lg font-thin">
                   Design elements were way too{" "}
                   <span className="font-semibold">crowded</span>
@@ -671,15 +680,11 @@ const Beachside = () => {
           />
         </div>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col gap-5 md:gap-10 justify-center items-center">
-        <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-2xl font-thin text-center">
-          If you’ve made it this far, thank you!
-        </p>
-        <h4 className="font-helvetica text-3xl font-medium text-center md:text-5xl">
+      <section className="font-garamond py-[50px] border-b border-b-black/40 flex flex-col gap-[30px] justify-center items-center">
+        <h4 className="font-helvetica text-xl md:text-2xl font-medium text-center">
           Let’s wrap this up...
         </h4>
         <svg
-          className="md:w-6"
           width="20px"
           height="100%"
           viewBox="0 0 23 31"
@@ -693,13 +698,13 @@ const Beachside = () => {
           />
         </svg>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40">
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-3">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+      <section className="font-garamond py-[50px] border-b border-b-black/40">
+        <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             The End
           </h4>
-          <div className="mb-10 md:mb-[60px] md:col-span-3">
-            <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+          <div className=" mb-[30px] md:col-span-3">
+            <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
               BeachSide SnackShop mobile app
             </h6>
             <ul className="flex flex-col gap-[15px]">
@@ -740,14 +745,14 @@ const Beachside = () => {
             </div>
           </div>
 
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             What did I learn?
           </h4>
           <div className="mb-[50px] md:col-span-3">
-            <h6 className="text-2xl font-medium font-helvetica mb-[20px]">
+            <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
               Screens are scrollable and consistency in design elements is key
             </h6>
-            <ul className="flex flex-col gap-[15px]">
+            <ul className="flex flex-col gap-[10px]">
               <li className="text-[16px] md:text-lg font-thin">
                 When I designed my first high-fidelity mockup, I was unfamiliar
                 with auto layout. After experimenting with it, I learned how
@@ -758,11 +763,11 @@ const Beachside = () => {
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[20px] lg:text-[24px] mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:col-span-1 mb-[30px] md:mb-0">
             What’s next?
           </h4>
-          <div className="md:mb-[20px] md:col-span-3">
-            <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+          <div className="md:col-span-3">
+            <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
               Accessibility considerations and refining the UI
             </h6>
             <ul className="list-disc list-inside pl-3 text-[16px] md:text-lg font-thin">
@@ -781,8 +786,8 @@ const Beachside = () => {
           </div>
         </div>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[110px] border-b border-b-black/40 flex flex-col gap-2 md:gap-10 justify-center items-center">
-        <h4 className="font-helvetica text-2xl font-medium text-center md:text-5xl">
+      <section className="font-garamond py-[50px]  border-b border-b-black/40 flex flex-col gap-2 md:gap-[30px] justify-center items-center">
+        <h4 className="font-helvetica text-xl md:text-2xl font-medium text-center">
           Thank you for sticking around!
         </h4>
         <svg
@@ -800,13 +805,13 @@ const Beachside = () => {
             cy="13.6875"
             r="12.6875"
             stroke="black"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <path
             d="M7.93005 17.3369C10.8534 22.1057 18.3514 22.3005 21.0701 17.3369"
             stroke="black"
-            stroke-width="2"
-            stroke-linecap="square"
+            strokeWidth="2"
+            strokeLinecap="square"
           />
         </svg>
       </section>
