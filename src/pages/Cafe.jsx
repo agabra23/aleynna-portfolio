@@ -163,7 +163,7 @@ const Cafe = () => {
           </div>
         </div>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-[30px] md:block">
+      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 ">
         <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px]">
           <h6 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px]">
             Our Solution
@@ -229,7 +229,7 @@ const Cafe = () => {
             </ul>
           </div>
           <div></div>
-          <h4 className="md:mb-[20px] mb-[10px] text-xl md:text-2xl font-medium font-helvetica col-span-3">
+          <h4 className="mb-[10px] text-xl md:text-2xl font-medium font-helvetica col-span-3">
             The Connection Café App
           </h4>
         </div>
@@ -266,15 +266,14 @@ const Cafe = () => {
           />
         </div>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-5 md:gap-10 justify-center items-center">
+      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-5 md:gap-[30px] justify-center items-center">
         <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-lg font-thin text-center">
           Want to learn more about our process?
         </p>
-        <h4 className="font-helvetica text-3xl font-medium text-center md:text-5xl">
+        <h4 className="font-helvetica md:text-2xl font-medium text-center text-xl">
           Let’s dig deeper...
         </h4>
         <svg
-          className="md:w-6"
           width="20px"
           height="100%"
           viewBox="0 0 23 31"
@@ -295,7 +294,7 @@ const Cafe = () => {
           </h4>
           <div className="flex flex-col gap-[30px] col-span-3">
             <div>
-              <h6 className="text-2xl font-medium max-w-[85%] mb-[10px] font-helvetica">
+              <h6 className="md:text-2xl text-xl font-medium max-w-[85%] mb-[10px] font-helvetica">
                 What do we want to target in the podcast space?
               </h6>
               <p className="text-[16px] font-thin md:text-lg">
@@ -307,7 +306,7 @@ const Cafe = () => {
               </p>
             </div>
             <div>
-              <h6 className="text-2xl font-medium max-w-[85%] mb-[10px] font-helvetica">
+              <h6 className="md:text-2xl text-xl font-medium max-w-[85%] mb-[10px] font-helvetica">
                 What do we want to learn?
               </h6>
               <p className="text-16px font-thin md:text-lg">
@@ -318,7 +317,7 @@ const Cafe = () => {
               </p>
             </div>
             <div>
-              <h6 className="text-2xl font-medium max-w-[85%] mb-[10px] font-helvetica">
+              <h6 className="md:text-2xl text-xl font-medium max-w-[85%] mb-[10px] font-helvetica">
                 Plan of attack
               </h6>
               <p className="text-16px font-thin md:text-lg">
@@ -339,7 +338,7 @@ const Cafe = () => {
             What did we find?
           </h4>
           <div className="mb-[50px] md:col-span-3">
-            <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+            <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               Secondary and primary research key findings
             </h6>
             <ul className="list-disc list-inside pl-3">
@@ -364,10 +363,10 @@ const Cafe = () => {
             Say What?
           </h4>
           <div className="mb-[50px] md:col-span-3">
-            <h6 className="text-2xl font-medium font-helvetica mb-[20px]">
+            <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               What our users have to say
             </h6>
-            <ul className="flex flex-col gap-[15px]">
+            <ul className="flex flex-col gap-[30px]">
               <li className=" md:text-lg font-thin leading-7">
                 “When people consume content independently but can discuss it
                 later, it{" "}
@@ -399,10 +398,10 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:mb-5 md:col-span-1 place-self-end">
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:mb-[10px] md:col-span-1 place-self-end">
             User Personas
           </h4>
-          <h6 className="text-2xl w-max font-medium font-helvetica mb-[20px] justify-self-start md:mb-5 md:col-span-3">
+          <h6 className="md:text-2xl text-xl w-max font-medium font-helvetica mb-[10px] justify-self-start md:col-span-3">
             Meet Matt and Kat
           </h6>
         </div>
@@ -445,7 +444,7 @@ const Cafe = () => {
             The emerging problem
           </h4>
           <div className="mb-[50px] md:col-span-3">
-            <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+            <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               Adult podcast enthusiasts have few opportunities to engage in
               in-person interactions with fellow listeners who have common
               interests.
@@ -463,7 +462,7 @@ const Cafe = () => {
             Thus, we asked
           </h4>
           <div className="mb-[50px] md:col-span-3">
-            <h6 className="text-2xl font-medium font-helvetica mb-[20px]">
+            <h6 className="md:text-2xl text-xl font-medium font-helvetica">
               How can we provide adult podcast listeners with a means to unwind
               after a busy day while maintaining a sense of connection with
               others?
@@ -473,7 +472,7 @@ const Cafe = () => {
             Ideation
           </h4>
           <div className="md:mb-[20px] md:col-span-3">
-            <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+            <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               Brainstorming and affinity maps
             </h6>
             <ul className="flex flex-col gap-[15px]">
@@ -526,7 +525,7 @@ const Cafe = () => {
         <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px] mb-3">
           <div></div>
           <div className="md:mb-[50px] mb-[10px] md:col-span-3">
-            <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+            <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               Visualizing our solutions
             </h6>
             <ul className="flex flex-col gap-[15px]">
@@ -569,7 +568,7 @@ const Cafe = () => {
             Say What?
           </h4>
           <div className="md:col-span-3">
-            <h6 className="text-2xl font-medium font-helvetica mb-[20px]">
+            <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[20px]">
               What our users have to say
             </h6>
             <ul className="flex flex-col gap-[15px] md:gap-10">
@@ -601,14 +600,13 @@ const Cafe = () => {
         </div>
       </section>
       <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-5 md:gap-10 justify-center items-center">
-        <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-2xl font-thin text-center">
+        <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-lg font-thin text-center">
           If you’ve made it this far, thank you!
         </p>
-        <h4 className="font-helvetica text-3xl font-medium text-center md:text-5xl">
+        <h4 className="font-helvetica text-xl font-medium text-center md:text-2xl">
           Let’s wrap this up...
         </h4>
         <svg
-          className="md:w-6"
           width="20px"
           height="100%"
           viewBox="0 0 23 31"
@@ -628,7 +626,7 @@ const Cafe = () => {
             The End
           </h4>
           <div className="mb-[50px] md:col-span-3">
-            <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+            <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               The Connection Café
             </h6>
             <ul className="flex flex-col gap-[15px]">
@@ -650,7 +648,7 @@ const Cafe = () => {
             What did I learn?
           </h4>
           <div className="mb-[50px] md:col-span-3">
-            <h6 className="text-2xl font-medium font-helvetica mb-[20px]">
+            <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[20px]">
               UX Research is cool and people yearn for in-person interaction
             </h6>
             <ul className="flex flex-col gap-[15px]">
@@ -669,7 +667,7 @@ const Cafe = () => {
             What’s next?
           </h4>
           <div className=" md:col-span-3">
-            <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
+            <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               User Testing and Implementation
             </h6>
             <ul className="list-disc list-inside pl-3 text-[16px] md:text-lg font-thin">
@@ -689,8 +687,8 @@ const Cafe = () => {
           </div>
         </div>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-2 md:gap-10 justify-center items-center">
-        <h4 className="font-helvetica text-2xl font-medium text-center md:text-5xl">
+      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-5 md:gap-[30px] justify-center items-center">
+        <h4 className="font-helvetica md:text-2xl font-medium text-center text-[20px]">
           Thank you for diving in!
         </h4>
         <svg
