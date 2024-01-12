@@ -502,7 +502,7 @@ const Cafe = () => {
             </ul>
           </div>
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 bg-white rounded-3xl gap-2 p-9">
+        <div className="grid grid-cols-2 justify-center grid-rows-2 bg-white rounded-3xl gap-2 p-9">
           <img src={Ideas1} alt="Ideation" />
           <img src={Ideas2} alt="Ideation" />
           <img src={Ideas3} alt="Ideation" />
