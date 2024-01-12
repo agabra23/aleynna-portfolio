@@ -176,7 +176,7 @@ const NavBar = () => {
           mobileOpened ? "" : "translate-x-full"
         } transition-all z-20 h-screen w-full flex flex-col items-center`}
       >
-        <ul className="flex flex-col justify-start items-center gap-10 font-thin text-[16px] absolute translate-y-32">
+        <ul className="flex flex-col justify-start items-center gap-10 font-thin text-[16px] absolute translate-y-44">
           <li
             className={`cursor-pointer ${isLinkActive("/") && "underline"}`}
             onClick={() => mobileClickHandler("/")}

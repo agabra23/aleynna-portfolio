@@ -249,7 +249,7 @@ const Beachside = () => {
       </section>
       <section className="font-garamond py-[50px] border-b border-b-black/40">
         <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:mb-0 md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             Project Overview
           </h4>
           <div className="md:col-span-3 flex flex-col gap-[30px]">
@@ -301,7 +301,7 @@ const Beachside = () => {
       </section>
       <section className="font-garamond py-[50px]  border-b border-b-black/40">
         <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-[10px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] mb-[30px] md:mb-0 md:text-lg md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] mb-[10px] md:mb-0 md:text-lg md:col-span-1">
             My solution
           </h4>
           <h6 className="text-xl md:text-2xl font-medium font-helvetica md:col-span-3">
@@ -309,10 +309,10 @@ const Beachside = () => {
           </h6>
         </div>
         <div className="flex flex-col md:flex-row gap-[30px] md:gap-[60px]">
-          <div className="max-w-80 flex md:flex-col justify-center">
+          <div className="max-w-80 flex md:flex-col justify-center self-center">
             <img src={Beach1} alt="Beachside Snackshop Login Screen" />
           </div>
-          <div className="grid grid-cols-3 gap-x-[10px] gap-y-[15px]">
+          <div className="grid grid-cols-3 gap-x-[10px] gap-y-[15px] max-w-[350px] self-center">
             <img src={BeachsideMenu} alt="Snackshop Menu" />
             <img src={BeachsideDetails} alt="Snackshop Item Details" />
             <img src={BeachsideCheckout} alt="Snackshop Checkout" />
@@ -357,7 +357,7 @@ const Beachside = () => {
       </section>
       <section className="font-garamond py-[50px]  border-b border-b-black/40">
         <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:col-span-1 mb-[30px] md:mb-0">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:col-span-1 mb-[10px] md:mb-0">
             The Starting Point
           </h4>
           <div className="md:col-span-3 flex flex-col gap-[30px]">
@@ -402,7 +402,7 @@ const Beachside = () => {
       </section>
       <section className="font-garamond py-[50px]  border-b border-b-black/40">
         <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-3">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:mb-0 md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             What Did we Find?
           </h4>
           <div className="md:col-span-3 flex flex-col gap-[30px] mb-[50px]">
@@ -441,7 +441,7 @@ const Beachside = () => {
               </ul>
             </div>
           </div>
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:mb-0 md:col-span-1 place-self-end">
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1 place-self-end">
             User Personas
           </h4>
           <h6 className="text-xl md:text-2xl w-max font-medium font-helvetica mb-[10px] justify-self-start md:col-span-3">
@@ -481,7 +481,7 @@ const Beachside = () => {
       </section>
       <section className="font-garamond py-[50px]  border-b border-b-black/40">
         <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
             The emerging problem
           </h4>
           <div className="md:col-span-3 mb-[50px]">
@@ -497,7 +497,7 @@ const Beachside = () => {
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             Thus, we asked
           </h4>
           <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[50px] md:col-span-3">
@@ -505,7 +505,7 @@ const Beachside = () => {
             that provides a seamless online ordering system and accurate
             real-time tracking?
           </h6>
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             Ideation
           </h4>
           <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px] md:col-span-3">
@@ -514,7 +514,7 @@ const Beachside = () => {
           <div className="md:bg-white md:rounded-3xl md:p-9 mb-[50px] md:col-span-4">
             <img src={LofiFlow} alt="Low Fidelity Flow" />
           </div>
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             Usability study
           </h4>
           <div className="md:col-span-3 mb-[10px]">
@@ -619,7 +619,7 @@ const Beachside = () => {
       </section>
       <section className="font-garamond py-[50px]  border-b border-b-black/40">
         <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             Usability Study #2
           </h4>
           <div className="md:col-span-3 flex flex-col gap-[30px]">
@@ -700,7 +700,7 @@ const Beachside = () => {
       </section>
       <section className="font-garamond py-[50px] border-b border-b-black/40">
         <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             The End
           </h4>
           <div className=" mb-[30px] md:col-span-3">
@@ -709,21 +709,24 @@ const Beachside = () => {
             </h6>
             <ul className="flex flex-col gap-[15px]">
               <li className="text-[16px] md:text-lg font-thin">
-                Connection Café is a community initiative designed to connect
-                people who share an interest in podcasts. Its goal is to improve
-                community mental health by facilitating in-person interactions
-                in today’s technology-focused world.
+                With the BeachSide SnackShop mobile app, users can trust that
+                they’ll have a seamless online food ordering experience.{" "}
+                <span className="font-semibold">
+                  The real-time delivery tracking will allow users to order at
+                  any time during their day, empowering them to reclaim their
+                  free time.
+                </span>
               </li>
             </ul>
           </div>
 
-          <div className="col-span-4 flex gap-5 md:gap-[60px] justify-center mb-10 md:mb-[60px]">
+          <div className="col-span-4 flex flex-col md:flex-row gap-5 md:gap-[60px] justify-center mb-10 md:mb-[60px]">
             {/* Video */}
-            <div className="max-w-80 flex flex-col justify-center">
+            <div className="max-w-80 flex flex-col justify-center self-center">
               <img src={Beach1} alt="Beachside Snackshop Login Screen" />
             </div>
 
-            <div className="grid grid-cols-3 gap-x-[10px] gap-y-[15px] md:gap-y-0">
+            <div className="grid grid-cols-3 gap-x-[10px] gap-y-[15px] md:gap-y-0 max-w-[350px] self-center">
               <img src={BeachsideMenu} alt="Snackshop Menu" />
               <img src={BeachsideDetails} alt="Snackshop Item Details" />
               <img src={BeachsideCheckout} alt="Snackshop Checkout" />
@@ -745,7 +748,7 @@ const Beachside = () => {
             </div>
           </div>
 
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             What did I learn?
           </h4>
           <div className="mb-[50px] md:col-span-3">
@@ -763,7 +766,7 @@ const Beachside = () => {
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:col-span-1 mb-[30px] md:mb-0">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:col-span-1 mb-[10px] md:mb-0 md:mb-0">
             What’s next?
           </h4>
           <div className="md:col-span-3">
