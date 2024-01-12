@@ -103,7 +103,7 @@ const NavBar = () => {
           <div
             className={`${
               showProjectDetails ? "visible opacity-100" : "invisible opacity-0"
-            } transition-all duration-300 ease-in-out text-xl font-thin absolute shadow-custom top-12 -translate-x-10 bg-white p-[35px] rounded-[25px]`}
+            } transition-all duration-300 ease-in-out text-lg font-thin absolute shadow-custom top-12 -translate-x-10 bg-white p-[35px] rounded-[25px]`}
           >
             <p
               onClick={() => {
