@@ -10,31 +10,31 @@ const About = () => {
     window.scrollTo(0, 0);
   });
   return (
-    <div className="py-[50px] md:py-[110px] mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full flex flex-col md:flex-row-reverse md:gap-[55px] gap-[30px] items-center">
-      <div className="relative flex justify-center items-center min-w-[90px] max-w-[200px] md:max-w-[350px]">
+    <div className="py-[50px] mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full flex flex-col md:flex-row-reverse md:gap-[50px] gap-[30px] items-center">
+      <div className="relative flex justify-center items-center min-w-[90px] md:min-w-[200px] max-w-[200px] md:max-w-[350px]">
         <img
-          className="relative z-10 h-auto"
+          className="relative z-10 "
           src={selfies}
           alt="Aleynna Quiñones Selfies"
         />
         <img
-          className="absolute scale-150 z-0 h-auto"
+          className="absolute scale-150 z-0"
           src={Blobs}
           role="presentation"
         />
       </div>
 
-      <div className="flex flex-col gap-5 lg:gap-10 items-start">
-        <h4 className="font-helvetica font-normal text-2xl lg:text-3xl">
+      <div className="flex flex-col gap-[10px] md:gap-[30px] items-start md:max-w-[450px]">
+        <h4 className="font-helvetica font-normal md:text-2xl text-xl">
           A little bit about me
         </h4>
-        <p className="font-garamond text-[16px] lg:text-xl">
+        <p className="font-garamond text-[16px] md:text-lg">
           Hi! My name’s Aleynna (pronounced uh-lay-nuh), and I’m based in
           Boston, MA. I’m currently a senior studying UX Design at Lesley
           University, and I’m eager to expand my knowledge through internship
           and job opportunities for Summer 2024!
         </p>
-        <p className="font-garamond text-[16px] lg:text-xl">
+        <p className="font-garamond text-[16px] md:text-lg">
           My background lies in visual art, specifically{" "}
           <a
             className="font-semibold cursor-pointer no-underline text-inherit"
@@ -46,14 +46,14 @@ const About = () => {
           trying to “find my way,” and in late 2022, I discovered a passion for
           UX Design.
         </p>
-        <p className="font-garamond text-[16px] lg:text-xl">
+        <p className="font-garamond text-[16px] md:text-lg">
           Throughout my life, I’ve been a natural problem solver and an
           inherently curious individual, always eager to learn and create
           understanding for myself and others. The field of UX Design has become
           a perfect fit, allowing me to leverage both my creative and analytical
           abilities.
         </p>
-        <p className="font-garamond text-[16px] lg:text-xl">
+        <p className="font-garamond text-[16px] md:text-lg">
           I am enthusiastic about designing interfaces that are not only
           intuitive and purposeful, but also polished and visually appealing. UX
           Design has opened a pathway for me to merge my artistic inclinations
@@ -61,7 +61,7 @@ const About = () => {
           experiences.
         </p>
         <a href={Resume} target="_blank">
-          <button className="border-2 border-black rounded-full py-2 px-8 hover:bg-black hover:text-offwhite cursor-pointer transition-colors duration-200 md:text-xl">
+          <button className="border-2 border-black rounded-full px-6 py-3 mt-5 hover:bg-black hover:text-offwhite cursor-pointer transition-colors duration-200 font-helvetica text-[16px]">
             My Resumé
           </button>
         </a>
