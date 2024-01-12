@@ -502,14 +502,14 @@ const Cafe = () => {
             </ul>
           </div>
         </div>
-        <div className="grid grid-cols-2 justify-center grid-rows-2 bg-white rounded-3xl gap-2 p-9">
+        {/* <div className="grid grid-cols-2 justify-center grid-rows-2 bg-white rounded-3xl gap-2 p-9">
           <img src={Ideas1} alt="Ideation" />
           <img src={Ideas2} alt="Ideation" />
           <img src={Ideas3} alt="Ideation" />
           <img src={Ideas4} alt="Ideation" />
-        </div>
-        <div className="grid grid-cols-2 mt-4 md:mt-8 gap-y-3 md:gap-y-7 gap-x-5 md:gap-x-36 mb-[50px]">
-          <svg
+        </div> */}
+        <div className="grid grid-cols-2 mt-4 md:mt-8 gap-y-3 md:gap-y-7 gap-x-5 md:gap-x-36 mb-[50px] max-w-[1000px] self-center">
+          {/* <svg
             className="md:w-8 place-self-center"
             width="20px"
             height="100%"
@@ -536,7 +536,7 @@ const Cafe = () => {
               d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
               fill="black"
             />
-          </svg>
+          </svg> */}
           <div className="max-w-[250px] justify-self-center place-self-start justify-center flex ">
             <img src={Sticky1} alt="Sticky Note 1" />
           </div>
@@ -562,7 +562,7 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
-          <div className="md:col-span-4 bg-white p-9 rounded-3xl flex flex-col md:flex-row gap-5 md:gap-[90px] items-center mb-[50px]">
+          <div className="md:col-span-4 bg-white p-9 rounded-3xl flex flex-col md:flex-row md:justify-center md:justify-self-center gap-5 md:gap-[90px] items-center mb-[50px] max-w-[1000px]">
             <div>
               <p className="uppercase text-center font-helvetica font-thin text-[16px]">
                 Podcast Chat

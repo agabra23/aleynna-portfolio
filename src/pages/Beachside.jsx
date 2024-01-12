@@ -308,7 +308,7 @@ const Beachside = () => {
             BeachSide SnackShop mobile app final mock ups
           </h6>
         </div>
-        <div className="flex flex-col md:flex-row gap-[30px] md:gap-[60px]">
+        <div className="flex flex-col items-center md:items-start md:flex-row md:justify-center gap-[30px] md:gap-[60px]">
           <div className="max-w-80 flex md:flex-col justify-center self-center">
             <img src={Beach1} alt="Beachside Snackshop Login Screen" />
           </div>
@@ -448,7 +448,7 @@ const Beachside = () => {
             Meet Lisa and José
           </h6>
         </div>
-        <div className="flex flex-col gap-12 md:gap-[30px]">
+        <div className="flex flex-col items-center gap-12 md:gap-[30px]">
           <UserPersona
             avatar={LisaAvatar}
             name={"Lisa"}
@@ -511,7 +511,7 @@ const Beachside = () => {
           <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px] md:col-span-3">
             Low-fidelity Prototype
           </h6>
-          <div className="md:bg-white md:rounded-3xl md:p-9 mb-[50px] md:col-span-4">
+          <div className="md:bg-white md:rounded-3xl md:p-9 mb-[50px] md:col-span-4 max-w-[1000px] justify-self-center">
             <img src={LofiFlow} alt="Low Fidelity Flow" />
           </div>
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
@@ -576,7 +576,7 @@ const Beachside = () => {
             </ol>
           </div>
         </div>
-        <div className="flex flex-col gap-[10px] md:gap-[30px]">
+        <div className="flex flex-col items-center mx-auto gap-[10px] md:gap-[30px] max-w-[1000px]">
           <BeachsideScreenDescription
             imageSrc1={LofiHome1}
             imageSrc2={LofiHome2}
