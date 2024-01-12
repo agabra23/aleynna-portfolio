@@ -130,9 +130,13 @@ const Cafe = () => {
                 The Spoken Word On-Demand Audio Space
               </h4>
               <p className="text-[16px] font-thin md:text-lg">
-                This project aims to find and address a problem in the Spoken
-                Word On-Demand Audio space, with a specific focus on improving
-                the overall experience for adult podcast listeners.
+                This project aims to{" "}
+                <span className="font-semibold">
+                  find and address a problem in the Spoken Word On-Demand Audio
+                  space
+                </span>
+                , with a specific focus on improving the overall experience for
+                adult podcast listeners.
               </p>
             </div>
             <div>
@@ -141,9 +145,12 @@ const Cafe = () => {
               </h4>
               <p className="text-[16px] font-thin md:text-lg">
                 We discovered that adult podcast listeners seek human connection
-                and fresh perspectives. They desire a way to share their
-                favorite podcasts and newfound knowledge beyond their phones,
-                and connect with like-minded individuals who share similar
+                and fresh perspectives.{" "}
+                <span className="font-semibold">
+                  They desire a way to share their favorite podcasts and
+                  newfound knowledge beyond their phones
+                </span>
+                , and connect with like-minded individuals who share similar
                 interests.
               </p>
             </div>
@@ -152,12 +159,14 @@ const Cafe = () => {
                 The Connection Café
               </h4>
               <p className="text-[16px] font-thin md:text-lg">
-                The proposed solution, the Connection Café, provides a seamless
-                integration of the physical and digital world. Its goal is to
-                improve community mental health by facilitating in-person
-                interactions through encouraging users to meet face-to-face in
-                the café, hosting live podcast events, and providing equipment
-                to record their own podcasts.
+                <span className="font-semibold">
+                  The proposed solution, the Connection Café, provides a
+                  seamless integration of the physical and digital world
+                </span>
+                . Its goal is to improve community mental health by facilitating
+                in-person interactions through encouraging users to meet
+                face-to-face in the café, hosting live podcast events, and
+                providing equipment to record their own podcasts.
               </p>
             </div>
           </div>
@@ -343,19 +352,28 @@ const Cafe = () => {
             </h6>
             <ul className="list-disc list-inside pl-3">
               <li className="text-[16px] md:text-lg font-thin leading-7">
-                Podcast listeners search for a way to connect with others
-                through podcasts.
+                Podcast listeners{" "}
+                <span className="font-semibold">
+                  search for a way to connect
+                </span>{" "}
+                with others through podcasts.
               </li>
               <li className="text-[16px] md:text-lg font-thin leading-7">
-                Podcast listening is a chance to build community.
+                Podcast listening is a{" "}
+                <span className="font-semibold">chance to build community</span>
+                .
               </li>
               <li className="text-[16px] md:text-lg font-thin leading-7">
-                Adults need a way to disconnect from real life that continues to
-                stimulate them.
+                Adults need a way to{" "}
+                <span className="font-semibold">disconnect from real life</span>{" "}
+                that continues to stimulate them.
               </li>
               <li className="text-[16px] md:text-lg font-thin leading-7">
-                Adults need an engaging way to discuss podcast content with
-                friends.
+                Adults{" "}
+                <span className="font-semibold">
+                  need an engaging way to discuss
+                </span>{" "}
+                podcast content with friends.
               </li>
             </ul>
           </div>
@@ -519,12 +537,16 @@ const Cafe = () => {
               fill="black"
             />
           </svg>
-          <img src={Sticky1} alt="Sticky Note 1" />
-          <img src={Sticky2} alt="Sticky Note 2" />
+          <div className="max-w-[250px] justify-self-center place-self-start justify-center flex justify-center">
+            <img src={Sticky1} alt="Sticky Note 1" />
+          </div>
+          <div className="max-w-[250px] justify-self-center place-self-start justify-center flex justify-center">
+            <img src={Sticky2} alt="Sticky Note 2" />
+          </div>
         </div>
         <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px] mb-3">
           <div></div>
-          <div className="md:mb-[50px] mb-[10px] md:col-span-3">
+          <div className="md:mb-[30px] mb-[10px] md:col-span-3">
             <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               Visualizing our solutions
             </h6>
@@ -625,7 +647,7 @@ const Cafe = () => {
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             The End
           </h4>
-          <div className="mb-[50px] md:col-span-3">
+          <div className="mb-[30px] md:col-span-3">
             <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               The Connection Café
             </h6>
