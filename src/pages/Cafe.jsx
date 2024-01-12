@@ -537,10 +537,10 @@ const Cafe = () => {
               fill="black"
             />
           </svg>
-          <div className="max-w-[250px] justify-self-center place-self-start justify-center flex justify-center">
+          <div className="max-w-[250px] justify-self-center place-self-start justify-center flex ">
             <img src={Sticky1} alt="Sticky Note 1" />
           </div>
-          <div className="max-w-[250px] justify-self-center place-self-start justify-center flex justify-center">
+          <div className="max-w-[250px] justify-self-center place-self-start justify-center flex ">
             <img src={Sticky2} alt="Sticky Note 2" />
           </div>
         </div>
@@ -622,9 +622,6 @@ const Cafe = () => {
         </div>
       </section>
       <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-5 md:gap-10 justify-center items-center">
-        <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-lg font-thin text-center">
-          If you’ve made it this far, thank you!
-        </p>
         <h4 className="font-helvetica text-xl font-medium text-center md:text-2xl">
           Let’s wrap this up...
         </h4>
