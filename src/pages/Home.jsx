@@ -17,7 +17,7 @@ const Home = () => {
         <h2 className="font-helvetica [855px]:text-5xl text-4xl font-bold">
           Hi! I’m Aleynna Quiñones.
         </h2>
-        <p className="text-xl md:text-2xl mt-3">
+        <p className="text-xl md:text-2xl mt-[10px] max-w-[1000px]">
           I'm a UX Designer{" "}
           <span className="font-semibold  break-words">
             dedicated to solving problems

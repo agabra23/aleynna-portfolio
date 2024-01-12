@@ -401,7 +401,7 @@ const Beachside = () => {
         </div>
       </section>
       <section className="font-garamond py-[50px]  border-b border-b-black/40">
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-3">
+        <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             What Did we Find?
           </h4>
@@ -441,7 +441,7 @@ const Beachside = () => {
               </ul>
             </div>
           </div>
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1 place-self-end">
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1 place-self-end">
             User Personas
           </h4>
           <h6 className="text-xl md:text-2xl w-max font-medium font-helvetica mb-[10px] justify-self-start md:col-span-3">
