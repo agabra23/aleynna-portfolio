@@ -766,7 +766,7 @@ const Beachside = () => {
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:col-span-1 mb-[10px] md:mb-0 md:mb-0">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:col-span-1 mb-[10px] md:mb-0">
             What’s next?
           </h4>
           <div className="md:col-span-3">
