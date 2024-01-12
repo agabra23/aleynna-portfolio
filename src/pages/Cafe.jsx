@@ -80,7 +80,7 @@ const Cafe = () => {
       <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40">
         <ul className="grid grid-cols-2 gap-y-[40px] md:flex md:justify-evenly md:gap-[50px]">
           <li>
-            <h6 className="font-helvetica font-normal text-xl md:text-2xl mb-2">
+            <h6 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
               Role
             </h6>
             <p className="text-[16px] md:text-lg font-garamond font-thin">
@@ -91,7 +91,7 @@ const Cafe = () => {
             </p>
           </li>
           <li className="text-right md:text-left  md:max-w-[250px] md:min-w-[150px] flex flex-col items-end md:block">
-            <h6 className="font-helvetica font-normal text-xl md:text-2xl mb-2 place-self-end">
+            <h6 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px] place-self-end">
               Team
             </h6>
             <p className="text-[16px] md:text-lg font-garamond font-thin max-w-[250px]">
@@ -99,7 +99,7 @@ const Cafe = () => {
             </p>
           </li>
           <li>
-            <h6 className="font-helvetica font-normal text-xl md:text-2xl mb-2">
+            <h6 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
               Timeline
             </h6>
             <p className="text-[16px] md:text-lg font-garamond font-thin">
@@ -107,7 +107,7 @@ const Cafe = () => {
             </p>
           </li>
           <li className="text-right md:text-left">
-            <h6 className="font-helvetica font-normal text-xl md:text-2xl mb-2">
+            <h6 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
               Tools
             </h6>
             <p className="text-[16px] md:text-lg font-garamond font-thin">
@@ -119,51 +119,52 @@ const Cafe = () => {
           </li>
         </ul>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-[30px] md:flex-row md:gap-[50px]">
-        <div>
-          <h6 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max">
+      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-[30px] md:block">
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px]">
+          <h6 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[30px]">
             Project Overview
           </h6>
-        </div>
-        <div className="flex flex-col gap-[30px]">
-          <div>
-            <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
-              The Spoken Word On-Demand Audio Space
-            </h4>
-            <p className="text-[16px] font-thin md:text-lg">
-              This project aims to find and address a problem in the Spoken Word
-              On-Demand Audio space, with a specific focus on improving the
-              overall experience for adult podcast listeners.
-            </p>
-          </div>
-          <div>
-            <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
-              Increase human connection between adult podcast listeners
-            </h4>
-            <p className="text-[16px] font-thin md:text-lg">
-              We discovered that adult podcast listeners seek human connection
-              and fresh perspectives. They desire a way to share their favorite
-              podcasts and newfound knowledge beyond their phones, and connect
-              with like-minded individuals who share similar interests.
-            </p>
-          </div>
-          <div>
-            <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
-              The Connection Café
-            </h4>
-            <p className="text-[16px] font-thin md:text-lg">
-              The proposed solution, the Connection Café, provides a seamless
-              integration of the physical and digital world. Its goal is to
-              improve community mental health by facilitating in-person
-              interactions through encouraging users to meet face-to-face in the
-              café, hosting live podcast events, and providing equipment to
-              record their own podcasts.
-            </p>
+          <div className="flex flex-col gap-[30px] col-span-3">
+            <div>
+              <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
+                The Spoken Word On-Demand Audio Space
+              </h4>
+              <p className="text-[16px] font-thin md:text-lg">
+                This project aims to find and address a problem in the Spoken
+                Word On-Demand Audio space, with a specific focus on improving
+                the overall experience for adult podcast listeners.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
+                Increase human connection between adult podcast listeners
+              </h4>
+              <p className="text-[16px] font-thin md:text-lg">
+                We discovered that adult podcast listeners seek human connection
+                and fresh perspectives. They desire a way to share their
+                favorite podcasts and newfound knowledge beyond their phones,
+                and connect with like-minded individuals who share similar
+                interests.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
+                The Connection Café
+              </h4>
+              <p className="text-[16px] font-thin md:text-lg">
+                The proposed solution, the Connection Café, provides a seamless
+                integration of the physical and digital world. Its goal is to
+                improve community mental health by facilitating in-person
+                interactions through encouraging users to meet face-to-face in
+                the café, hosting live podcast events, and providing equipment
+                to record their own podcasts.
+              </p>
+            </div>
           </div>
         </div>
       </section>
       <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-[30px] md:block">
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px]">
           <h6 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px]">
             Our Solution
           </h6>
@@ -287,53 +288,53 @@ const Cafe = () => {
           />
         </svg>
       </section>
-      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-8 md:flex-row">
-        <div>
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max">
+      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-[30px] md:block">
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px]">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[30px]">
             Our starting point
           </h4>
-        </div>
-        <div className="flex flex-col gap-[30px]">
-          <div>
-            <h6 className="text-2xl font-medium max-w-[85%] mb-[10px] font-helvetica">
-              What do we want to target in the podcast space?
-            </h6>
-            <p className="text-[16px] font-thin md:text-lg">
-              As a team, we decided to hone in on a specific area of the podcast
-              space:{" "}
-              <span className="font-semibold">
-                adult podcast listeners and their listening experience.
-              </span>
-            </p>
-          </div>
-          <div>
-            <h6 className="text-2xl font-medium max-w-[85%] mb-[10px] font-helvetica">
-              What do we want to learn?
-            </h6>
-            <p className="text-16px font-thin md:text-lg">
-              How their listening experience{" "}
-              <span className="font-semibold">
-                affects their overall mental health.
-              </span>
-            </p>
-          </div>
-          <div>
-            <h6 className="text-2xl font-medium max-w-[85%] mb-[10px] font-helvetica">
-              Plan of attack
-            </h6>
-            <p className="text-16px font-thin md:text-lg">
-              Conduct{" "}
-              <span className="font-semibold">
-                secondary research and 1-on-1 interviews
-              </span>{" "}
-              to gather insights, challenges, and pain-points for our potential
-              users.
-            </p>
+          <div className="flex flex-col gap-[30px] col-span-3">
+            <div>
+              <h6 className="text-2xl font-medium max-w-[85%] mb-[10px] font-helvetica">
+                What do we want to target in the podcast space?
+              </h6>
+              <p className="text-[16px] font-thin md:text-lg">
+                As a team, we decided to hone in on a specific area of the
+                podcast space:{" "}
+                <span className="font-semibold">
+                  adult podcast listeners and their listening experience.
+                </span>
+              </p>
+            </div>
+            <div>
+              <h6 className="text-2xl font-medium max-w-[85%] mb-[10px] font-helvetica">
+                What do we want to learn?
+              </h6>
+              <p className="text-16px font-thin md:text-lg">
+                How their listening experience{" "}
+                <span className="font-semibold">
+                  affects their overall mental health.
+                </span>
+              </p>
+            </div>
+            <div>
+              <h6 className="text-2xl font-medium max-w-[85%] mb-[10px] font-helvetica">
+                Plan of attack
+              </h6>
+              <p className="text-16px font-thin md:text-lg">
+                Conduct{" "}
+                <span className="font-semibold">
+                  secondary research and 1-on-1 interviews
+                </span>{" "}
+                to gather insights, challenges, and pain-points for our
+                potential users.
+              </p>
+            </div>
           </div>
         </div>
       </section>
       <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col">
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             What did we find?
           </h4>
@@ -439,7 +440,7 @@ const Cafe = () => {
         </div>
       </section>
       <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col">
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-3">
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px] mb-3">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             The emerging problem
           </h4>
@@ -522,7 +523,7 @@ const Cafe = () => {
           <img src={Sticky1} alt="Sticky Note 1" />
           <img src={Sticky2} alt="Sticky Note 2" />
         </div>
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-3">
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px] mb-3">
           <div></div>
           <div className="md:mb-[50px] mb-[10px] md:col-span-3">
             <h6 className="text-2xl font-medium font-helvetica mb-[10px]">
@@ -622,7 +623,7 @@ const Cafe = () => {
         </svg>
       </section>
       <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40">
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             The End
           </h4>

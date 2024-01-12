@@ -7,19 +7,19 @@ const ScreenDescription = ({ imageSrc1, imageSrc2, cap1, cap2, p1, p2 }) => {
         <div className="min-w-[50px] max-w-[150px]">
           <img className="h-auto object-cover" src={imageSrc1} alt={cap1} />
         </div>
-        <p className="uppercase text-center font-helvetica text-sm md:text-lg max-[390px]:text-[10px] font-thin">
+        <p className="uppercase text-center font-helvetica text-[16px] md:text-lg max-[390px]:text-[10px] font-thin">
           {cap1}
         </p>
         <div className="min-w-[50px] max-w-[150px]">
           <img className="h-auto object-cover" src={imageSrc2} alt={cap2} />
         </div>
-        <p className="uppercase text-center font-helvetica text-sm md:text-lg max-[390px]:text-[10px] font-thin">
+        <p className="uppercase text-center font-helvetica text-[16px] md:text-lg max-[390px]:text-[10px] font-thin">
           {cap2}
         </p>
       </div>
       <div className="md:flex-1">
-        <p className="text-[16px] md:text-2xl font-thin mb-[15px]">{p1}</p>
-        <p className="text-[16px] md:text-2xl font-thin">{p2}</p>
+        <p className="text-[16px] md:text-lg font-thin mb-[15px]">{p1}</p>
+        <p className="text-[16px] md:text-lg font-thin">{p2}</p>
       </div>
     </div>
   );
