@@ -47,15 +47,19 @@ const ClickableCarousel = () => {
 
       {/* Right Arrow */}
       <div className="self-center text-xl rounded-full border-2 border-black p-2 bg-transparent text-black cursor-pointer transition-all duration-500 hover:bg-black hover:text-offwhite">
-        <BsChevronRight onClick={nextSlide} className="translate-x-0" size={30} />
+        <BsChevronRight
+          onClick={nextSlide}
+          className="translate-x-0"
+          size={30}
+        />
       </div>
 
       <div className="absolute -bottom-[30px] left-1/2 -translate-x-1/2 py-[10px] flex justify-center items-center gap-2">
         {cardArray.map((_, i) => (
           <div
             key={i}
-            className={`bg-black/20 p-1 rounded-full transition-all duration-500 cursor-pointer hovers:cale-105 hover:bg-black/50
-                ${curr === i ? "scale-105 bg-black/50" : ""}
+            className={`bg-black/20 p-1 rounded-full border transition-all duration-500 cursor-pointer hover:scale-105 hover:bg-black
+                ${curr === i ? "bg-black" : ""}
               `}
             onClick={() => setCurr(i)}
           ></div>
