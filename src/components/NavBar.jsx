@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
+import { BsChevronUp } from "react-icons/bs";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const NavBar = () => {
@@ -80,15 +81,15 @@ const NavBar = () => {
         </li>
         <li
           ref={popUpRef}
-          className={`relative flex items-center gap-2 cursor-pointer font-thin hover:underline ${
+          className={`relative flex items-center gap-2 cursor-pointer font-thin hover:underline group ${
             isLinkActive("/beachside-snackshop") && "underline"
           } ${isLinkActive("/connection-cafe") && "underline"}`}
         >
           <span onClick={() => setShowProjectDetails(!showProjectDetails)}>
             PROJECTS
           </span>
-          <svg
-            className={`hover:scale-125 transition-all ${
+          {/* <svg
+            className={`group-hover:rotate-0 transition-all ${
               showProjectDetails ? "rotate-0" : "rotate-180"
             }`}
             xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +100,13 @@ const NavBar = () => {
             onClick={() => setShowProjectDetails(!showProjectDetails)}
           >
             <path d="M1 1.5L8.5 10.5L16 1.5" stroke="black" strokeWidth="2" />
-          </svg>
+          </svg> */}
+          <BsChevronUp
+            className={`group-hover:rotate-180 transition-all ${
+              showProjectDetails ? "rotate-180" : "rotate-0"
+            }`}
+          />
+
           <div
             className={`${
               showProjectDetails ? "visible opacity-100" : "invisible opacity-0"

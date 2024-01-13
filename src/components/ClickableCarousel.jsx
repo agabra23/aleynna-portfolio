@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { cardArray } from "./carousel-config";
-import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 const ClickableCarousel = () => {
   const [curr, setCurr] = useState(0);
@@ -37,8 +37,8 @@ const ClickableCarousel = () => {
   return (
     <div className="max-w-[1000px] max-h-[100vw] h-[800px] w-full mx-auto flex relative">
       {/* Left Arrow */}
-      <div className="self-center text-xl rounded-full p-2 bg-black/20 text-offwhite cursor-pointer transition-all duration-500 hover:bg-black/50">
-        <BsChevronCompactLeft onClick={prevSlide} size={30} />
+      <div className="self-center text-xl rounded-full border-2 border-black p-2 bg-transparent text-black cursor-pointer transition-all duration-500 hover:bg-black hover:text-offwhite">
+        <BsChevronLeft onClick={prevSlide} size={30} />
       </div>
       <div
         style={{ backgroundImage: `url(${cardArray[curr].imgUrl})` }}
@@ -46,8 +46,8 @@ const ClickableCarousel = () => {
       ></div>
 
       {/* Right Arrow */}
-      <div className="self-center text-xl rounded-full p-2 bg-black/20 text-offwhite cursor-pointer transition-all duration-500 hover:bg-black/50">
-        <BsChevronCompactRight onClick={nextSlide} size={30} />
+      <div className="self-center text-xl rounded-full border-2 border-black p-2 bg-transparent text-black cursor-pointer transition-all duration-500 hover:bg-black hover:text-offwhite">
+        <BsChevronRight onClick={nextSlide} className="translate-x-0" size={30} />
       </div>
 
       <div className="absolute -bottom-[30px] left-1/2 -translate-x-1/2 py-[10px] flex justify-center items-center gap-2">
