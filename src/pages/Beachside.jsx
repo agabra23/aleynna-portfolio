@@ -184,12 +184,12 @@ const Beachside = () => {
         <div className="flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[65px] max-w-full">
           <div className="flex justify-center gap-[15px] lg:max-w-[calc(100%-415px)] max-w-full mb-[30px] md:mb-0">
             <img
-              className="min-w-[90px] max-w-[200px] h-auto"
+              className="min-w-[120px] max-w-[200px] h-auto"
               src={Beach1}
               alt="Beachside Snackshop Login Screen"
             />
             <img
-              className="min-w-[90px] max-w-[200px] h-auto"
+              className="min-w-[120px] max-w-[200px] h-auto"
               src={Beach2}
               alt="Beachside Snackshop Item Detail Screen"
             />

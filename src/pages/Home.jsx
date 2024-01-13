@@ -13,45 +13,49 @@ const Home = () => {
   });
   return (
     <div className="relative -z-10 mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full">
-      <section className="font-garamond pt-[75px] lg:pb-[150px] pb-[100px] border-b border-b-black/40">
-        <h2 className="font-helvetica [855px]:text-5xl text-4xl font-bold">
-          Hi! I’m Aleynna Quiñones.
-        </h2>
-        <p className="text-xl md:text-2xl mt-[10px] max-w-[1000px]">
-          I'm a UX Designer{" "}
-          <span className="font-semibold  break-words">
-            dedicated to solving problems
-          </span>{" "}
-          through the creation of digital experiences that seamlessly integrate{" "}
-          <span className="font-semibold  break-words">
-            innovation, empathy, and intuitive design
-          </span>
-          .
-        </p>
-        <div className="flex flex-col  gap-[15px] mt-12 lg:mt-16">
-          <div className="text-xl lg:text-2xl font-thin mb-4">
-            <h5 className="font-helvetica text-[16px] md:text-lg">
-              I ALSO LOVE...
-            </h5>
-            <p className="text-[16px] lg:text-xl">
-              painting, lifting heavy weights, and hanging out with my two cats.
-            </p>
-          </div>
-          <div className="text-xl md:text-2xl font-thin">
-            <h5 className="font-helvetica text-[16px] md:text-lg">
-              CURRENTLY...
-            </h5>
-            <p className="text-[16px] lg:text-xl">
-              a senior at Lesley University seeking Summer 2024 internship
-              opportunities.{" "}
-              <a
-                href="https://www.linkedin.com/in/aleynna-quinones"
-                target="_blank"
-                className="appearance-auto underline cursor-pointer text-[#0057D7]"
-              >
-                Let's chat!
-              </a>
-            </p>
+      <section className="font-garamond pt-[75px] lg:pb-[150px] pb-[100px] border-b border-b-black/40 flex justify-center">
+        <div>
+          <h2 className="font-helvetica [855px]:text-5xl text-4xl font-bold">
+            Hi! I’m Aleynna Quiñones.
+          </h2>
+          <p className="text-xl md:text-2xl mt-[10px] max-w-[1000px]">
+            I'm a UX Designer{" "}
+            <span className="font-semibold  break-words">
+              dedicated to solving problems
+            </span>{" "}
+            through the creation of digital experiences that seamlessly
+            integrate{" "}
+            <span className="font-semibold  break-words">
+              innovation, empathy, and intuitive design
+            </span>
+            .
+          </p>
+          <div className="flex flex-col  gap-[15px] mt-12 lg:mt-16">
+            <div className="text-xl lg:text-2xl font-thin mb-4">
+              <h5 className="font-helvetica text-[16px] md:text-lg">
+                I ALSO LOVE...
+              </h5>
+              <p className="text-[16px] lg:text-xl">
+                painting, lifting heavy weights, and hanging out with my two
+                cats.
+              </p>
+            </div>
+            <div className="text-xl md:text-2xl font-thin">
+              <h5 className="font-helvetica text-[16px] md:text-lg">
+                CURRENTLY...
+              </h5>
+              <p className="text-[16px] lg:text-xl">
+                a senior at Lesley University seeking Summer 2024 internship
+                opportunities.{" "}
+                <a
+                  href="https://www.linkedin.com/in/aleynna-quinones"
+                  target="_blank"
+                  className="appearance-auto underline cursor-pointer text-[#0057D7]"
+                >
+                  Let's chat!
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -77,12 +81,12 @@ const Home = () => {
           </div>
           <div className="flex gap-[15px] lg:max-w-[calc(100%-415px)] max-w-full">
             <img
-              className="min-w-[90px] md:min-[120px] max-w-[200px] h-auto"
+              className="min-w-[120px] md:min-[120px] max-w-[200px] h-auto"
               src={HomeImg}
               alt="Cafe Home"
             />
             <img
-              className="min-w-[90px] md:min-[120px] max-w-[200px] h-auto"
+              className="min-w-[120px] md:min-[120px] max-w-[200px] h-auto"
               src={MatchImg}
               alt="Cafe Menu"
             />
@@ -109,12 +113,12 @@ const Home = () => {
           </div>
           <div className="flex gap-[15px] lg:max-w-[calc(100%-415px)] max-w-full">
             <img
-              className="min-w-[90px] md:min-[120px] max-w-[200px] h-auto"
+              className="min-w-[120px] md:min-[120px] max-w-[200px] h-auto"
               src={Beach1}
               alt="Snackshop Home"
             />
             <img
-              className="min-w-[90px] md:min-[120px] max-w-[200px] h-auto"
+              className="min-w-[120px] md:min-[120px] max-w-[200px] h-auto"
               src={Beach2}
               alt="Snackshop Menu"
             />
