@@ -54,12 +54,12 @@ const Cafe = () => {
         <div className="flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[65px] max-w-full">
           <div className="flex justify-center gap-[15px] lg:max-w-[calc(100%-415px)] max-w-full md:mb-0 mb-[30px]">
             <img
-              className="min-w-[90px] max-w-[200px] h-auto scale-110"
+              className="min-w-[120px] max-w-[200px] h-auto scale-110"
               src={HomeImg}
               alt="Cafe Home"
             />
             <img
-              className="min-w-[90px] max-w-[200px] h-auto scale-110"
+              className="min-w-[120px] max-w-[200px] h-auto scale-110"
               src={MatchImg}
               alt="Cafe Menu"
             />

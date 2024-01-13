@@ -197,7 +197,7 @@ const NavBar = () => {
             } ${isLinkActive("/connection-cafe") && "underline"}`}
           >
             <span>PROJECTS</span>
-            <svg
+            {/* <svg
               className={`${
                 mobileDropdown ? "rotate-0" : "rotate-180"
               } absolute right-0 translate-x-7 transition-all`}
@@ -208,7 +208,13 @@ const NavBar = () => {
               fill="none"
             >
               <path d="M1 1.5L8.5 10.5L16 1.5" stroke="black" strokeWidth="2" />
-            </svg>
+            </svg> */}
+
+            <BsChevronUp
+              className={`${
+                mobileDropdown ? "rotate-180" : "rotate-0"
+              } absolute right-0 translate-x-7 transition-all`}
+            />
           </li>
           <li
             className={`flex md:hidden flex-col gap-10 justify-start items-center text-xl ${

@@ -58,10 +58,12 @@ const ClickableCarousel = () => {
         {cardArray.map((_, i) => (
           <div
             key={i}
-            className={`bg-black/20 p-1 rounded-full border transition-all duration-500 cursor-pointer hover:scale-105 hover:bg-black
-                ${curr === i ? "bg-black" : ""}
-              `}
+            className={` p-1 rounded-full border border-black transition-all duration-500 cursor-pointer hover:scale-105 hover:bg-black`}
             onClick={() => setCurr(i)}
+            style={{
+              opacity: `${curr === i ? 1 : 0.4}`,
+              backgroundColor: `${curr === i ? "black" : ""}`,
+            }}
           ></div>
         ))}
       </div>
