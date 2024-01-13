@@ -10,7 +10,7 @@ import Carousel9 from "../assets/carousel/Carousel9.png";
 import Carousel10 from "../assets/carousel/Carousel10.png";
 import Carousel11 from "../assets/carousel/Carousel11.png";
 
-export const cardDetails = {
+const autoCardDetails = {
   0: {
     imgUrl: Carousel1,
     title: "Home Screen",
@@ -66,3 +66,61 @@ export const cardDetails = {
     title: "Thanks For Checking In Screen",
   },
 };
+const cardArray = [
+  {
+    imgUrl: Carousel1,
+    title: "Home Screen",
+  },
+
+  {
+    imgUrl: Carousel2,
+    title: "Connection Screen",
+  },
+
+  {
+    imgUrl: Carousel3,
+    title: "Top 5 Screen",
+  },
+
+  {
+    imgUrl: Carousel4,
+    title: "Found a Match Screen",
+  },
+
+  {
+    imgUrl: Carousel5,
+    title: "Match Screen",
+  },
+
+  {
+    imgUrl: Carousel6,
+    title: "Match Profile Screen",
+  },
+
+  {
+    imgUrl: Carousel7,
+    title: "Table Screen",
+  },
+
+  {
+    imgUrl: Carousel8,
+    title: "New User Screen",
+  },
+
+  {
+    imgUrl: Carousel9,
+    title: "Message Screen",
+  },
+
+  {
+    imgUrl: Carousel10,
+    title: "Edit Profile Screen",
+  },
+
+  {
+    imgUrl: Carousel11,
+    title: "Thanks For Checking In Screen",
+  },
+];
+
+export { autoCardDetails, cardArray };

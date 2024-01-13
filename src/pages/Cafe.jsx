@@ -26,6 +26,7 @@ import PodcastChat from "../assets/PodcastChat.jpg";
 import ScreenDescription from "../components/ScreenDescription";
 import UserPersona from "../components/UserPersona";
 import AutoplayCarousel from "../components/AutoplayCarousel";
+import ClickableCarousel from "../components/ClickableCarousel";
 
 const Cafe = () => {
   useLayoutEffect(() => {
@@ -121,7 +122,7 @@ const Cafe = () => {
       </section>
       <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-[30px] md:block">
         <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px]">
-          <h6 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[30px]">
+          <h6 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[10px]">
             Project Overview
           </h6>
           <div className="flex flex-col gap-[30px] col-span-3">
@@ -174,10 +175,10 @@ const Cafe = () => {
       </section>
       <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 ">
         <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px]">
-          <h6 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px]">
+          <h6 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">
             Our Solution
           </h6>
-          <div className="mb-[20px] col-span-3">
+          <div className="mb-[10px] col-span-3">
             <h4 className="mb-[10px] text-xl md:text-2xl font-medium font-helvetica">
               The Connection Café physical space
             </h4>
@@ -298,7 +299,7 @@ const Cafe = () => {
       </section>
       <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-[30px] md:block">
         <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[30px]">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[10px]">
             Our starting point
           </h4>
           <div className="flex flex-col gap-[30px] col-span-3">
@@ -343,7 +344,7 @@ const Cafe = () => {
       </section>
       <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col">
         <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
             What did we find?
           </h4>
           <div className="mb-[50px] md:col-span-3">
@@ -377,7 +378,7 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
             Say What?
           </h4>
           <div className="mb-[50px] md:col-span-3">
@@ -416,7 +417,7 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:mb-[10px] md:col-span-1 place-self-end">
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-[10px] md:col-span-1 place-self-end">
             User Personas
           </h4>
           <h6 className="md:text-2xl text-xl w-max font-medium font-helvetica mb-[10px] justify-self-start md:col-span-3">
@@ -458,7 +459,7 @@ const Cafe = () => {
       </section>
       <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col">
         <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px] mb-3">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
             The emerging problem
           </h4>
           <div className="mb-[50px] md:col-span-3">
@@ -476,7 +477,7 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
             Thus, we asked
           </h4>
           <div className="mb-[50px] md:col-span-3">
@@ -489,7 +490,7 @@ const Cafe = () => {
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             Ideation
           </h4>
-          <div className="md:mb-[20px] md:col-span-3">
+          <div className="md:mb-[10px] md:col-span-3">
             <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               Brainstorming and affinity maps
             </h6>
@@ -586,11 +587,11 @@ const Cafe = () => {
               </div>
             </div>
           </div>
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
             Say What?
           </h4>
           <div className="md:col-span-3">
-            <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[20px]">
+            <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               What our users have to say
             </h6>
             <ul className="flex flex-col gap-[15px] md:gap-10">
@@ -641,7 +642,7 @@ const Cafe = () => {
       </section>
       <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40">
         <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
             The End
           </h4>
           <div className="mb-[30px] md:col-span-3">
@@ -662,8 +663,11 @@ const Cafe = () => {
           <div className="col-span-4 mb-11 md:mb-[50px] bg-white">
             <AutoplayCarousel />
           </div>
+          <div className="col-span-4 mb-11 md:mb-[50px]">
+            <ClickableCarousel />
+          </div>
 
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
             What did I learn?
           </h4>
           <div className="mb-[50px] md:col-span-3">
@@ -684,7 +688,7 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
             What’s next?
           </h4>
           <div className=" md:col-span-3">

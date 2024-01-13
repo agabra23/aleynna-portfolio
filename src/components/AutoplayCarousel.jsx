@@ -1,5 +1,5 @@
 import React from "react";
-import { cardDetails } from "./carousel-config";
+import { autoCardDetails } from "./carousel-config";
 import CarouselItem from "./CarouselItem";
 
 export default function AutoplayCarousel() {
@@ -20,21 +20,21 @@ export default function AutoplayCarousel() {
 
     <div className="max-w-full overflow-hidden bg-offwhite ">
       <div className="flex py-2 w-min animate-slider">
-        {Object.keys(cardDetails).map((detailKey, index) => {
+        {Object.keys(autoCardDetails).map((detailKey, index) => {
           return (
             <CarouselItem
               key={index}
-              imgUrl={cardDetails[detailKey].imgUrl}
-              imgTitle={cardDetails[detailKey].title}
+              imgUrl={autoCardDetails[detailKey].imgUrl}
+              imgTitle={autoCardDetails[detailKey].title}
             />
           );
         })}
-        {Object.keys(cardDetails).map((detailKey, index) => {
+        {Object.keys(autoCardDetails).map((detailKey, index) => {
           return (
             <CarouselItem
               key={index}
-              imgUrl={cardDetails[detailKey].imgUrl}
-              imgTitle={cardDetails[detailKey].title}
+              imgUrl={autoCardDetails[detailKey].imgUrl}
+              imgTitle={autoCardDetails[detailKey].title}
             />
           );
         })}
