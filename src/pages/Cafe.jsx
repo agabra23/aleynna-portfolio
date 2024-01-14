@@ -27,6 +27,7 @@ import ScreenDescription from "../components/ScreenDescription";
 import UserPersona from "../components/UserPersona";
 import AutoplayCarousel from "../components/AutoplayCarousel";
 import ClickableCarousel from "../components/ClickableCarousel";
+import Section from "../components/Section";
 
 const Cafe = () => {
   useLayoutEffect(() => {
@@ -49,8 +50,8 @@ const Cafe = () => {
   );
 
   return (
-    <div className="relative -z-10 mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full">
-      <section className="font-garamond pt-[75px] lg:pb-[110px] pb-[50px] border-b border-b-black/40 max-w-full">
+    <div className="relative -z-10 font-garamond max-w-full">
+      <Section>
         <div className="flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[65px] max-w-full">
           <div className="flex justify-center gap-[15px] lg:max-w-[calc(100%-415px)] max-w-full md:mb-0 mb-[30px]">
             <img
@@ -77,8 +78,8 @@ const Cafe = () => {
             </p>
           </div>
         </div>
-      </section>
-      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40">
+      </Section>
+      <Section>
         <ul className="grid grid-cols-2 gap-y-[40px] md:flex md:justify-evenly md:gap-[50px]">
           <li>
             <h6 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
@@ -119,13 +120,13 @@ const Cafe = () => {
             </p>
           </li>
         </ul>
-      </section>
-      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-[30px] md:block">
-        <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px]">
-          <h6 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[10px]">
+      </Section>
+      <Section>
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
+          <h6 className="md:justify-self-end uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[10px] md:mb-0">
             Project Overview
           </h6>
-          <div className="flex flex-col gap-[30px] col-span-3">
+          <div className="flex flex-col gap-[30px] col-span-2">
             <div>
               <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
                 The Spoken Word On-Demand Audio Space
@@ -172,13 +173,13 @@ const Cafe = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 ">
-        <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px]">
+      </Section>
+      <Section>
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
           <h6 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">
             Our Solution
           </h6>
-          <div className="mb-[10px] col-span-3">
+          <div className="mb-[10px] col-span-2">
             <h4 className="mb-[10px] text-xl md:text-2xl font-medium font-helvetica">
               The Connection Café physical space
             </h4>
@@ -189,7 +190,7 @@ const Cafe = () => {
               </span>
             </p>
           </div>
-          <div className="md:col-span-4 md:flex-row md:justify-center bg-white p-9 rounded-3xl flex flex-col gap-[10px] mb-[30px] md:max-w-[1000px] w-full justify-self-center">
+          <div className="md:col-span-3 md:flex-row md:justify-center bg-white p-9 rounded-3xl flex flex-col gap-[10px] mb-[30px] md:max-w-[1000px] w-full justify-self-center">
             <img
               className="object-cover md:max-w-[325px] md:min-w-[100px] h-auto"
               src={Mockup1}
@@ -207,7 +208,7 @@ const Cafe = () => {
             />
           </div>
           <div></div>
-          <div className="mb-[30px] col-span-3">
+          <div className="mb-[30px] col-span-2">
             <h4 className="mb-[10px]  text-xl md:text-2xl font-medium font-helvetica">
               Visitors can...
             </h4>
@@ -239,7 +240,7 @@ const Cafe = () => {
             </ul>
           </div>
           <div></div>
-          <h4 className="mb-[10px] text-xl md:text-2xl font-medium font-helvetica col-span-3">
+          <h4 className="mb-[10px] text-xl md:text-2xl font-medium font-helvetica col-span-2">
             The Connection Café App
           </h4>
         </div>
@@ -275,34 +276,37 @@ const Cafe = () => {
             p2="The pivotal aspect of this interaction is the personal connection; users can either meet their match immediately at the café or initiate communication through the app, with the option to be directed to a designated table for in-person conversation."
           />
         </div>
-      </section>
-      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-5 md:gap-[30px] justify-center items-center">
-        <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-lg font-thin text-center">
-          Want to learn more about our process?
-        </p>
-        <h4 className="font-helvetica md:text-2xl font-medium text-center text-xl">
-          Let’s dig deeper...
-        </h4>
-        <svg
-          width="20px"
-          height="100%"
-          viewBox="0 0 23 31"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            id="Arrow 1"
-            d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
-            fill="black"
-          />
-        </svg>
-      </section>
-      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-[30px] md:block">
-        <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[10px]">
+      </Section>
+      <Section>
+        <div className="flex flex-col items-center gap-[10px]">
+          <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-lg font-thin text-center self-center">
+            Want to learn more about our process?
+          </p>
+          <h4 className="font-helvetica md:text-2xl font-medium text-center text-xl self-center">
+            Let’s dig deeper...
+          </h4>
+          <svg
+            className="mx-auto"
+            width="20px"
+            height="100%"
+            viewBox="0 0 23 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="Arrow 1"
+              d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+      </Section>
+      <Section>
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
+          <h4 className="justify-self-center uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[10px] md:mb-0">
             Our starting point
           </h4>
-          <div className="flex flex-col gap-[30px] col-span-3">
+          <div className="flex flex-col gap-[30px] col-span-2">
             <div>
               <h6 className="md:text-2xl text-xl font-medium max-w-[85%] mb-[10px] font-helvetica">
                 What do we want to target in the podcast space?
@@ -341,13 +345,13 @@ const Cafe = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col">
-        <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
+      </Section>
+      <Section>
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">
             What did we find?
           </h4>
-          <div className="mb-[50px] md:col-span-3">
+          <div className="mb-[50px] md:col-span-2">
             <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               Secondary and primary research key findings
             </h6>
@@ -381,7 +385,7 @@ const Cafe = () => {
           <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
             Say What?
           </h4>
-          <div className="mb-[50px] md:col-span-3">
+          <div className="mb-[50px] md:col-span-2">
             <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               What our users have to say
             </h6>
@@ -420,7 +424,7 @@ const Cafe = () => {
           <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-[10px] md:col-span-1 place-self-end">
             User Personas
           </h4>
-          <h6 className="md:text-2xl text-xl w-max font-medium font-helvetica mb-[10px] justify-self-start md:col-span-3">
+          <h6 className="md:text-2xl text-xl w-max font-medium font-helvetica mb-[10px] justify-self-start md:col-span-2">
             Meet Matt and Kat
           </h6>
         </div>
@@ -456,13 +460,13 @@ const Cafe = () => {
             description={katDescriptionElement}
           />
         </div>
-      </section>
-      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col">
-        <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px] mb-3">
+      </Section>
+      <Section>
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
             The emerging problem
           </h4>
-          <div className="mb-[50px] md:col-span-3">
+          <div className="mb-[50px] md:col-span-2">
             <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               Adult podcast enthusiasts have few opportunities to engage in
               in-person interactions with fellow listeners who have common
@@ -480,7 +484,7 @@ const Cafe = () => {
           <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
             Thus, we asked
           </h4>
-          <div className="mb-[50px] md:col-span-3">
+          <div className="mb-[50px] md:col-span-2">
             <h6 className="md:text-2xl text-xl font-medium font-helvetica">
               How can we provide adult podcast listeners with a means to unwind
               after a busy day while maintaining a sense of connection with
@@ -490,7 +494,7 @@ const Cafe = () => {
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             Ideation
           </h4>
-          <div className="md:mb-[10px] md:col-span-3">
+          <div className="md:mb-[10px] md:col-span-2">
             <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               Brainstorming and affinity maps
             </h6>
@@ -545,9 +549,9 @@ const Cafe = () => {
             <img src={Sticky2} alt="Sticky Note 2" />
           </div>
         </div>
-        <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px] mb-3">
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
           <div></div>
-          <div className="md:mb-[30px] mb-[10px] md:col-span-3">
+          <div className="md:mb-[30px] mb-[10px] md:col-span-2">
             <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               Visualizing our solutions
             </h6>
@@ -563,7 +567,7 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
-          <div className="md:col-span-4 bg-white p-9 rounded-3xl flex flex-col md:flex-row md:justify-center md:justify-self-center gap-5 md:gap-[90px] items-center mb-[50px] max-w-[1000px]">
+          <div className="md:col-span-3 bg-white p-9 rounded-3xl flex flex-col md:flex-row md:justify-center md:justify-self-center gap-5 md:gap-[90px] items-center mb-[50px] max-w-[1000px]">
             <div>
               <p className="uppercase text-center font-helvetica font-thin text-[16px]">
                 Podcast Chat
@@ -590,7 +594,7 @@ const Cafe = () => {
           <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
             Say What?
           </h4>
-          <div className="md:col-span-3">
+          <div className="md:col-span-2">
             <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               What our users have to say
             </h6>
@@ -621,31 +625,33 @@ const Cafe = () => {
             </ul>
           </div>
         </div>
-      </section>
-      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-5 md:gap-10 justify-center items-center">
-        <h4 className="font-helvetica text-xl font-medium text-center md:text-2xl">
-          Let’s wrap this up...
-        </h4>
-        <svg
-          width="20px"
-          height="100%"
-          viewBox="0 0 23 31"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            id="Arrow 1"
-            d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
-            fill="black"
-          />
-        </svg>
-      </section>
-      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40">
-        <div className="md:grid md:grid-cols-[180px_1fr_1fr_1fr] md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
+      </Section>
+      <Section>
+        <div className="flex flex-col items-center gap-[10px]">
+          <h4 className="font-helvetica text-xl font-medium text-center md:text-2xl">
+            Let’s wrap this up...
+          </h4>
+          <svg
+            width="20px"
+            height="100%"
+            viewBox="0 0 23 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="Arrow 1"
+              d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+      </Section>
+      <Section>
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">
             The End
           </h4>
-          <div className="mb-[30px] md:col-span-3">
+          <div className="mb-[30px] md:col-span-2">
             <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               The Connection Café
             </h6>
@@ -660,17 +666,17 @@ const Cafe = () => {
           </div>
 
           {/* Carousel */}
-          <div className="col-span-4 mb-11 md:mb-[50px] bg-white">
+          <div className="col-span-3 mb-11 md:mb-[50px] bg-white">
             <AutoplayCarousel />
           </div>
-          <div className="col-span-4 mb-11 md:mb-[50px]">
+          <div className="col-span-3 mb-11 md:mb-[50px]">
             <ClickableCarousel />
           </div>
 
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">
             What did I learn?
           </h4>
-          <div className="mb-[50px] md:col-span-3">
+          <div className="mb-[50px] md:col-span-2">
             <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[20px]">
               UX Research is cool and people yearn for in-person interaction
             </h6>
@@ -688,10 +694,10 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">
             What’s next?
           </h4>
-          <div className=" md:col-span-3">
+          <div className=" md:col-span-2">
             <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
               User Testing and Implementation
             </h6>
@@ -711,36 +717,38 @@ const Cafe = () => {
             </ul>
           </div>
         </div>
-      </section>
-      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40 flex flex-col gap-5 md:gap-[30px] justify-center items-center">
-        <h4 className="font-helvetica md:text-2xl font-medium text-center text-[20px]">
-          Thank you for diving in!
-        </h4>
-        <svg
-          className="md:w-10"
-          xmlns="http://www.w3.org/2000/svg"
-          width="28"
-          height="100%"
-          viewBox="0 0 29 28"
-          fill="none"
-        >
-          <circle cx="10.3025" cy="10.2196" r="1.6425" fill="black" />
-          <circle cx="18.5151" cy="10.2196" r="1.6425" fill="black" />
-          <circle
-            cx="14.5"
-            cy="13.6875"
-            r="12.6875"
-            stroke="black"
-            strokeWidth="2"
-          />
-          <path
-            d="M7.93005 17.3369C10.8534 22.1057 18.3514 22.3005 21.0701 17.3369"
-            stroke="black"
-            strokeWidth="2"
-            strokeLinecap="square"
-          />
-        </svg>
-      </section>
+      </Section>
+      <Section>
+        <div className="flex flex-col items-center gap-[10px]">
+          <h4 className="font-helvetica md:text-2xl font-medium text-center text-[20px]">
+            Thank you for diving in!
+          </h4>
+          <svg
+            className="md:w-10"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="100%"
+            viewBox="0 0 29 28"
+            fill="none"
+          >
+            <circle cx="10.3025" cy="10.2196" r="1.6425" fill="black" />
+            <circle cx="18.5151" cy="10.2196" r="1.6425" fill="black" />
+            <circle
+              cx="14.5"
+              cy="13.6875"
+              r="12.6875"
+              stroke="black"
+              strokeWidth="2"
+            />
+            <path
+              d="M7.93005 17.3369C10.8534 22.1057 18.3514 22.3005 21.0701 17.3369"
+              stroke="black"
+              strokeWidth="2"
+              strokeLinecap="square"
+            />
+          </svg>
+        </div>
+      </Section>
     </div>
   );
 };
