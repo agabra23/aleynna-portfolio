@@ -180,7 +180,7 @@ const Beachside = () => {
   ];
 
   return (
-    <div className="relative -z-10 mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full">
+    <div className="relative -z-10 font-garamond max-w-full">
       <Section>
         <div className="flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[65px] max-w-full">
           <div className="flex justify-center gap-[15px] max-w-full mb-[30px] md:mb-0">
