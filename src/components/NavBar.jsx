@@ -114,25 +114,25 @@ const NavBar = () => {
           >
             <p
               onClick={() => {
-                navigator("/connection-cafe");
-                setShowProjectDetails(false);
-              }}
-              className={`uppercase hover:underline cursor-pointer ${
-                isLinkActive("/connection-cafe") && "underline"
-              }`}
-            >
-              Connection Café
-            </p>
-            <p
-              onClick={() => {
                 navigator("/beachside-snackshop");
                 setShowProjectDetails(false);
               }}
-              className={`uppercase mt-[20px] hover:underline cursor-pointer ${
+              className={`uppercase  hover:underline cursor-pointer ${
                 isLinkActive("/beachside-snackshop") && "underline"
               }`}
             >
               Beachside Snackshop
+            </p>
+            <p
+              onClick={() => {
+                navigator("/connection-cafe");
+                setShowProjectDetails(false);
+              }}
+              className={`mt-[10px] uppercase hover:underline cursor-pointer ${
+                isLinkActive("/connection-cafe") && "underline"
+              }`}
+            >
+              Connection Café
             </p>
           </div>
         </li>
@@ -192,7 +192,7 @@ const NavBar = () => {
           </li>
           <li
             onClick={() => setMobileDropdown(!mobileDropdown)}
-            className={`flex items-center gap-2 cursor-pointer relative ${
+            className={`flex hover:underline items-center gap-2 cursor-pointer relative group ${
               isLinkActive("/beachside-snackshop") && "underline"
             } ${isLinkActive("/connection-cafe") && "underline"}`}
           >
@@ -213,7 +213,7 @@ const NavBar = () => {
             <BsChevronUp
               className={`${
                 mobileDropdown ? "rotate-180" : "rotate-0"
-              } absolute right-0 translate-x-7 transition-all`}
+              } group-hover:rotate-180 absolute right-0 translate-x-7 transition-all`}
             />
           </li>
           <li
@@ -223,30 +223,30 @@ const NavBar = () => {
           >
             <p
               onClick={() => {
-                mobileClickHandler("/connection-cafe");
-                setMobileDropdown(false);
-              }}
-              className={`uppercase text-[16px] text-charcoal ${
-                isLinkActive("/connection-cafe") && "underline"
-              }`}
-            >
-              Connection Café
-            </p>
-            <p
-              onClick={() => {
                 mobileClickHandler("/beachside-snackshop");
                 setMobileDropdown(false);
               }}
-              className={`uppercase text-[16px] text-charcoal ${
+              className={`uppercase text-[16px] text-charcoal cursor-pointer hover:underline ${
                 isLinkActive("/beachside-snackshop") && "underline"
               }`}
             >
               Beachside Snackshop
             </p>
+            <p
+              onClick={() => {
+                mobileClickHandler("/connection-cafe");
+                setMobileDropdown(false);
+              }}
+              className={`uppercase text-[16px] text-charcoal cursor-pointer hover:underline ${
+                isLinkActive("/connection-cafe") && "underline"
+              }`}
+            >
+              Connection Café
+            </p>
           </li>
           <li
             onClick={() => mobileClickHandler("/about")}
-            className={`cursor-pointer ${
+            className={`hover:underline cursor-pointer ${
               isLinkActive("/about") && "underline"
             }`}
           >
@@ -254,7 +254,9 @@ const NavBar = () => {
           </li>
           <li
             onClick={() => mobileClickHandler("/art")}
-            className={`cursor-pointer ${isLinkActive("/art") && "underline"}`}
+            className={`hover:underline cursor-pointer ${
+              isLinkActive("/art") && "underline"
+            }`}
           >
             ART
           </li>

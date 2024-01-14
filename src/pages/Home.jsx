@@ -5,6 +5,7 @@ import HomeImg from "../assets/Home.png";
 import MatchImg from "../assets/Match.png";
 import { useNavigate } from "react-router-dom";
 import { useLayoutEffect } from "react";
+import Section from "../components/Section";
 
 const Home = () => {
   const navigator = useNavigate();
@@ -13,53 +14,49 @@ const Home = () => {
   });
   return (
     <div className="relative -z-10 mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full">
-      <section className="font-garamond pt-[75px] lg:pb-[150px] pb-[100px] border-b border-b-black/40 flex justify-center">
-        <div>
-          <h2 className="font-helvetica [855px]:text-5xl text-4xl font-bold">
-            Hi! I’m Aleynna Quiñones.
-          </h2>
-          <p className="text-xl md:text-2xl mt-[10px] max-w-[1000px]">
-            I'm a UX Designer{" "}
-            <span className="font-semibold  break-words">
-              dedicated to solving problems
-            </span>{" "}
-            through the creation of digital experiences that seamlessly
-            integrate{" "}
-            <span className="font-semibold  break-words">
-              innovation, empathy, and intuitive design
-            </span>
-            .
-          </p>
-          <div className="flex flex-col  gap-[15px] mt-12 lg:mt-16">
-            <div className="text-xl lg:text-2xl font-thin mb-4">
-              <h5 className="font-helvetica text-[16px] md:text-lg">
-                I ALSO LOVE...
-              </h5>
-              <p className="text-[16px] lg:text-xl">
-                painting, lifting heavy weights, and hanging out with my two
-                cats.
-              </p>
-            </div>
-            <div className="text-xl md:text-2xl font-thin">
-              <h5 className="font-helvetica text-[16px] md:text-lg">
-                CURRENTLY...
-              </h5>
-              <p className="text-[16px] lg:text-xl">
-                a senior at Lesley University seeking Summer 2024 internship
-                opportunities.{" "}
-                <a
-                  href="https://www.linkedin.com/in/aleynna-quinones"
-                  target="_blank"
-                  className="appearance-auto underline cursor-pointer text-[#0057D7]"
-                >
-                  Let's chat!
-                </a>
-              </p>
-            </div>
+      <Section>
+        <h2 className="font-helvetica [855px]:text-5xl text-4xl font-bold">
+          Hi! I’m Aleynna Quiñones.
+        </h2>
+        <p className="text-xl md:text-2xl mt-[10px] max-w-[1000px]">
+          I'm a UX Designer{" "}
+          <span className="font-semibold  break-words">
+            dedicated to solving problems
+          </span>{" "}
+          through the creation of digital experiences that seamlessly integrate{" "}
+          <span className="font-semibold  break-words">
+            innovation, empathy, and intuitive design
+          </span>
+          .
+        </p>
+        <div className="flex flex-col  gap-[15px] mt-12 lg:mt-16">
+          <div className="text-xl lg:text-2xl font-thin mb-4">
+            <h5 className="font-helvetica text-[16px] md:text-lg">
+              I ALSO LOVE...
+            </h5>
+            <p className="text-[16px] lg:text-xl">
+              painting, lifting heavy weights, and hanging out with my two cats.
+            </p>
+          </div>
+          <div className="text-xl md:text-2xl font-thin">
+            <h5 className="font-helvetica text-[16px] md:text-lg">
+              CURRENTLY...
+            </h5>
+            <p className="text-[16px] lg:text-xl">
+              a senior at Lesley University seeking Summer 2024 internship
+              opportunities.{" "}
+              <a
+                href="https://www.linkedin.com/in/aleynna-quinones"
+                target="_blank"
+                className="appearance-auto underline cursor-pointer text-[#0057D7]"
+              >
+                Let's chat!
+              </a>
+            </p>
           </div>
         </div>
-      </section>
-      <section className="font-garamond pt-[100px] lg:pb-[150px] pb-[100px] border-b border-b-black/40">
+      </Section>
+      <Section>
         <div className="flex flex-col-reverse lg:flex-row-reverse justify-center items-center gap-[30px] lg:gap-[65px] mb-[75px] lg:mb-[145px]">
           <div className="flex items-center lg:items-start flex-col gap-[10px]">
             <h6 className="uppercase text-center md:text-left font-thin font-helvetica text-[16px] md:text-lg">
@@ -124,7 +121,7 @@ const Home = () => {
             />
           </div>
         </div>
-      </section>
+      </Section>
     </div>
   );
 };

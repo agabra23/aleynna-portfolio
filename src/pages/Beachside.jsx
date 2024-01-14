@@ -37,6 +37,7 @@ import BlueDriver from "../assets/BlueDriver.png";
 import BlueTracking from "../assets/BlueTracking.png";
 import BeachsideScreenDescription from "../components/BeachsideScreenDescription";
 import BeachsideComparisons from "../components/BeachsideComparisons";
+import Section from "../components/Section";
 
 const Beachside = () => {
   useLayoutEffect(() => {
@@ -180,16 +181,16 @@ const Beachside = () => {
 
   return (
     <div className="relative -z-10 mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full">
-      <section className="font-garamond pt-[75px] lg:pb-[110px] pb-[50px] border-b border-b-black/40 max-w-full">
+      <Section>
         <div className="flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[65px] max-w-full">
-          <div className="flex justify-center gap-[15px] lg:max-w-[calc(100%-415px)] max-w-full mb-[30px] md:mb-0">
+          <div className="flex justify-center gap-[15px] max-w-full mb-[30px] md:mb-0">
             <img
-              className="min-w-[120px] max-w-[200px] h-auto"
+              className="min-w-[120px] max-w-[220px] h-auto"
               src={Beach1}
               alt="Beachside Snackshop Login Screen"
             />
             <img
-              className="min-w-[120px] max-w-[200px] h-auto"
+              className="min-w-[120px] max-w-[220px] h-auto"
               src={Beach2}
               alt="Beachside Snackshop Item Detail Screen"
             />
@@ -207,8 +208,8 @@ const Beachside = () => {
             </p>
           </div>
         </div>
-      </section>
-      <section className="font-garamond py-[50px] lg:py-[70px] border-b border-b-black/40">
+      </Section>
+      <Section>
         <ul className="grid grid-cols-2 gap-y-[40px] md:flex md:justify-evenly md:gap-[50px]">
           <li>
             <h6 className="font-helvetica font-normal md:text-2xl text-[20px] mb-2">
@@ -246,8 +247,8 @@ const Beachside = () => {
             </p>
           </li>
         </ul>
-      </section>
-      <section className="font-garamond py-[50px] border-b border-b-black/40">
+      </Section>
+      <Section>
         <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             Project Overview
@@ -298,8 +299,8 @@ const Beachside = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="font-garamond py-[50px]  border-b border-b-black/40">
+      </Section>
+      <Section>
         <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-[10px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] mb-[10px] md:mb-0 md:text-lg md:col-span-1">
             My solution
@@ -333,29 +334,31 @@ const Beachside = () => {
             />
           </div>
         </div>
-      </section>
-      <section className="font-garamond py-[50px]  border-b border-b-black/40 flex flex-col gap-5 md:gap-[30px] justify-center items-center">
-        <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-lg font-thin text-center">
-          Want to learn more about our process?
-        </p>
-        <h4 className="font-helvetica text-xl md:text-2xl font-medium text-center">
-          Let’s dig deeper...
-        </h4>
-        <svg
-          width="20px"
-          height="100%"
-          viewBox="0 0 23 31"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            id="Arrow 1"
-            d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
-            fill="black"
-          />
-        </svg>
-      </section>
-      <section className="font-garamond py-[50px]  border-b border-b-black/40">
+      </Section>
+      <Section>
+        <div className="flex flex-col items-center gap-[10px]">
+          <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-lg font-thin text-center">
+            Want to learn more about our process?
+          </p>
+          <h4 className="font-helvetica text-xl md:text-2xl font-medium text-center">
+            Let’s dig deeper...
+          </h4>
+          <svg
+            width="20px"
+            height="100%"
+            viewBox="0 0 23 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="Arrow 1"
+              d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+      </Section>
+      <Section>
         <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:col-span-1 mb-[10px] md:mb-0">
             The Starting Point
@@ -399,8 +402,8 @@ const Beachside = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="font-garamond py-[50px]  border-b border-b-black/40">
+      </Section>
+      <Section>
         <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             What Did we Find?
@@ -478,8 +481,8 @@ const Beachside = () => {
             description={joseDescriptionElement}
           />
         </div>
-      </section>
-      <section className="font-garamond py-[50px]  border-b border-b-black/40">
+      </Section>
+      <Section>
         <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
             The emerging problem
@@ -616,8 +619,8 @@ const Beachside = () => {
             reverse={false}
           />
         </div>
-      </section>
-      <section className="font-garamond py-[50px]  border-b border-b-black/40">
+      </Section>
+      <Section>
         <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             Usability Study #2
@@ -679,26 +682,28 @@ const Beachside = () => {
             blueImages={blueImages2}
           />
         </div>
-      </section>
-      <section className="font-garamond py-[50px] border-b border-b-black/40 flex flex-col gap-[30px] justify-center items-center">
-        <h4 className="font-helvetica text-xl md:text-2xl font-medium text-center">
-          Let’s wrap this up...
-        </h4>
-        <svg
-          width="20px"
-          height="100%"
-          viewBox="0 0 23 31"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            id="Arrow 1"
-            d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
-            fill="black"
-          />
-        </svg>
-      </section>
-      <section className="font-garamond py-[50px] border-b border-b-black/40">
+      </Section>
+      <Section>
+        <div className="flex flex-col items-center gap-[10px]">
+          <h4 className="font-helvetica text-xl md:text-2xl font-medium text-center">
+            Let’s wrap this up...
+          </h4>
+          <svg
+            width="20px"
+            height="100%"
+            viewBox="0 0 23 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="Arrow 1"
+              d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+      </Section>
+      <Section>
         <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             The End
@@ -788,36 +793,38 @@ const Beachside = () => {
             </ul>
           </div>
         </div>
-      </section>
-      <section className="font-garamond py-[50px]  border-b border-b-black/40 flex flex-col gap-2 md:gap-[30px] justify-center items-center">
-        <h4 className="font-helvetica text-xl md:text-2xl font-medium text-center">
-          Thank you for sticking around!
-        </h4>
-        <svg
-          className="md:w-10"
-          xmlns="http://www.w3.org/2000/svg"
-          width="28"
-          height="100%"
-          viewBox="0 0 29 28"
-          fill="none"
-        >
-          <circle cx="10.3025" cy="10.2196" r="1.6425" fill="black" />
-          <circle cx="18.5151" cy="10.2196" r="1.6425" fill="black" />
-          <circle
-            cx="14.5"
-            cy="13.6875"
-            r="12.6875"
-            stroke="black"
-            strokeWidth="2"
-          />
-          <path
-            d="M7.93005 17.3369C10.8534 22.1057 18.3514 22.3005 21.0701 17.3369"
-            stroke="black"
-            strokeWidth="2"
-            strokeLinecap="square"
-          />
-        </svg>
-      </section>
+      </Section>
+      <Section>
+        <div className="flex flex-col items-center gap-[10px]">
+          <h4 className="font-helvetica text-xl md:text-2xl font-medium text-center">
+            Thank you for sticking around!
+          </h4>
+          <svg
+            className="md:w-10"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="100%"
+            viewBox="0 0 29 28"
+            fill="none"
+          >
+            <circle cx="10.3025" cy="10.2196" r="1.6425" fill="black" />
+            <circle cx="18.5151" cy="10.2196" r="1.6425" fill="black" />
+            <circle
+              cx="14.5"
+              cy="13.6875"
+              r="12.6875"
+              stroke="black"
+              strokeWidth="2"
+            />
+            <path
+              d="M7.93005 17.3369C10.8534 22.1057 18.3514 22.3005 21.0701 17.3369"
+              stroke="black"
+              strokeWidth="2"
+              strokeLinecap="square"
+            />
+          </svg>
+        </div>
+      </Section>
     </div>
   );
 };

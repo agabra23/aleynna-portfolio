@@ -53,14 +53,14 @@ const Cafe = () => {
     <div className="relative -z-10 font-garamond max-w-full">
       <Section>
         <div className="flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[65px] max-w-full">
-          <div className="flex justify-center gap-[15px] lg:max-w-[calc(100%-415px)] max-w-full md:mb-0 mb-[30px]">
+          <div className="flex justify-center gap-[15px]  max-w-full md:mb-0 mb-[30px]">
             <img
-              className="min-w-[120px] max-w-[200px] h-auto scale-110"
+              className="min-w-[120px] max-w-[220px] h-auto "
               src={HomeImg}
               alt="Cafe Home"
             />
             <img
-              className="min-w-[120px] max-w-[200px] h-auto scale-110"
+              className="min-w-[120px] max-w-[220px] h-auto"
               src={MatchImg}
               alt="Cafe Menu"
             />
