@@ -66,7 +66,7 @@ const Cafe = () => {
               alt="Cafe Menu"
             />
           </div>
-          <div className="text-center md:text-left flex items-center md:items-start flex-col gap-[10px] lg:gap-[15px]">
+          <div className="text-center md:text-left flex items-center md:items-start flex-col">
             <h6 className="uppercase text-center md:text-left font-thin font-helvetica text-[16px] md:text-lg">
               ACADEMIC PROJECT
             </h6>
@@ -77,51 +77,93 @@ const Cafe = () => {
               Encouraging in-person and digital interactions through a love for
               podcasts.
             </p>
+            <ul className="hidden md:grid grid-cols-2 gap-y-[30px] mt-[50px] max-w-screen-lg">
+              <li>
+                <h6 className="font-helvetica font-normal text-lg md:text-xl">
+                  Role
+                </h6>
+                <p className="text-[16px] md:text-lg font-garamond font-thin">
+                  UX Researcher
+                </p>
+                <p className="text-[16px] md:text-lg font-garamond font-thin">
+                  UX Designer
+                </p>
+              </li>
+              <li className="text-right md:text-left  md:max-w-[250px] md:min-w-[150px] flex flex-col items-end md:block">
+                <h6 className="font-helvetica font-normal text-lg md:text-xl place-self-end">
+                  Team
+                </h6>
+                <p className="text-[16px] md:text-lg font-garamond font-thin max-w-[250px]">
+                  Aleynna Quiñones, Alexa Sciacca, Elizabeth Leifheit, Amine
+                  Mena
+                </p>
+              </li>
+              <li>
+                <h6 className="font-helvetica font-normal text-lg md:text-xl">
+                  Timeline
+                </h6>
+                <p className="text-[16px] md:text-lg font-garamond font-thin">
+                  8 Weeks
+                </p>
+              </li>
+              <li className="text-right md:text-left">
+                <h6 className="font-helvetica font-normal text-lg md:text-xl">
+                  Tools
+                </h6>
+                <p className="text-[16px] md:text-lg font-garamond font-thin">
+                  Figma
+                </p>
+                <p className="text-[16px] md:text-lg font-garamond font-thin">
+                  GetFloorPlan
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
+        <div className="flex justify-center">
+          <ul className="md:hidden grid grid-cols-2 gap-y-[40px] mt-[30px] text-center">
+            <li>
+              <h6 className="font-helvetica font-normal text-xl md:text-2xl">
+                Role
+              </h6>
+              <p className="text-[16px] md:text-lg font-garamond font-thin">
+                UX Researcher
+              </p>
+              <p className="text-[16px] md:text-lg font-garamond font-thin">
+                UX Designer
+              </p>
+            </li>
+            <li className=" md:max-w-[250px] md:min-w-[150px] flex flex-col">
+              <h6 className="font-helvetica font-normal text-xl md:text-2xl">
+                Team
+              </h6>
+              <p className="text-[16px] md:text-lg font-garamond font-thin max-w-[180px]">
+                Aleynna Quiñones, Alexa Sciacca, Elizabeth Leifheit, Amine Mena
+              </p>
+            </li>
+            <li>
+              <h6 className="font-helvetica font-normal text-xl md:text-2xl">
+                Timeline
+              </h6>
+              <p className="text-[16px] md:text-lg font-garamond font-thin">
+                8 Weeks
+              </p>
+            </li>
+            <li>
+              <h6 className="font-helvetica font-normal text-xl md:text-2xl">
+                Tools
+              </h6>
+              <p className="text-[16px] md:text-lg font-garamond font-thin">
+                Figma
+              </p>
+              <p className="text-[16px] md:text-lg font-garamond font-thin">
+                GetFloorPlan
+              </p>
+            </li>
+          </ul>
+        </div>
       </HeroSectionWrapper>
-      <Section>
-        <ul className="grid grid-cols-2 gap-y-[40px] md:flex md:justify-evenly md:gap-[50px]">
-          <li>
-            <h6 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
-              Role
-            </h6>
-            <p className="text-[16px] md:text-lg font-garamond font-thin">
-              UX Researcher
-            </p>
-            <p className="text-[16px] md:text-lg font-garamond font-thin">
-              UX Designer
-            </p>
-          </li>
-          <li className="text-right md:text-left  md:max-w-[250px] md:min-w-[150px] flex flex-col items-end md:block">
-            <h6 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px] place-self-end">
-              Team
-            </h6>
-            <p className="text-[16px] md:text-lg font-garamond font-thin max-w-[250px]">
-              Aleynna Quiñones, Alexa Sciacca, Elizabeth Leifheit, Amine Mena
-            </p>
-          </li>
-          <li>
-            <h6 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
-              Timeline
-            </h6>
-            <p className="text-[16px] md:text-lg font-garamond font-thin">
-              8 Weeks
-            </p>
-          </li>
-          <li className="text-right md:text-left">
-            <h6 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
-              Tools
-            </h6>
-            <p className="text-[16px] md:text-lg font-garamond font-thin">
-              Figma
-            </p>
-            <p className="text-[16px] md:text-lg font-garamond font-thin">
-              GetFloorPlan
-            </p>
-          </li>
-        </ul>
-      </Section>
+
       <Section>
         <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
           <h6 className="md:justify-self-end uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[10px] md:mb-0">
