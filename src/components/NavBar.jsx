@@ -81,13 +81,12 @@ const NavBar = () => {
         </li>
         <li
           ref={popUpRef}
+          onClick={() => setShowProjectDetails(!showProjectDetails)}
           className={`relative flex items-center gap-2 cursor-pointer font-thin hover:underline group ${
             isLinkActive("/beachside-snackshop") && "underline"
           } ${isLinkActive("/connection-cafe") && "underline"}`}
         >
-          <span onClick={() => setShowProjectDetails(!showProjectDetails)}>
-            PROJECTS
-          </span>
+          <span>PROJECTS</span>
           {/* <svg
             className={`group-hover:rotate-0 transition-all ${
               showProjectDetails ? "rotate-0" : "rotate-180"

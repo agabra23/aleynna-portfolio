@@ -35,16 +35,10 @@ const About = () => {
           and job opportunities for Summer 2024!
         </p>
         <p className="font-garamond text-[16px] md:text-lg">
-          My background lies in visual art, specifically{" "}
-          <a
-            className="font-semibold cursor-pointer no-underline text-inherit"
-            href="/play"
-          >
-            painting, graphite drawing, and digital art
-          </a>
-          . After leaving college (unfinished) in 2019, I spent several years
-          trying to “find my way,” and in late 2022, I discovered a passion for
-          UX Design.
+          My background lies in visual art, specifically painting, graphite
+          drawing, and digital art . After leaving college (unfinished) in 2019,
+          I spent several years trying to “find my way,” and in late 2022, I
+          discovered a passion for UX Design.
         </p>
         <p className="font-garamond text-[16px] md:text-lg">
           Throughout my life, I’ve been a natural problem solver and an
