@@ -38,6 +38,7 @@ import BlueTracking from "../assets/BlueTracking.png";
 import BeachsideScreenDescription from "../components/BeachsideScreenDescription";
 import BeachsideComparisons from "../components/BeachsideComparisons";
 import Section from "../components/Section";
+import HeroSectionWrapper from "../components/HeroSectionWrapper";
 
 const Beachside = () => {
   useLayoutEffect(() => {
@@ -181,7 +182,7 @@ const Beachside = () => {
 
   return (
     <div className="relative -z-10 font-garamond max-w-full">
-      <Section>
+      <HeroSectionWrapper>
         <div className="flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[65px] max-w-full">
           <div className="flex justify-center gap-[15px] max-w-full mb-[30px] md:mb-0">
             <img
@@ -208,7 +209,7 @@ const Beachside = () => {
             </p>
           </div>
         </div>
-      </Section>
+      </HeroSectionWrapper>
       <Section>
         <ul className="grid grid-cols-2 gap-y-[40px] md:flex md:justify-evenly md:gap-[50px]">
           <li>

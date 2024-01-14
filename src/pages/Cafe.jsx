@@ -28,6 +28,7 @@ import UserPersona from "../components/UserPersona";
 import AutoplayCarousel from "../components/AutoplayCarousel";
 import ClickableCarousel from "../components/ClickableCarousel";
 import Section from "../components/Section";
+import HeroSectionWrapper from "../components/HeroSectionWrapper";
 
 const Cafe = () => {
   useLayoutEffect(() => {
@@ -51,9 +52,9 @@ const Cafe = () => {
 
   return (
     <div className="relative -z-10 font-garamond max-w-full">
-      <Section>
+      <HeroSectionWrapper>
         <div className="flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[65px] max-w-full">
-          <div className="flex justify-center gap-[15px]  max-w-full md:mb-0 mb-[30px]">
+          <div className="flex justify-center  max-w-full md:mb-0 mb-[30px]">
             <img
               className="min-w-[120px] max-w-[220px] h-auto "
               src={HomeImg}
@@ -78,7 +79,7 @@ const Cafe = () => {
             </p>
           </div>
         </div>
-      </Section>
+      </HeroSectionWrapper>
       <Section>
         <ul className="grid grid-cols-2 gap-y-[40px] md:flex md:justify-evenly md:gap-[50px]">
           <li>
