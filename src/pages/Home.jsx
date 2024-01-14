@@ -61,46 +61,14 @@ const Home = () => {
       </section>
       <section className="font-garamond pt-[100px] lg:pb-[150px] pb-[100px] border-b border-b-black/40">
         <div className="flex flex-col-reverse lg:flex-row-reverse justify-center items-center gap-[30px] lg:gap-[65px] mb-[75px] lg:mb-[145px]">
-          <div className="text-center md:text-left flex items-center lg:items-start flex-col gap-[10px] lg:gap-[15px]">
-            <h6 className="uppercase text-center md:text-left font-thin font-helvetica text-[16px] md:text-lg">
-              ACADEMIC PROJECT
-            </h6>
-            <h3 className="text-center md:text-left leading-none font-helvetica text-[30px] lg:text-4xl font-bold">
-              Connection Café
-            </h3>
-            <p className="text-center md:text-left md:text-lg text-[16px] font-thin">
-              Encouraging in-person and digital interactions through a love for
-              podcasts.
-            </p>
-            <button
-              onClick={() => navigator("/connection-cafe")}
-              className="text-[16px] hover:bg-black hover:text-offwhite transition-colors duration-200  font-helvetica font-normal px-6 py-3 mt-5 rounded-full border-2 border-solid border-black"
-            >
-              Learn More
-            </button>
-          </div>
-          <div className="flex gap-[15px] lg:max-w-[calc(100%-415px)] max-w-full">
-            <img
-              className="min-w-[120px] md:min-[120px] max-w-[200px] h-auto"
-              src={HomeImg}
-              alt="Cafe Home"
-            />
-            <img
-              className="min-w-[120px] md:min-[120px] max-w-[200px] h-auto"
-              src={MatchImg}
-              alt="Cafe Menu"
-            />
-          </div>
-        </div>
-        <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-[30px] lg:gap-[65px]">
-          <div className="flex items-center lg:items-start flex-col gap-[10px] lg:gap-[15px]">
+          <div className="flex items-center lg:items-start flex-col gap-[10px]">
             <h6 className="uppercase text-center md:text-left font-thin font-helvetica text-[16px] md:text-lg">
               GOOGLE UX CERTIFICATE Project
             </h6>
-            <h3 className="text-center md:text-left leading-none font-helvetica text-[30px] lg:text-4xl font-bold">
+            <h3 className="text-center md:text-left leading-none font-helvetica text-[30px] lg:text-4xl font-bold ">
               BeachSide SnackShop
             </h3>
-            <p className="text-center md:text-left md:text-lg text-[16px] font-thin">
+            <p className="text-center md:text-left md:text-lg text-[16px] font-thin max-w-md">
               Order food online and track your delivery in real-time for a
               simple and efficient dining experience.
             </p>
@@ -111,16 +79,48 @@ const Home = () => {
               Learn More
             </button>
           </div>
-          <div className="flex gap-[15px] lg:max-w-[calc(100%-415px)] max-w-full">
+          <div className="flex max-w-full">
             <img
-              className="min-w-[120px] md:min-[120px] max-w-[200px] h-auto"
+              className="min-w-[120px] max-w-[250px] h-auto"
               src={Beach1}
               alt="Snackshop Home"
             />
             <img
-              className="min-w-[120px] md:min-[120px] max-w-[200px] h-auto"
+              className="hidden min-[340px]:block min-w-[120px] max-w-[250px] h-auto"
               src={Beach2}
               alt="Snackshop Menu"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-[30px] lg:gap-[65px]">
+          <div className="text-center md:text-left flex items-center lg:items-start flex-col gap-[10px] lg:gap-[15px]">
+            <h6 className="uppercase text-center md:text-left font-thin font-helvetica text-[16px] md:text-lg">
+              ACADEMIC PROJECT
+            </h6>
+            <h3 className="text-center md:text-left leading-none font-helvetica text-[30px] lg:text-4xl font-bold">
+              Connection Café
+            </h3>
+            <p className="text-center md:text-left md:text-lg text-[16px] font-thin max-w-md">
+              Encouraging in-person and digital interactions through a love for
+              podcasts.
+            </p>
+            <button
+              onClick={() => navigator("/connection-cafe")}
+              className="text-[16px] hover:bg-black hover:text-offwhite transition-colors duration-200  font-helvetica font-normal px-6 py-3 mt-5 rounded-full border-2 border-solid border-black"
+            >
+              Learn More
+            </button>
+          </div>
+          <div className="flex  max-w-full">
+            <img
+              className="min-w-[120px] max-w-[250px] h-auto"
+              src={HomeImg}
+              alt="Cafe Home"
+            />
+            <img
+              className="hidden min-[340px]:block min-w-[120px] max-w-[250px] h-auto"
+              src={MatchImg}
+              alt="Cafe Menu"
             />
           </div>
         </div>
