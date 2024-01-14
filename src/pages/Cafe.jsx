@@ -167,53 +167,57 @@ const Cafe = () => {
       <Section>
         <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
           <h6 className="md:justify-self-end uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[10px] md:mb-0">
-            Project Overview
+            The Context
           </h6>
-          <div className="flex flex-col gap-[30px] col-span-2">
-            <div>
-              <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
-                The Spoken Word On-Demand Audio Space
-              </h4>
-              <p className="text-[16px] font-thin md:text-lg">
-                This project aims to{" "}
-                <span className="font-semibold">
-                  find and address a problem in the Spoken Word On-Demand Audio
-                  space
-                </span>
-                , with a specific focus on improving the overall experience for
-                adult podcast listeners.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
-                Increase human connection between adult podcast listeners
-              </h4>
-              <p className="text-[16px] font-thin md:text-lg">
-                We discovered that adult podcast listeners seek human connection
-                and fresh perspectives.{" "}
-                <span className="font-semibold">
-                  They desire a way to share their favorite podcasts and
-                  newfound knowledge beyond their phones
-                </span>
-                , and connect with like-minded individuals who share similar
-                interests.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
-                The Connection Café
-              </h4>
-              <p className="text-[16px] font-thin md:text-lg">
-                <span className="font-semibold">
-                  The proposed solution, the Connection Café, provides a
-                  seamless integration of the physical and digital world
-                </span>
-                . Its goal is to improve community mental health by facilitating
-                in-person interactions through encouraging users to meet
-                face-to-face in the café, hosting live podcast events, and
-                providing equipment to record their own podcasts.
-              </p>
-            </div>
+          <div className="col-span-2 mb-[50px]">
+            <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
+              The Spoken Word On-Demand Audio Space
+            </h4>
+            <p className="text-[16px] font-thin md:text-lg">
+              This project aims to{" "}
+              <span className="font-semibold">
+                find and address a problem in the Spoken Word On-Demand Audio
+                space
+              </span>
+              , with a specific focus on improving the overall experience for
+              adult podcast listeners.
+            </p>
+          </div>
+          <h6 className="md:justify-self-end uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[10px] md:mb-0">
+            The Problem
+          </h6>
+          <div className="col-span-2 mb-[50px]">
+            <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
+              Increase human connection between adult podcast listeners
+            </h4>
+            <p className="text-[16px] font-thin md:text-lg">
+              We discovered that adult podcast listeners seek human connection
+              and fresh perspectives.{" "}
+              <span className="font-semibold">
+                They desire a way to share their favorite podcasts and newfound
+                knowledge beyond their phones
+              </span>
+              , and connect with like-minded individuals who share similar
+              interests.
+            </p>
+          </div>
+          <h6 className="md:justify-self-end uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[10px] md:mb-0">
+            The Solution
+          </h6>
+          <div className="col-span-2">
+            <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
+              The Connection Café
+            </h4>
+            <p className="text-[16px] font-thin md:text-lg">
+              <span className="font-semibold">
+                The proposed solution, the Connection Café, provides a seamless
+                integration of the physical and digital world
+              </span>
+              . Its goal is to improve community mental health by facilitating
+              in-person interactions through encouraging users to meet
+              face-to-face in the café, hosting live podcast events, and
+              providing equipment to record their own podcasts.
+            </p>
           </div>
         </div>
       </Section>
