@@ -1,18 +1,20 @@
 import React from "react";
+import { AiOutlineMail } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="relative z-0 flex justify-between items-center mx-[30px] md:max-xl:mx-[60px] lg:mx-[130px] font-helvetica py-[30px] md:py-[50px]">
       <div className="flex flex-col gap-5">
-        <h6 className="text-xl font-medium">Let's Connect!</h6>
-        <ul className="flex justify-start gap-[45px]">
+        <h6 className="text-lg font-medium">Let's Connect!</h6>
+        <ul className="flex justify-start gap-[30px]">
           <li className="underline">
             <a
               href="https://www.linkedin.com/in/aleynna-quinones"
               target="_blank"
               className="text-inherit no-underline"
             >
-              LinkedIn
+              <FaLinkedin size={24} />
             </a>
           </li>
           <li className="underline">
@@ -20,7 +22,7 @@ const Footer = () => {
               href="mailto:aleynnaquinones@gmail.com"
               className="text-inherit no-underline"
             >
-              Email
+              <AiOutlineMail size={24} />
             </a>
           </li>
         </ul>
