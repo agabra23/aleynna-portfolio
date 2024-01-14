@@ -13,7 +13,7 @@ const Home = () => {
     window.scrollTo(0, 0);
   });
   return (
-    <div className="relative -z-10 mx-[50px] md:mx-[130px] lg:mx-[200px] xl:mx-[340px] font-garamond max-w-full">
+    <div className="relative -z-10 font-garamond max-w-full">
       <Section>
         <h2 className="font-helvetica [855px]:text-5xl text-4xl font-bold">
           Hi! I’m Aleynna Quiñones.
