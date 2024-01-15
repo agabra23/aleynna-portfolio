@@ -219,7 +219,7 @@ const Cafe = () => {
               providing equipment to record their own podcasts.
             </p>
             <button className="text-[16px] hover:bg-black hover:text-offwhite transition-colors duration-200  font-helvetica font-normal px-6 py-3 mt-[30px] mb-[30px] rounded-full border-2 border-solid border-black">
-              <a href="#ourSolution">Jump to solution</a>
+              <a href="#ourSolutionCafe">Jump to solution</a>
             </button>
           </div>
         </div>
@@ -622,7 +622,7 @@ const Cafe = () => {
       </Section> */}
       <Section>
         <div
-          id="ourSolution"
+          id="ourSolutionCafe"
           className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]"
         >
           <h6 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">

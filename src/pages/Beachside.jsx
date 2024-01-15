@@ -1,6 +1,7 @@
 import React from "react";
 import { useLayoutEffect } from "react";
 import UserPersona from "../components/UserPersona";
+import AutoplayCarousel from "../components/AutoplayCarousel";
 
 import Beach2 from "../assets/Beach2.png";
 import Beach1 from "../assets/Beach1.png";
@@ -39,6 +40,17 @@ import BeachsideScreenDescription from "../components/BeachsideScreenDescription
 import BeachsideComparisons from "../components/BeachsideComparisons";
 import Section from "../components/Section";
 import HeroSectionWrapper from "../components/HeroSectionWrapper";
+import UberEatsScreenshot from "../assets/UberEats.jpg";
+import DoorDashScreenshot from "../assets/DoorDash.png";
+import PaperWireframe1 from "../assets/PaperWireframe1.jpg";
+import PaperWireframe2 from "../assets/PaperWireframe2.jpg";
+import PaperWireframe3 from "../assets/PaperWireframe3.jpg";
+import PaperWireframe4 from "../assets/PaperWireframe4.jpg";
+import InitialWireframe1 from "../assets/InitialWireframe1.png";
+import InitialWireframe2 from "../assets/InitialWireframe2.png";
+import InitialWireframe3 from "../assets/InitialWireframe3.png";
+import InitialWireframe4 from "../assets/InitialWireframe4.png";
+import InitialWireframe5 from "../assets/InitialWireframe5.png";
 
 const Beachside = () => {
   useLayoutEffect(() => {
@@ -196,21 +208,100 @@ const Beachside = () => {
               alt="Beachside Snackshop Item Detail Screen"
             />
           </div>
-          <div className="text-center md:text-left flex items-center md:items-start flex-col gap-[10px] lg:gap-[15px]">
+          <div className="text-center md:text-left flex items-center md:items-start flex-col">
             <h6 className="uppercase text-center md:text-left font-thin font-helvetica text-[16px] md:text-lg">
               GOOGLE UX CERTIFICATE PROJECT
             </h6>
             <h3 className="text-center md:text-left leading-none font-helvetica text-[30px] md:text-4xl font-bold">
               Beachside Snackshop
             </h3>
-            <p className="text-center md:text-left text-[16px] md:text-lg font-thin">
+            <p className="text-center md:text-left text-[16px] md:text-lg font-thin max-w-[500px]">
               Order food online and track your delivery in real-time for a
               simple and efficient dining experience.
             </p>
+            <ul className="hidden md:grid grid-cols-2 gap-y-[30px] gap-x-[50px] mt-[50px] max-w-screen-lg">
+              <li>
+                <h6 className="font-helvetica font-normal text-lg md:text-xl">
+                  Role
+                </h6>
+                <p className="text-[16px] md:text-lg font-garamond font-thin">
+                  UX Researcher
+                </p>
+                <p className="text-[16px] md:text-lg font-garamond font-thin">
+                  UX Designer
+                </p>
+              </li>
+              <li className="text-right md:text-left  md:max-w-[250px] md:min-w-[150px] flex flex-col items-end md:block">
+                <h6 className="font-helvetica font-normal text-lg md:text-xl">
+                  Team
+                </h6>
+                <p className="text-[16px] md:text-lg font-garamond font-thin">
+                  Aleynna Quiñones
+                </p>
+              </li>
+              <li>
+                <h6 className="font-helvetica font-normal text-lg md:text-xl">
+                  Timeline
+                </h6>
+                <p className="text-[16px] md:text-lg font-garamond font-thin">
+                  6 months
+                </p>
+              </li>
+              <li className="text-right md:text-left">
+                <h6 className="font-helvetica font-normal text-lg md:text-xl">
+                  Tools
+                </h6>
+                <p className="text-[16px] md:text-lg font-garamond font-thin">
+                  Figma
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
+        <div className="flex justify-center">
+          <ul className="md:hidden grid grid-cols-2 gap-y-[40px] mt-[30px] text-center">
+            <li>
+              <h6 className="font-helvetica font-normal text-xl md:text-2xl">
+                Role
+              </h6>
+              <p className="text-[16px] md:text-lg font-garamond font-thin">
+                UX Researcher
+              </p>
+              <p className="text-[16px] md:text-lg font-garamond font-thin">
+                UX Designer
+              </p>
+            </li>
+            <li className=" md:max-w-[250px] md:min-w-[150px] flex flex-col">
+              <h6 className="font-helvetica font-normal text-xl md:text-2xl">
+                Team
+              </h6>
+              <p className="text-[16px] md:text-lg font-garamond font-thin max-w-[180px]">
+                Aleynna Quiñones, Alexa Sciacca, Elizabeth Leifheit, Amine Mena
+              </p>
+            </li>
+            <li>
+              <h6 className="font-helvetica font-normal text-xl md:text-2xl">
+                Timeline
+              </h6>
+              <p className="text-[16px] md:text-lg font-garamond font-thin">
+                8 Weeks
+              </p>
+            </li>
+            <li>
+              <h6 className="font-helvetica font-normal text-xl md:text-2xl">
+                Tools
+              </h6>
+              <p className="text-[16px] md:text-lg font-garamond font-thin">
+                Figma
+              </p>
+              <p className="text-[16px] md:text-lg font-garamond font-thin">
+                GetFloorPlan
+              </p>
+            </li>
+          </ul>
+        </div>
       </HeroSectionWrapper>
-      <Section>
+      {/* <Section>
         <ul className="grid grid-cols-2 gap-y-[40px] md:flex md:justify-evenly md:gap-[50px]">
           <li>
             <h6 className="font-helvetica font-normal md:text-2xl text-[20px] mb-2">
@@ -248,13 +339,67 @@ const Beachside = () => {
             </p>
           </li>
         </ul>
-      </Section>
+      </Section> */}
       <Section>
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
+          <h6 className="md:justify-self-end uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[10px] md:mb-0">
+            The Context
+          </h6>
+          <div className="col-span-2 mb-[50px]">
+            <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
+              Design a food delivery tracking app for BeachSide SnackShop, a
+              local oceanside restaurant.
+            </h4>
+            <p className="text-[16px] font-thin md:text-lg">
+              As part of my Google UX Design Certificate course, I undertook a
+              project to enhance the customer’s experience by designing a food
+              delivery tracking app for a local oceanside restaurant named
+              BeachSide SnackShop.
+            </p>
+          </div>
+          <h6 className="md:justify-self-end uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[10px] md:mb-0">
+            The Problem
+          </h6>
+          <div className="col-span-2 mb-[50px]">
+            <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
+              Busy adults need a quick and efficient way to order and track
+              online food orders.
+            </h4>
+            <p className="text-[16px] font-thin md:text-lg">
+              I discovered that busy adults prioritize spending time on aspects
+              of their lives that are important to them, such as family, work,
+              and hobbies, and are often determined to find a quick and
+              efficient way to acquire healthy meals through online ordering and
+              delivery.
+            </p>
+          </div>
+          <h6 className="md:justify-self-end uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[10px] md:mb-0">
+            The Solution
+          </h6>
+          <div className="col-span-2">
+            <h4 className="font-helvetica font-normal text-xl md:text-2xl mb-[10px]">
+              BeachSide SnackShop mobile app
+            </h4>
+            <p className="text-[16px] font-thin md:text-lg">
+              The BeachSide SnackShop mobile app offers users a fast and
+              efficient online food ordering experience with real-time delivery
+              tracking. Its objective is to empower busy adults to reclaim their
+              free time by enabling them to skip in-store lines and eliminate
+              the hassle of preparing meals themselves.
+            </p>
+            <button className="text-[16px] hover:bg-black hover:text-offwhite transition-colors duration-200  font-helvetica font-normal px-6 py-3 mt-[30px] mb-[30px] rounded-full border-2 border-solid border-black">
+              <a href="#ourSolutionBeachside">Jump to solution</a>
+            </button>
+          </div>
+        </div>
+        <AutoplayCarousel />
+      </Section>
+      {/* <Section>
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             Project Overview
           </h4>
-          <div className="md:col-span-3 flex flex-col gap-[30px]">
+          <div className="md:col-span-2 flex flex-col gap-[30px]">
             <div>
               <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
                 Design a food delivery tracking app for BeachSide SnackShop, a
@@ -300,13 +445,13 @@ const Beachside = () => {
             </div>
           </div>
         </div>
-      </Section>
-      <Section>
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px] mb-[10px]">
+      </Section> */}
+      {/* <Section>
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px] mb-[10px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] mb-[10px] md:mb-0 md:text-lg md:col-span-1">
             My solution
           </h4>
-          <h6 className="text-xl md:text-2xl font-medium font-helvetica md:col-span-3">
+          <h6 className="text-xl md:text-2xl font-medium font-helvetica md:col-span-2">
             BeachSide SnackShop mobile app final mock ups
           </h6>
         </div>
@@ -335,8 +480,8 @@ const Beachside = () => {
             />
           </div>
         </div>
-      </Section>
-      <Section>
+      </Section> */}
+      {/* <Section>
         <div className="flex flex-col items-center gap-[10px]">
           <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-lg font-thin text-center">
             Want to learn more about our process?
@@ -358,13 +503,13 @@ const Beachside = () => {
             />
           </svg>
         </div>
-      </Section>
+      </Section> */}
       <Section>
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:col-span-1 mb-[10px] md:mb-0">
             The Starting Point
           </h4>
-          <div className="md:col-span-3 flex flex-col gap-[30px]">
+          <div className="md:col-span-2 flex flex-col gap-[30px]">
             <div>
               <h6 className="md:text-2xl text-[20px] font-medium font-helvetica mb-[10px]">
                 Who is the target audience?
@@ -405,54 +550,83 @@ const Beachside = () => {
         </div>
       </Section>
       <Section>
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
-            What Did we Find?
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
+            The emerging problem
           </h4>
-          <div className="md:col-span-3 flex flex-col gap-[30px] mb-[50px]">
-            <div>
-              <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
-                Uber Eats and DoorDash
-              </h6>
-              <ul className="flex flex-col gap-[15px]">
-                <li className="text-[16px] md:text-lg font-thin">
-                  In examining these two major competitors in the realm of
-                  online food ordering and real-time delivery tracking, I
-                  observed that their interfaces can become overwhelming due to
-                  the multitude of additional services they provide. For
-                  first-time users, it can be challenging to pinpoint exactly
-                  what they are looking for, whether it’s a specific restaurant
-                  or menu item.
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
-                Pain points
-              </h6>
-              <ul className="list-disc list-inside pl-3 text-[16px] md:text-lg font-thin">
-                <li className="leading-7">
-                  Existing delivery apps have confusing and overwhelming layouts
-                  that are difficult to navigate
-                </li>
-                <li className="leading-7">
-                  Users need a quick way to order food online
-                </li>
-                <li className="leading-7">
-                  Remembering the delivery time is unrealistic, users need a way
-                  to see where their order is in real-time
-                </li>
-              </ul>
-            </div>
+          <div className="md:col-span-2 mb-[50px]">
+            <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
+              Online food ordering systems are confusing and overwhelming.
+            </h6>
+            <ul className="flex flex-col gap-[15px]">
+              <li className="text-[16px] md:text-lg font-thin">
+                Busy adults often find themselves wasting time navigating
+                through overwhelming and confusing online food ordering systems,
+                diverting their focus from aspects of life that hold greater
+                importance to them.
+              </li>
+            </ul>
           </div>
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1 place-self-end">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
+            But why?
+          </h4>
+          <div className="md:col-span-2 flex flex-col mb-[30px]">
+            <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
+              Research findings and pain points
+            </h6>
+            <ul className="flex flex-col gap-[15px]">
+              <li className="text-[16px] md:text-lg font-thin">
+                In examining Uber Eats and DoorDash, two major competitors in
+                the realm of online food ordering and real-time delivery
+                tracking, I observed that their interfaces can become
+                overwhelming due to the multitude of additional services they
+                provide. For first-time users, it can be challenging to pinpoint
+                exactly what they are looking for, whether it’s a specific
+                restaurant or menu item.
+              </li>
+            </ul>
+          </div>
+
+          <div className="flex justify-evenly col-span-3 mb-[30px]">
+            <img
+              className="max-w-[200px]"
+              src={UberEatsScreenshot}
+              alt="Uber Eats Screen"
+            />
+            <img
+              className="max-w-[200px]"
+              src={DoorDashScreenshot}
+              alt="DoorDash Screen"
+            />
+          </div>
+          <div></div>
+          <div className="md:col-span-2 flex flex-col">
+            <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
+              After conducting 1-on-1 interviews with potential users, we
+              gathered more helpful insights
+            </h6>
+            <ul className="list-disc list-inside pl-3 text-[16px] md:text-lg font-thin">
+              <li className="leading-7">
+                Users value spending time on aspects of their lives that are
+                important to them, like family and work
+              </li>
+              <li className="leading-7">
+                Users don't want to waste time using confusing and overwhelming
+                interfaces
+              </li>
+              <li className="leading-7">
+                Users want a quick and easy way to order and track food online
+              </li>
+            </ul>
+          </div>
+          {/* <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1 place-self-end">
             User Personas
           </h4>
-          <h6 className="text-xl md:text-2xl w-max font-medium font-helvetica mb-[10px] justify-self-start md:col-span-3">
+          <h6 className="text-xl md:text-2xl w-max font-medium font-helvetica mb-[10px] justify-self-start md:col-span-2">
             Meet Lisa and José
-          </h6>
+          </h6> */}
         </div>
-        <div className="flex flex-col items-center gap-12 md:gap-[30px]">
+        {/* <div className="flex flex-col items-center gap-12 md:gap-[30px]">
           <UserPersona
             avatar={LisaAvatar}
             name={"Lisa"}
@@ -481,47 +655,92 @@ const Beachside = () => {
             age={"23"}
             description={joseDescriptionElement}
           />
+        </div> */}
+      </Section>
+
+      <Section>
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
+            Synthesis
+          </h4>
+          <div className="md:col-span-2">
+            <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px] ">
+              After understanding the challenges that users were facing with
+              existing apps, as well as their own personal life experiences, we
+              asked...
+            </h6>
+            <p className="text-[16px] text-lg font-thin">
+              How can we design an intuitive mobile app for BeachSide SnackShop
+              that provides a seamless online ordering system and accurate
+              real-time tracking?
+            </p>
+          </div>
         </div>
       </Section>
       <Section>
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
-            The emerging problem
-          </h4>
-          <div className="md:col-span-3 mb-[50px]">
-            <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
-              Online food ordering systems are confusing and overwhelming.
-            </h6>
-            <ul className="flex flex-col gap-[15px]">
-              <li className="text-[16px] md:text-lg font-thin">
-                Busy adults often find themselves wasting time navigating
-                through overwhelming and confusing online food ordering systems,
-                diverting their focus from aspects of life that hold greater
-                importance to them.
-              </li>
-            </ul>
-          </div>
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
-            Thus, we asked
-          </h4>
-          <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[50px] md:col-span-3">
-            How can we design an intuitive mobile app for BeachSide SnackShop
-            that provides a seamless online ordering system and accurate
-            real-time tracking?
-          </h6>
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             Ideation
           </h4>
-          <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px] md:col-span-3">
-            Low-fidelity Prototype
+          <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[30px] md:col-span-2">
+            Paper and digital wireframes
           </h6>
-          <div className="md:bg-white md:rounded-3xl md:p-9 mb-[50px] md:col-span-4 max-w-[1000px] justify-self-center">
-            <img src={LofiFlow} alt="Low Fidelity Flow" />
+          <div className="flex flex-col gap-[10px] md:gap-0 items-center md:flex-row md:justify-evenly col-span-3 mb-[30px]">
+            <img
+              className="max-w-[300px] md:max-w-[200px]"
+              src={PaperWireframe1}
+              alt=""
+            />
+            <img
+              className="max-w-[300px] md:max-w-[200px]"
+              src={PaperWireframe2}
+              alt=""
+            />
+            <img
+              className="max-w-[300px] md:max-w-[200px]"
+              src={PaperWireframe3}
+              alt=""
+            />
+            <img
+              className="max-w-[300px] md:max-w-[200px]"
+              src={PaperWireframe4}
+              alt=""
+            />
           </div>
+          <div className="flex flex-col gap-[10px] md:gap-0 items-center md:flex-row md:justify-evenly col-span-3 mb-[30px]">
+            <img
+              className="max-w-[250px] md:max-w-[150px]"
+              src={InitialWireframe1}
+              alt=""
+            />
+            <img
+              className="max-w-[250px] md:max-w-[150px]"
+              src={InitialWireframe2}
+              alt=""
+            />
+            <img
+              className="max-w-[250px] md:max-w-[150px]"
+              src={InitialWireframe3}
+              alt=""
+            />
+            <img
+              className="max-w-[250px] md:max-w-[150px]"
+              src={InitialWireframe4}
+              alt=""
+            />
+            <img
+              className="max-w-[250px] md:max-w-[150px]"
+              src={InitialWireframe5}
+              alt=""
+            />
+          </div>
+          {/* <div className="md:bg-white md:rounded-3xl md:p-9 mb-[50px] md:col-span-3 max-w-[1000px] justify-self-center">
+            <img src={LofiFlow} alt="Low Fidelity Flow" />
+          </div> */}
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             Usability study
           </h4>
-          <div className="md:col-span-3 mb-[10px]">
+          <div className="md:col-span-2 mb-[10px]">
             <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
               Refining my wireframes utilizing user feedback
             </h6>
@@ -622,11 +841,11 @@ const Beachside = () => {
         </div>
       </Section>
       <Section>
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             Usability Study #2
           </h4>
-          <div className="md:col-span-3 flex flex-col gap-[30px]">
+          <div className="md:col-span-2 flex flex-col gap-[30px]">
             <div className="mb-[30px]">
               <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
                 Initial Mockups vs final mockups
@@ -705,11 +924,11 @@ const Beachside = () => {
         </div>
       </Section>
       <Section>
-        <div className="md:grid md:grid-cols-4 md:gap-x-[50px]">
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             The End
           </h4>
-          <div className=" mb-[30px] md:col-span-3">
+          <div className=" mb-[30px] md:col-span-2">
             <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
               BeachSide SnackShop mobile app
             </h6>
@@ -726,7 +945,7 @@ const Beachside = () => {
             </ul>
           </div>
 
-          <div className="col-span-4 flex flex-col md:flex-row gap-5 md:gap-[60px] justify-center mb-10 md:mb-[60px]">
+          <div className="col-span-3 flex flex-col md:flex-row gap-5 md:gap-[60px] justify-center mb-10 md:mb-[60px]">
             {/* Video */}
             <div className="max-w-80 flex flex-col justify-center self-center">
               <img src={Beach1} alt="Beachside Snackshop Login Screen" />
@@ -757,7 +976,7 @@ const Beachside = () => {
           <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             What did I learn?
           </h4>
-          <div className="mb-[50px] md:col-span-3">
+          <div className="mb-[50px] md:col-span-2">
             <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
               Screens are scrollable and consistency in design elements is key
             </h6>
@@ -775,7 +994,7 @@ const Beachside = () => {
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:col-span-1 mb-[10px] md:mb-0">
             What’s next?
           </h4>
-          <div className="md:col-span-3">
+          <div className="md:col-span-2">
             <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
               Accessibility considerations and refining the UI
             </h6>
