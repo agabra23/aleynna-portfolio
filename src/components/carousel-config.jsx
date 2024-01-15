@@ -44,53 +44,43 @@ const autoCardDetails = {
   },
 
   1: {
+    imgUrl: Carousel10,
+    title: "Edit Profile Screen",
+  },
+
+  2: {
     imgUrl: Carousel2,
     title: "Connection Screen",
   },
 
-  2: {
+  3: {
     imgUrl: Carousel3,
     title: "Top 5 Screen",
   },
 
-  3: {
+  4: {
     imgUrl: Carousel4,
     title: "Found a Match Screen",
   },
 
-  4: {
+  5: {
     imgUrl: Carousel5,
     title: "Match Screen",
   },
 
-  5: {
+  6: {
     imgUrl: Carousel6,
     title: "Match Profile Screen",
   },
 
-  6: {
+  7: {
     imgUrl: Carousel7,
     title: "Table Screen",
-  },
-
-  7: {
-    imgUrl: Carousel8,
-    title: "New User Screen",
   },
 
   8: {
     imgUrl: Carousel9,
     title: "Message Screen",
-  },
-
-  9: {
-    imgUrl: Carousel10,
-    title: "Edit Profile Screen",
-  },
-
-  10: {
-    imgUrl: Carousel11,
-    title: "Thanks For Checking In Screen",
   },
 };
 
@@ -157,27 +147,59 @@ const autoBeachsideCards = {
 };
 
 const cardArray = [
-  <img className={`w-full max-w-[250px]`} src={Carousel1} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={Carousel1}
+    alt="Login Scscreenreen"
+  />,
 
-  <img className={`w-full max-w-[250px]`} src={Carousel2} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={Carousel10}
+    alt="Edit profile screen"
+  />,
 
-  <img className={`w-full max-w-[250px]`} src={Carousel3} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={Carousel2}
+    alt="Connection screen"
+  />,
 
-  <img className={`w-full max-w-[250px]`} src={Carousel4} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={Carousel3}
+    alt="Select podcasts screen"
+  />,
 
-  <img className={`w-full max-w-[250px]`} src={Carousel5} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={Carousel4}
+    alt="Match found page"
+  />,
 
-  <img className={`w-full max-w-[250px]`} src={Carousel6} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={Carousel5}
+    alt="Match profile page"
+  />,
 
-  <img className={`w-full max-w-[250px]`} src={Carousel7} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={Carousel6}
+    alt="Match profile extended"
+  />,
 
-  <img className={`w-full max-w-[250px]`} src={Carousel8} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={Carousel7}
+    alt="Table meet-up screen"
+  />,
 
-  <img className={`w-full max-w-[250px]`} src={Carousel9} alt="" />,
-
-  <img className={`w-full max-w-[250px]`} src={Carousel10} alt="" />,
-
-  <img className={`w-full max-w-[250px]`} src={Carousel11} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={Carousel9}
+    alt="Messaging screen"
+  />,
 ];
 
 const mattDescriptionElement = (
@@ -268,14 +290,14 @@ const beachsideComparisonsArray = [
       <img
         className="w-full max-w-[200px]"
         src={PinkMenu}
-        alt="Old Login Screen"
+        alt="Old Menu Screen"
       />
     </div>
     <div className="flex-1">
       <img
         className="w-full max-w-[200px]"
         src={BlueMenu}
-        alt="New Login Screen"
+        alt="New Menu Screen"
       />
     </div>
   </div>,
@@ -284,14 +306,14 @@ const beachsideComparisonsArray = [
       <img
         className="w-full max-w-[200px]"
         src={PinkDetails}
-        alt="Old Login Screen"
+        alt="Old Item Details Screen"
       />
     </div>
     <div className="flex-1">
       <img
         className="w-full max-w-[200px]"
         src={BlueDetails}
-        alt="New Login Screen"
+        alt="New Item Details Screen"
       />
     </div>
   </div>,
@@ -300,14 +322,14 @@ const beachsideComparisonsArray = [
       <img
         className="w-full max-w-[200px]"
         src={PinkCart}
-        alt="Old Login Screen"
+        alt="Old Cart Screen"
       />
     </div>
     <div className="flex-1">
       <img
         className="w-full max-w-[200px]"
         src={BlueCart}
-        alt="New Login Screen"
+        alt="New Cart Screen"
       />
     </div>
   </div>,
@@ -316,14 +338,14 @@ const beachsideComparisonsArray = [
       <img
         className="w-full max-w-[200px]"
         src={PinkCheckout}
-        alt="Old Login Screen"
+        alt="Old Checkout Screen"
       />
     </div>
     <div className="flex-1">
       <img
         className="w-full max-w-[200px]"
         src={BlueCheckout}
-        alt="New Login Screen"
+        alt="New Checkout Screen"
       />
     </div>
   </div>,
@@ -332,14 +354,14 @@ const beachsideComparisonsArray = [
       <img
         className="w-full max-w-[200px]"
         src={PinkConfirmation}
-        alt="Old Login Screen"
+        alt="Old Confirmation Screen"
       />
     </div>
     <div className="flex-1">
       <img
         className="w-full max-w-[200px]"
         src={BlueConfirmation}
-        alt="New Login Screen"
+        alt="New Confirmation Screen"
       />
     </div>
   </div>,
@@ -348,14 +370,14 @@ const beachsideComparisonsArray = [
       <img
         className="w-full max-w-[200px]"
         src={PinkDriver}
-        alt="Old Login Screen"
+        alt="Old Driver Screen"
       />
     </div>
     <div className="flex-1">
       <img
         className="w-full max-w-[200px]"
         src={BlueDriver}
-        alt="New Login Screen"
+        alt="New Driver Screen"
       />
     </div>
   </div>,
@@ -364,45 +386,85 @@ const beachsideComparisonsArray = [
       <img
         className="w-full max-w-[200px]"
         src={PinkTracking}
-        alt="Old Login Screen"
+        alt="Old Tracking Screen"
       />
     </div>
     <div className="flex-1">
       <img
         className="w-full max-w-[200px]"
         src={BlueTracking}
-        alt="New Login Screen"
+        alt="New Tracking Screen"
       />
     </div>
   </div>,
 ];
 
 const beachsideCards = [
-  <img className={`w-full max-w-[250px]`} src={BlueLogin} alt="" />,
+  <img className={`w-full max-w-[250px]`} src={BlueLogin} alt="Login screen" />,
 
-  <img className={`w-full max-w-[250px]`} src={BlueLogin2} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={BlueLogin2}
+    alt="Login screen"
+  />,
 
-  <img className={`w-full max-w-[250px]`} src={BlueMenu} alt="" />,
+  <img className={`w-full max-w-[250px]`} src={BlueMenu} alt="Menu screen" />,
 
-  <img className={`w-full max-w-[250px]`} src={BlueDetails} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={BlueDetails}
+    alt="Item details screen"
+  />,
 
-  <img className={`w-full max-w-[250px]`} src={BlueDetails3} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={BlueDetails3}
+    alt="Add items pop-up"
+  />,
 
-  <img className={`w-full max-w-[250px]`} src={BlueDetails2} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={BlueDetails2}
+    alt="Items in cart"
+  />,
 
-  <img className={`w-full max-w-[250px]`} src={BlueCart} alt="" />,
+  <img className={`w-full max-w-[250px]`} src={BlueCart} alt="Cart screen" />,
 
-  <img className={`w-full max-w-[250px]`} src={BlueCheckout} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={BlueCheckout}
+    alt="Checkout screen"
+  />,
 
-  <img className={`w-full max-w-[250px]`} src={BlueCheckout2} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={BlueCheckout2}
+    alt="Checkout confirmation"
+  />,
 
-  <img className={`w-full max-w-[250px]`} src={BlueConfirmation} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={BlueConfirmation}
+    alt="Order confirmation"
+  />,
 
-  <img className={`w-full max-w-[250px]`} src={BlueDriver} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={BlueDriver}
+    alt="Driver information"
+  />,
 
-  <img className={`w-full max-w-[250px]`} src={BlueTracking} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={BlueTracking}
+    alt="Driver tracking screen"
+  />,
 
-  <img className={`w-full max-w-[250px]`} src={BlueConfirmation2} alt="" />,
+  <img
+    className={`w-full max-w-[250px]`}
+    src={BlueConfirmation2}
+    alt="Enjoy your food screen"
+  />,
 ];
 
 export {
