@@ -416,5 +416,6 @@ export {
   personaArray,
   mockupArray,
   beachsideComparisonsArray,
-  autoBeachsideCards
+  autoBeachsideCards,
+  beachsideCards
 };

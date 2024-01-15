@@ -57,6 +57,7 @@ import AfterWireframe3 from "../assets/AfterWireframe3.png";
 import ClickableCarousel from "../components/ClickableCarousel";
 import {
   autoBeachsideCards,
+  beachsideCards,
   beachsideComparisonsArray,
   cardArray,
   personaArray,
@@ -927,13 +928,15 @@ const Beachside = () => {
             </ul>
           </div>
 
-          <div className="col-span-3 flex flex-col md:flex-row gap-5 md:gap-[60px] justify-center mb-10 md:mb-[60px]">
+          <div className="col-span-3 flex flex-col md:flex-row gap-5 md:gap-[60px] justify-center items-center mb-10 md:mb-[60px]">
             {/* Video */}
             <div className="max-w-80 flex flex-col justify-center self-center">
               <img src={Beach1} alt="Beachside Snackshop Login Screen" />
             </div>
 
-            <div className="grid grid-cols-3 gap-x-[10px] gap-y-[15px] md:gap-y-0 max-w-[350px] self-center">
+            <ClickableCarousel slides={beachsideCards} desiredWidth="200px" />
+
+            {/* <div className="grid grid-cols-3 gap-x-[10px] gap-y-[15px] md:gap-y-0 max-w-[350px] self-center">
               <img src={BeachsideMenu} alt="Snackshop Menu" />
               <img src={BeachsideDetails} alt="Snackshop Item Details" />
               <img src={BeachsideCheckout} alt="Snackshop Checkout" />
@@ -952,7 +955,7 @@ const Beachside = () => {
                 src={BeachsideTracking2}
                 alt="Order Tracking 2"
               />
-            </div>
+            </div> */}
           </div>
           <div className="col-span-2 col-start-2">
             <ul className="flex flex-col gap-[10px]">
