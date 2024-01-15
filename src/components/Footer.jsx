@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="flex flex-col gap-5">
         <h6 className="text-lg font-medium">Let's Connect!</h6>
         <ul className="flex justify-start gap-[30px]">
-          <li className="underline">
+          <li className="border-b-2 border-transparent hover:border-black">
             <a
               href="https://www.linkedin.com/in/aleynna-quinones"
               target="_blank"
@@ -17,7 +17,7 @@ const Footer = () => {
               <FaLinkedin size={24} />
             </a>
           </li>
-          <li className="underline">
+          <li className="border-b-2 border-transparent hover:border-black">
             <a
               href="mailto:aleynnaquinones@gmail.com"
               className="text-inherit no-underline"
