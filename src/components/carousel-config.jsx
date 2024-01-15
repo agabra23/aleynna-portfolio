@@ -101,18 +101,18 @@ const autoBeachsideCards = {
   },
 
   1: {
-    imgUrl: BlueLogin2,
-    title: "Connection Screen",
-  },
-
-  2: {
     imgUrl: BlueMenu,
     title: "Top 5 Screen",
   },
 
-  3: {
+  2: {
     imgUrl: BlueDetails,
     title: "Found a Match Screen",
+  },
+
+  3: {
+    imgUrl: BlueDetails3,
+    title: "Match Profile Screen",
   },
 
   4: {
@@ -121,42 +121,37 @@ const autoBeachsideCards = {
   },
 
   5: {
-    imgUrl: BlueDetails3,
-    title: "Match Profile Screen",
-  },
-
-  6: {
     imgUrl: BlueCart,
     title: "Table Screen",
   },
 
-  7: {
+  6: {
     imgUrl: BlueCheckout,
     title: "New User Screen",
   },
 
-  8: {
+  7: {
     imgUrl: BlueCheckout2,
     title: "Message Screen",
   },
 
-  9: {
+  8: {
     imgUrl: BlueConfirmation,
     title: "Edit Profile Screen",
   },
 
-  10: {
-    imgUrl: BlueConfirmation2,
-    title: "Thanks For Checking In Screen",
-  },
-
-  11: {
+  9: {
     imgUrl: BlueDriver,
     title: "Thanks For Checking In Screen",
   },
 
-  12: {
+  10: {
     imgUrl: BlueTracking,
+    title: "Thanks For Checking In Screen",
+  },
+
+  11: {
+    imgUrl: BlueConfirmation2,
     title: "Thanks For Checking In Screen",
   },
 };
@@ -417,5 +412,5 @@ export {
   mockupArray,
   beachsideComparisonsArray,
   autoBeachsideCards,
-  beachsideCards
+  beachsideCards,
 };
