@@ -659,54 +659,72 @@ const Beachside = () => {
           <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[30px] md:col-span-2">
             Paper and digital wireframes
           </h6>
-          <div className="flex flex-col gap-[10px] items-center md:flex-row md:justify-center col-span-3 mb-[30px]">
-            <img
-              className="max-w-[300px] md:max-w-[200px]"
-              src={PaperWireframe1}
-              alt=""
-            />
-            <img
-              className="max-w-[300px] md:max-w-[200px]"
-              src={PaperWireframe2}
-              alt=""
-            />
-            <img
-              className="max-w-[300px] md:max-w-[200px]"
-              src={PaperWireframe3}
-              alt=""
-            />
-            <img
-              className="max-w-[300px] md:max-w-[200px]"
-              src={PaperWireframe4}
-              alt=""
-            />
+          <div className="grid grid-cols-2 md:flex md:justify-center gap-[10px] place-items-center col-span-3 mb-[30px]">
+            <div className="justify-self-end">
+              <img
+                className="max-w-[200px] w-full"
+                src={PaperWireframe1}
+                alt=""
+              />
+            </div>
+            <div className="justify-self-start">
+              <img
+                className="max-w-[200px] w-full"
+                src={PaperWireframe2}
+                alt=""
+              />
+            </div>
+            <div className="justify-self-end">
+              <img
+                className="max-w-[200px] w-full"
+                src={PaperWireframe3}
+                alt=""
+              />
+            </div>
+            <div className="justify-self-start">
+              <img
+                className="max-w-[200px] w-full"
+                src={PaperWireframe4}
+                alt=""
+              />
+            </div>
           </div>
-          <div className="flex flex-col gap-[10px] items-center md:flex-row md:justify-center col-span-3 mb-[50px]">
-            <img
-              className="border border-black/20 max-w-[250px] md:max-w-[100px]"
-              src={InitialWireframe1}
-              alt=""
-            />
-            <img
-              className="border border-black/20 max-w-[250px] md:max-w-[100px]"
-              src={InitialWireframe2}
-              alt=""
-            />
-            <img
-              className="border border-black/20 max-w-[250px] md:max-w-[100px]"
-              src={InitialWireframe3}
-              alt=""
-            />
-            <img
-              className="border border-black/20 max-w-[250px] md:max-w-[100px]"
-              src={InitialWireframe4}
-              alt=""
-            />
-            <img
-              className="border border-black/20 max-w-[250px] md:max-w-[100px]"
-              src={InitialWireframe5}
-              alt=""
-            />
+          <div className="md:flex md:justify-center grid grid-cols-6 gap-[10px] items-center place-items-center col-span-3 mb-[50px]">
+            <div className="col-span-2 justify-self-end">
+              <img
+                className="border border-black/20 max-w-[150px] w-full"
+                src={InitialWireframe1}
+                alt=""
+              />
+            </div>
+            <div className="col-span-2">
+              <img
+                className="border border-black/20 max-w-[150px] w-full"
+                src={InitialWireframe2}
+                alt=""
+              />
+            </div>
+            <div className="col-span-2 justify-self-start">
+              <img
+                className="border border-black/20 max-w-[150px] w-full"
+                src={InitialWireframe3}
+                alt=""
+              />
+            </div>
+            <div className="col-span-2 col-start-2 justify-self-end">
+              <img
+                className="border border-black/20 max-w-[150px] w-full"
+                src={InitialWireframe4}
+                alt=""
+              />
+            </div>
+            <div className="col-span-2 col-start-4 justify-self-start">
+              <img
+                className="border border-black/20 max-w-[150px] w-full"
+                src={InitialWireframe5}
+                alt=""
+              />
+            </div>
           </div>
           {/* <div className="md:bg-white md:rounded-3xl md:p-9 mb-[50px] md:col-span-3 max-w-[1000px] justify-self-center">
             <img src={LofiFlow} alt="Low Fidelity Flow" />

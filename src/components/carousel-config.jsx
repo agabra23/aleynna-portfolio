@@ -386,9 +386,9 @@ const beachsideCards = [
 
   <img className={`w-full max-w-[250px]`} src={BlueDetails} alt="" />,
 
-  <img className={`w-full max-w-[250px]`} src={BlueDetails2} alt="" />,
-
   <img className={`w-full max-w-[250px]`} src={BlueDetails3} alt="" />,
+
+  <img className={`w-full max-w-[250px]`} src={BlueDetails2} alt="" />,
 
   <img className={`w-full max-w-[250px]`} src={BlueCart} alt="" />,
 
@@ -398,11 +398,11 @@ const beachsideCards = [
 
   <img className={`w-full max-w-[250px]`} src={BlueConfirmation} alt="" />,
 
-  <img className={`w-full max-w-[250px]`} src={BlueConfirmation2} alt="" />,
-
   <img className={`w-full max-w-[250px]`} src={BlueDriver} alt="" />,
 
   <img className={`w-full max-w-[250px]`} src={BlueTracking} alt="" />,
+
+  <img className={`w-full max-w-[250px]`} src={BlueConfirmation2} alt="" />,
 ];
 
 export {
