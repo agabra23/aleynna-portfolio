@@ -26,6 +26,7 @@ import PodcastChat from "../assets/PodcastChat.png";
 import ScreenDescription from "../components/ScreenDescription";
 import UserPersona from "../components/UserPersona";
 import AutoplayCarousel from "../components/AutoplayCarousel";
+import { autoCardDetails } from "../components/carousel-config.jsx";
 import ClickableCarousel from "../components/ClickableCarousel";
 import Section from "../components/Section";
 import HeroSectionWrapper from "../components/HeroSectionWrapper";
@@ -95,7 +96,7 @@ const Cafe = () => {
                   UX Designer
                 </p>
               </li>
-              <li className="text-right md:text-left  md:max-w-[250px] md:min-w-[150px] flex flex-col items-end md:block">
+              <li className="text-right md:text-left  md:max-w-[250px] flex flex-col items-end md:block">
                 <h6 className="font-helvetica font-normal text-lg md:text-xl place-self-end">
                   Team
                 </h6>
@@ -229,7 +230,7 @@ const Cafe = () => {
             </button>
           </div>
         </div>
-        <AutoplayCarousel />
+        <AutoplayCarousel slides={autoCardDetails} />
       </Section>
 
       {/* <Section>

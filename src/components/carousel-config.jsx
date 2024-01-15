@@ -15,6 +15,27 @@ import KatAvatar from "../assets/KatAvatar.png";
 import Mockup1 from "../assets/Mockup1.png";
 import Mockup2 from "../assets/Mockup2.png";
 import Mockup3 from "../assets/Mockup3.png";
+import PinkLogin from "../assets/PinkLogin.png";
+import PinkMenu from "../assets/PinkMenu.png";
+import PinkDetails from "../assets/PinkDetails.png";
+import PinkCart from "../assets/PinkCart.png";
+import PinkCheckout from "../assets/PinkCheckout.png";
+import PinkConfirmation from "../assets/PinkConfirmation.png";
+import PinkDriver from "../assets/PinkDriver.png";
+import PinkTracking from "../assets/PinkTracking.png";
+import BlueLogin from "../assets/BlueLogin.png";
+import BlueLogin2 from "../assets/BlueLogin2.png";
+import BlueMenu from "../assets/BlueMenu.png";
+import BlueDetails from "../assets/BlueDetails.png";
+import BlueDetails2 from "../assets/BlueDetails2.png";
+import BlueDetails3 from "../assets/BlueDetails3.png";
+import BlueCart from "../assets/BlueCart.png";
+import BlueCheckout from "../assets/BlueCheckout.png";
+import BlueCheckout2 from "../assets/BlueCheckout2.png";
+import BlueConfirmation from "../assets/BlueConfirmation.png";
+import BlueConfirmation2 from "../assets/BlueConfirmation2.png";
+import BlueDriver from "../assets/BlueDriver.png";
+import BlueTracking from "../assets/BlueTracking.png";
 
 const autoCardDetails = {
   0: {
@@ -72,6 +93,74 @@ const autoCardDetails = {
     title: "Thanks For Checking In Screen",
   },
 };
+
+const autoBeachsideCards = {
+  0: {
+    imgUrl: BlueLogin,
+    title: "Login Screen",
+  },
+
+  1: {
+    imgUrl: BlueLogin2,
+    title: "Connection Screen",
+  },
+
+  2: {
+    imgUrl: BlueMenu,
+    title: "Top 5 Screen",
+  },
+
+  3: {
+    imgUrl: BlueDetails,
+    title: "Found a Match Screen",
+  },
+
+  4: {
+    imgUrl: BlueDetails2,
+    title: "Match Screen",
+  },
+
+  5: {
+    imgUrl: BlueDetails3,
+    title: "Match Profile Screen",
+  },
+
+  6: {
+    imgUrl: BlueCart,
+    title: "Table Screen",
+  },
+
+  7: {
+    imgUrl: BlueCheckout,
+    title: "New User Screen",
+  },
+
+  8: {
+    imgUrl: BlueCheckout2,
+    title: "Message Screen",
+  },
+
+  9: {
+    imgUrl: BlueConfirmation,
+    title: "Edit Profile Screen",
+  },
+
+  10: {
+    imgUrl: BlueConfirmation2,
+    title: "Thanks For Checking In Screen",
+  },
+
+  11: {
+    imgUrl: BlueDriver,
+    title: "Thanks For Checking In Screen",
+  },
+
+  12: {
+    imgUrl: BlueTracking,
+    title: "Thanks For Checking In Screen",
+  },
+};
+
 const cardArray = [
   <img className={`w-full max-w-[250px]`} src={Carousel1} alt="" />,
 
@@ -162,4 +251,170 @@ const mockupArray = [
   />,
 ];
 
-export { autoCardDetails, cardArray, personaArray, mockupArray };
+const beachsideComparisonsArray = [
+  <div className="flex justify-center gap-[10px] md:gap-[30px] w-full items-center">
+    <div className="flex-1">
+      <img
+        className="w-full max-w-[200px]"
+        src={PinkLogin}
+        alt="Old Login Screen"
+      />
+    </div>
+    <div className="flex-1">
+      <img
+        className="w-full max-w-[200px]"
+        src={BlueLogin}
+        alt="New Login Screen"
+      />
+    </div>
+  </div>,
+  <div className="flex justify-center gap-[10px] md:gap-[30px] w-full items-center">
+    <div className="flex-1">
+      <img
+        className="w-full max-w-[200px]"
+        src={PinkMenu}
+        alt="Old Login Screen"
+      />
+    </div>
+    <div className="flex-1">
+      <img
+        className="w-full max-w-[200px]"
+        src={BlueMenu}
+        alt="New Login Screen"
+      />
+    </div>
+  </div>,
+  <div className="flex justify-center gap-[10px] md:gap-[30px] w-full items-center">
+    <div className="flex-1">
+      <img
+        className="w-full max-w-[200px]"
+        src={PinkDetails}
+        alt="Old Login Screen"
+      />
+    </div>
+    <div className="flex-1">
+      <img
+        className="w-full max-w-[200px]"
+        src={BlueDetails}
+        alt="New Login Screen"
+      />
+    </div>
+  </div>,
+  <div className="flex justify-center gap-[10px] md:gap-[30px] w-full items-center">
+    <div className="flex-1">
+      <img
+        className="w-full max-w-[200px]"
+        src={PinkCart}
+        alt="Old Login Screen"
+      />
+    </div>
+    <div className="flex-1">
+      <img
+        className="w-full max-w-[200px]"
+        src={BlueCart}
+        alt="New Login Screen"
+      />
+    </div>
+  </div>,
+  <div className="flex justify-center gap-[10px] md:gap-[30px] w-full items-center">
+    <div className="flex-1">
+      <img
+        className="w-full max-w-[200px]"
+        src={PinkCheckout}
+        alt="Old Login Screen"
+      />
+    </div>
+    <div className="flex-1">
+      <img
+        className="w-full max-w-[200px]"
+        src={BlueCheckout}
+        alt="New Login Screen"
+      />
+    </div>
+  </div>,
+  <div className="flex justify-center gap-[10px] md:gap-[30px] w-full items-center">
+    <div className="flex-1">
+      <img
+        className="w-full max-w-[200px]"
+        src={PinkConfirmation}
+        alt="Old Login Screen"
+      />
+    </div>
+    <div className="flex-1">
+      <img
+        className="w-full max-w-[200px]"
+        src={BlueConfirmation}
+        alt="New Login Screen"
+      />
+    </div>
+  </div>,
+  <div className="flex justify-center gap-[10px] md:gap-[30px] w-full items-center">
+    <div className="flex-1">
+      <img
+        className="w-full max-w-[200px]"
+        src={PinkDriver}
+        alt="Old Login Screen"
+      />
+    </div>
+    <div className="flex-1">
+      <img
+        className="w-full max-w-[200px]"
+        src={BlueDriver}
+        alt="New Login Screen"
+      />
+    </div>
+  </div>,
+  <div className="flex justify-center gap-[10px] md:gap-[30px] w-full items-center">
+    <div className="flex-1">
+      <img
+        className="w-full max-w-[200px]"
+        src={PinkTracking}
+        alt="Old Login Screen"
+      />
+    </div>
+    <div className="flex-1">
+      <img
+        className="w-full max-w-[200px]"
+        src={BlueTracking}
+        alt="New Login Screen"
+      />
+    </div>
+  </div>,
+];
+
+const beachsideCards = [
+  <img className={`w-full max-w-[250px]`} src={BlueLogin} alt="" />,
+
+  <img className={`w-full max-w-[250px]`} src={BlueLogin2} alt="" />,
+
+  <img className={`w-full max-w-[250px]`} src={BlueMenu} alt="" />,
+
+  <img className={`w-full max-w-[250px]`} src={BlueDetails} alt="" />,
+
+  <img className={`w-full max-w-[250px]`} src={BlueDetails2} alt="" />,
+
+  <img className={`w-full max-w-[250px]`} src={BlueDetails3} alt="" />,
+
+  <img className={`w-full max-w-[250px]`} src={BlueCart} alt="" />,
+
+  <img className={`w-full max-w-[250px]`} src={BlueCheckout} alt="" />,
+
+  <img className={`w-full max-w-[250px]`} src={BlueCheckout2} alt="" />,
+
+  <img className={`w-full max-w-[250px]`} src={BlueConfirmation} alt="" />,
+
+  <img className={`w-full max-w-[250px]`} src={BlueConfirmation2} alt="" />,
+
+  <img className={`w-full max-w-[250px]`} src={BlueDriver} alt="" />,
+
+  <img className={`w-full max-w-[250px]`} src={BlueTracking} alt="" />,
+];
+
+export {
+  autoCardDetails,
+  cardArray,
+  personaArray,
+  mockupArray,
+  beachsideComparisonsArray,
+  autoBeachsideCards
+};

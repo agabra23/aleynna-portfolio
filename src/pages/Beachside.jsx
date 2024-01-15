@@ -54,45 +54,18 @@ import InitialWireframe5 from "../assets/InitialWireframe5.png";
 import AfterWireframe1 from "../assets/AfterWireframe1.png";
 import AfterWireframe2 from "../assets/AfterWireframe2.png";
 import AfterWireframe3 from "../assets/AfterWireframe3.png";
+import ClickableCarousel from "../components/ClickableCarousel";
+import {
+  autoBeachsideCards,
+  beachsideComparisonsArray,
+  cardArray,
+  personaArray,
+} from "../components/carousel-config";
 
 const Beachside = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
-
-  const lisaDescriptionElement = (
-    <p className="col-span-2 text-[16px] md:text-lg">
-      Lisa is a 34 year old busy mom who works as a Psychologist in Boston, MA.
-      Lisa{" "}
-      <span className="font-semibold">
-        enjoys spending time with her family
-      </span>{" "}
-      at home or at the beach when she is not working. She would love a{" "}
-      <span className="font-semibold">
-        more efficient way to order meals online so that she can spend her time
-        on the things that are important in her life.
-      </span>
-    </p>
-  );
-
-  const joseDescriptionElement = (
-    <p className="col-span-2 text-[16px] md:text-lg">
-      José, a 23-year-old recent college grad, is excited about his role as a
-      Marketing Representative at a major firm in San Diego. He aspires to
-      secure a promotion within the next year and{" "}
-      <span className="font-semibold">
-        actively demonstrates his attention to detail and teamwork by frequently
-        ordering coffee and food for his coworkers
-      </span>{" "}
-      during lunch breaks. However, he faces challenges with the{" "}
-      <span className="font-semibold">
-        inefficiency of current food delivery apps
-      </span>
-      , as they are often inaccurate and unclear with timing. Jose{" "}
-      <span className="font-semibold">desires a more streamlined process</span>{" "}
-      to ensure his team’s trust in him.
-    </p>
-  );
 
   const formattedPar1 = (
     <p className="font-thin text-[16px] md:text-lg">
@@ -234,7 +207,7 @@ const Beachside = () => {
                   UX Designer
                 </p>
               </li>
-              <li className="text-right md:text-left  md:max-w-[250px] md:min-w-[150px] flex flex-col items-end md:block">
+              <li className="text-right md:text-left flex flex-col items-end md:block">
                 <h6 className="font-helvetica font-normal text-lg md:text-xl">
                   Team
                 </h6>
@@ -262,7 +235,7 @@ const Beachside = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <ul className="md:hidden grid grid-cols-2 gap-y-[40px] mt-[30px] text-center">
+          <ul className="md:hidden grid grid-cols-2 gap-y-[40px] gap-x-[30px] mt-[30px] text-center">
             <li>
               <h6 className="font-helvetica font-normal text-xl md:text-2xl">
                 Role
@@ -279,7 +252,7 @@ const Beachside = () => {
                 Team
               </h6>
               <p className="text-[16px] md:text-lg font-garamond font-thin max-w-[180px]">
-                Aleynna Quiñones, Alexa Sciacca, Elizabeth Leifheit, Amine Mena
+                Aleynna Quiñones
               </p>
             </li>
             <li>
@@ -287,7 +260,7 @@ const Beachside = () => {
                 Timeline
               </h6>
               <p className="text-[16px] md:text-lg font-garamond font-thin">
-                8 Weeks
+                6 months
               </p>
             </li>
             <li>
@@ -296,9 +269,6 @@ const Beachside = () => {
               </h6>
               <p className="text-[16px] md:text-lg font-garamond font-thin">
                 Figma
-              </p>
-              <p className="text-[16px] md:text-lg font-garamond font-thin">
-                GetFloorPlan
               </p>
             </li>
           </ul>
@@ -395,7 +365,7 @@ const Beachside = () => {
             </button>
           </div>
         </div>
-        <AutoplayCarousel />
+        <AutoplayCarousel gap="10px" slides={autoBeachsideCards} />
       </Section>
       {/* <Section>
         <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
@@ -590,14 +560,14 @@ const Beachside = () => {
             </ul>
           </div>
 
-          <div className="flex justify-evenly col-span-3 mb-[30px]">
+          <div className="flex gap-[10px] justify-evenly col-span-3 mb-[30px] max-w-full">
             <img
-              className="max-w-[200px]"
+              className="max-w-[200px] min-w-[90px]"
               src={UberEatsScreenshot}
               alt="Uber Eats Screen"
             />
             <img
-              className="max-w-[200px]"
+              className="max-w-[200px] min-w-[90px]"
               src={DoorDashScreenshot}
               alt="DoorDash Screen"
             />
@@ -895,7 +865,7 @@ const Beachside = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-5 md:gap-[25px] md:flex-row">
+        {/* <div className="flex flex-col gap-5 md:gap-[25px] md:flex-row">
           <BeachsideComparisons
             pinkImages={pinkImages1}
             blueImages={blueImages1}
@@ -904,10 +874,12 @@ const Beachside = () => {
             pinkImages={pinkImages2}
             blueImages={blueImages2}
           />
-        </div>
-        <div className="flex justify-center gap-[30px]">
-          <img className="max-w-[200]" src={PinkLogin} alt="" />
-          <img className="max-w-[200]" src={BlueLogin} alt="" />
+        </div> */}
+        <div className="mb-[30px] max-w-full">
+          <ClickableCarousel
+            slides={beachsideComparisonsArray}
+            desiredWidth="200px"
+          />
         </div>
       </Section>
       {/* <Section>
