@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { cardArray } from "./carousel-config";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
-const ClickableCarousel = () => {
+const ClickableCarousel = ({ desiredWidth = "250px" }) => {
   const [curr, setCurr] = useState(0);
 
   const nextSlide = () => {
@@ -35,37 +35,43 @@ const ClickableCarousel = () => {
   //     </div>
   //   );
   return (
-    <div className="max-w-[1000px] max-h-[100vw] h-[800px] w-full mx-auto flex relative">
+    <div className="flex justify-center">
       {/* Left Arrow */}
       <div className="self-center text-xl rounded-full border-2 border-black p-2 bg-transparent text-black cursor-pointer transition-all duration-500 hover:bg-black hover:text-offwhite">
-        <BsChevronLeft onClick={prevSlide} size={30} />
+        <BsChevronLeft onClick={prevSlide} size={20} />
       </div>
       <div
-        style={{ backgroundImage: `url(${cardArray[curr].imgUrl})` }}
-        className=" w-full h-full rounded-2xl bg-center bg-contain bg-no-repeat duration-500"
-      ></div>
+        // style={{ backgroundImage: `url(${cardArray[curr].imgUrl})` }}
+        className="duration-500 relative"
+      >
+        <img
+          className={`max-w-[${desiredWidth}]`}
+          src={cardArray[curr].imgUrl}
+          alt=""
+        />
+
+        <div className="absolute left-1/2 -translate-x-1/2 py-[10px] flex justify-center items-center gap-2">
+          {cardArray.map((_, i) => (
+            <div
+              key={i}
+              className={` p-1 rounded-full border border-black transition-all duration-500 cursor-pointer hover:scale-105 hover:bg-black`}
+              onClick={() => setCurr(i)}
+              style={{
+                opacity: `${curr === i ? 1 : 0.4}`,
+                backgroundColor: `${curr === i ? "black" : ""}`,
+              }}
+            ></div>
+          ))}
+        </div>
+      </div>
 
       {/* Right Arrow */}
       <div className="self-center text-xl rounded-full border-2 border-black p-2 bg-transparent text-black cursor-pointer transition-all duration-500 hover:bg-black hover:text-offwhite">
         <BsChevronRight
           onClick={nextSlide}
           className="translate-x-0"
-          size={30}
+          size={20}
         />
-      </div>
-
-      <div className="absolute -bottom-[30px] left-1/2 -translate-x-1/2 py-[10px] flex justify-center items-center gap-2">
-        {cardArray.map((_, i) => (
-          <div
-            key={i}
-            className={` p-1 rounded-full border border-black transition-all duration-500 cursor-pointer hover:scale-105 hover:bg-black`}
-            onClick={() => setCurr(i)}
-            style={{
-              opacity: `${curr === i ? 1 : 0.4}`,
-              backgroundColor: `${curr === i ? "black" : ""}`,
-            }}
-          ></div>
-        ))}
       </div>
     </div>
   );

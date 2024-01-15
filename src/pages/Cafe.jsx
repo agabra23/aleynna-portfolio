@@ -22,7 +22,7 @@ import Sticky2 from "../assets/Sticky2.png";
 import CafeSketch1 from "../assets/CafeSketch1.png";
 import CafeSketch2 from "../assets/CafeSketch2.png";
 import CafeSketch3 from "../assets/CafeSketch3.png";
-import PodcastChat from "../assets/PodcastChat.jpg";
+import PodcastChat from "../assets/PodcastChat.png";
 import ScreenDescription from "../components/ScreenDescription";
 import UserPersona from "../components/UserPersona";
 import AutoplayCarousel from "../components/AutoplayCarousel";
@@ -218,113 +218,15 @@ const Cafe = () => {
               face-to-face in the café, hosting live podcast events, and
               providing equipment to record their own podcasts.
             </p>
+            <button className="text-[16px] hover:bg-black hover:text-offwhite transition-colors duration-200  font-helvetica font-normal px-6 py-3 mt-[30px] mb-[30px] rounded-full border-2 border-solid border-black">
+              <a href="#ourSolution">Jump to solution</a>
+            </button>
           </div>
         </div>
+        <AutoplayCarousel />
       </Section>
-      <Section>
-        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
-          <h6 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">
-            Our Solution
-          </h6>
-          <div className="mb-[10px] col-span-2">
-            <h4 className="mb-[10px] text-xl md:text-2xl font-medium font-helvetica">
-              The Connection Café physical space
-            </h4>
-            <p className="font-thin text-[16px] md:text-lg">
-              A versatile space where{" "}
-              <span className="font-semibold">
-                digital interaction meets in-person interaction.
-              </span>
-            </p>
-          </div>
-          <div className="md:col-span-3 md:flex-row md:justify-center bg-white p-9 rounded-3xl flex flex-col gap-[10px] mb-[30px] md:max-w-[1000px] w-full justify-self-center">
-            <img
-              className="object-cover md:max-w-[325px] md:min-w-[100px] h-auto"
-              src={Mockup1}
-              alt=""
-            />
-            <img
-              className="object-cover md:max-w-[325px] md:min-w-[100px] h-auto"
-              src={Mockup2}
-              alt=""
-            />
-            <img
-              className="object-cover md:max-w-[325px] md:min-w-[100px] h-auto"
-              src={Mockup3}
-              alt=""
-            />
-          </div>
-          <div></div>
-          <div className="mb-[30px] col-span-2">
-            <h4 className="mb-[10px]  text-xl md:text-2xl font-medium font-helvetica">
-              Visitors can...
-            </h4>
-            <ul className="list-disc list-inside pl-3 text-[16px] md:text-lg">
-              <li className="leading-7">
-                <span className="font-semibold">
-                  Check in to the café using the QR code
-                </span>{" "}
-                on the wall where they can get in contact with other visitors at
-                the café (more on this below)
-              </li>
-              <li className="leading-7">
-                Grab <span className="font-semibold">food and drink</span> at
-                the counter
-              </li>
-              <li className="leading-7">
-                Check out the{" "}
-                <span className="font-semibold">daily top 5 podcasts</span>{" "}
-                posted next to the menu
-              </li>
-              <li className="leading-7">
-                <span className="font-semibold">Record their own podcasts</span>{" "}
-                in soundproof booths with rented equipment
-              </li>
-              <li className="leading-7">
-                Watch <span className="font-semibold">live podcast shows</span>{" "}
-                on weekend evenings
-              </li>
-            </ul>
-          </div>
-          <div></div>
-          <h4 className="mb-[10px] text-xl md:text-2xl font-medium font-helvetica col-span-2">
-            The Connection Café App
-          </h4>
-        </div>
 
-        <div className="flex flex-col gap-10 items-center">
-          <ScreenDescription
-            imageSrc1={Connect}
-            imageSrc2={Populate}
-            cap1="Connect to listening platforms"
-            cap2="Unique population of podcasts"
-            p1="Upon check-in or sign-up, users are directed to the initial screen where
-        they can link their preferred podcast platforms, redirecting outside the
-        app upon selection."
-            p2="After successful connections, the subsequent screen displays a
-        consolidated list of their podcasts from all linked platforms, allowing
-        users to pick their top 5 for display on their profile when connecting
-        with others."
-          />
-          <ScreenDescription
-            imageSrc1={FoundMatch}
-            imageSrc2={MatchExample}
-            cap1="Your match confirmation"
-            cap2="Your match"
-            p1="After choosing their top 5 podcasts, the app uses the list to match the user with others in the café."
-            p2="Although the app can potentially match the user with multiple people, for simplicity, it displays a single match, like Angela, whom users can learn more about on a dedicated page from the previous screen."
-          />
-          <ScreenDescription
-            imageSrc1={MatchProfile}
-            imageSrc2={Meeting}
-            cap1="Your match profile"
-            cap2="Meeting confirmation"
-            p1="Upon selecting to learn more, users access their match's profile, featuring a brief bio, favorite podcast genres, and top 5 podcasts."
-            p2="The pivotal aspect of this interaction is the personal connection; users can either meet their match immediately at the café or initiate communication through the app, with the option to be directed to a designated table for in-person conversation."
-          />
-        </div>
-      </Section>
-      <Section>
+      {/* <Section>
         <div className="flex flex-col items-center gap-[10px]">
           <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-lg font-thin text-center self-center">
             Want to learn more about our process?
@@ -347,7 +249,7 @@ const Cafe = () => {
             />
           </svg>
         </div>
-      </Section>
+      </Section> */}
       <Section>
         <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
           <h4 className="justify-self-center uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[10px] md:mb-0">
@@ -395,12 +297,30 @@ const Cafe = () => {
       </Section>
       <Section>
         <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">
-            What did we find?
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
+            The emerging problem
           </h4>
           <div className="mb-[50px] md:col-span-2">
             <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
-              Secondary and primary research key findings
+              Adult podcast enthusiasts have few opportunities to engage in
+              in-person interactions with fellow listeners who have common
+              interests.
+            </h6>
+            <ul className="flex flex-col gap-[15px]">
+              <li className="text-[16px] md:text-lg font-thin">
+                After a taxing day at work, adult podcast listeners are seeking
+                a hassle-free and relaxed way to engage with fellow listeners
+                beyond their phone screens, in hopes of diverting their minds
+                from work stress.
+              </li>
+            </ul>
+          </div>
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">
+            But why?
+          </h4>
+          <div className="mb-[50px] md:col-span-2">
+            <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
+              Research findings and pain points
             </h6>
             <ul className="list-disc list-inside pl-3">
               <li className="text-[16px] md:text-lg font-thin leading-7">
@@ -414,6 +334,16 @@ const Cafe = () => {
                 Podcast listening is a{" "}
                 <span className="font-semibold">chance to build community</span>
                 .
+                <ul className="list-inside list-[circle] pl-[30px]">
+                  <li className="text-[16px] md:text-lg font-thin leading-7">
+                    “...podcasts are a social experience... most listeners say
+                    they recommend podcasts to someone else, [and]{" "}
+                    <span className="font-semibold">
+                      discuss the content they hear with others
+                    </span>
+                    ...” Pew Research
+                  </li>
+                </ul>
               </li>
               <li className="text-[16px] md:text-lg font-thin leading-7">
                 Adults need a way to{" "}
@@ -426,10 +356,19 @@ const Cafe = () => {
                   need an engaging way to discuss
                 </span>{" "}
                 podcast content with friends.
+                <ul className="list-inside list-[circle] pl-[30px]">
+                  <li>
+                    “I like to discuss with people but{" "}
+                    <span className="font-semibold">
+                      sometimes people don’t care.
+                    </span>
+                    ” Pam, 53 yr old
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
+          {/* <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
             Say What?
           </h4>
           <div className="mb-[50px] md:col-span-2">
@@ -450,7 +389,7 @@ const Cafe = () => {
                   I’ll choose a podcast more catered to general entertainment
                 </span>
                 .” Logan, 26 yrs old
-              </li>
+              </li>{" "}
               <li className="text-[16px] md:text-lg font-thin leading-7">
                 “I like to discuss with people but{" "}
                 <span className="font-semibold">
@@ -467,14 +406,21 @@ const Cafe = () => {
                 ...” Pew Research
               </li>
             </ul>
-          </div>
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-[10px] md:col-span-1 place-self-end">
+          </div> */}
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
             User Personas
           </h4>
-          <h6 className="md:text-2xl text-xl w-max font-medium font-helvetica mb-[10px] justify-self-start md:col-span-2">
-            Meet Matt and Kat
-          </h6>
+          <div className="col-span-2 mb-[30px]">
+            <h6 className="md:text-2xl text-xl w-max font-medium font-helvetica mb-[10px] justify-self-start md:col-span-2">
+              Meet Matt and Kat
+            </h6>
+            <p className="text-16px font-thin md:text-lg">
+              We created user personas, Matt and Kat, to help us better
+              understand and empathize with our audience.
+            </p>
+          </div>
         </div>
+        <ClickableCarousel />
         <div className="flex flex-col gap-12 md:gap-10 items-center">
           <UserPersona
             avatar={MattAvatar}
@@ -510,58 +456,52 @@ const Cafe = () => {
       </Section>
       <Section>
         <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
-            The emerging problem
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
+            Synthesis
           </h4>
-          <div className="mb-[50px] md:col-span-2">
+          <div className="md:col-span-2">
             <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
-              Adult podcast enthusiasts have few opportunities to engage in
-              in-person interactions with fellow listeners who have common
-              interests.
+              Now, with an understanding of the challenges adult podcast
+              listeners face, we asked...
             </h6>
             <ul className="flex flex-col gap-[15px]">
               <li className="text-[16px] md:text-lg font-thin">
-                After a taxing day at work, adult podcast listeners are seeking
-                a hassle-free and relaxed way to engage with fellow listeners
-                beyond their phone screens, in hopes of diverting their minds
-                from work stress.
+                How can we provide adult podcast listeners with a means to
+                unwind after a busy day while maintaining a sense of connection
+                with others?
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
-            Thus, we asked
-          </h4>
-          <div className="mb-[50px] md:col-span-2">
-            <h6 className="md:text-2xl text-xl font-medium font-helvetica">
-              How can we provide adult podcast listeners with a means to unwind
-              after a busy day while maintaining a sense of connection with
-              others?
-            </h6>
-          </div>
+        </div>
+      </Section>
+      <Section>
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[30px] md:col-span-1">
             Ideation
           </h4>
           <div className="md:mb-[10px] md:col-span-2">
             <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
-              Brainstorming and affinity maps
+              Brainstorming and visualizing our solutions
             </h6>
             <ul className="flex flex-col gap-[15px]">
               <li className="text-[16px] md:text-lg font-thin">
-                After brainstorming over 100 solutions to our problem via
-                brainwriting and mash-ups techniques, my team and I honed in on
-                two we thought were best.
+                We brainstormed over 100 solutions using brainwriting and mashup
+                techniques. After honing in on two that we thought best
+                addressed our user's needs, we created gallery sketches to
+                provide a visual representation of what our solutions might
+                entail and to facilitate the collection of user feedback.
               </li>
             </ul>
           </div>
         </div>
-        {/* <div className="grid grid-cols-2 justify-center grid-rows-2 bg-white rounded-3xl gap-2 p-9">
-          <img src={Ideas1} alt="Ideation" />
-          <img src={Ideas2} alt="Ideation" />
-          <img src={Ideas3} alt="Ideation" />
-          <img src={Ideas4} alt="Ideation" />
-        </div> */}
-        <div className="grid grid-cols-2 mt-4 md:mt-8 gap-y-3 md:gap-y-7 gap-x-5 md:gap-x-36 mb-[50px] max-w-[1000px] self-center">
-          {/* <svg
+        <div className="flex justify-center rounded-3xl">
+          <img className="max-w-[200px]" src={Ideas1} alt="Ideation" />
+          <img className="max-w-[200px]" src={Ideas2} alt="Ideation" />
+          <img className="max-w-[200px]" src={Ideas3} alt="Ideation" />
+          <img className="max-w-[200px]" src={Ideas4} alt="Ideation" />
+        </div>
+        {/* <div className="grid grid-cols-2 mt-4 md:mt-8 gap-y-3 md:gap-y-7 gap-x-5 md:gap-x-36 mb-[50px] max-w-[1000px] self-center">
+          <svg
             className="md:w-8 place-self-center"
             width="20px"
             height="100%"
@@ -588,38 +528,25 @@ const Cafe = () => {
               d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
               fill="black"
             />
-          </svg> */}
+          </svg>
           <div className="max-w-[250px] justify-self-center place-self-start justify-center flex ">
             <img src={Sticky1} alt="Sticky Note 1" />
           </div>
           <div className="max-w-[250px] justify-self-center place-self-start justify-center flex ">
             <img src={Sticky2} alt="Sticky Note 2" />
           </div>
-        </div>
+        </div> */}
         <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
-          <div></div>
-          <div className="md:mb-[30px] mb-[10px] md:col-span-2">
-            <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
-              Visualizing our solutions
-            </h6>
-            <ul className="flex flex-col gap-[15px]">
-              <li className="text-lg md:text-lg font-thin">
-                After selecting our two best ideas, we moved on to creating
-                gallery sketches.{" "}
-                <span className="font-semibold">
-                  This step aimed to provide a visual representation of what our
-                  solutions might entail and facilitated the collection of user
-                  feedback.
-                </span>
-              </li>
-            </ul>
-          </div>
-          <div className="md:col-span-3 bg-white p-9 rounded-3xl flex flex-col md:flex-row md:justify-center md:justify-self-center gap-5 md:gap-[90px] items-center mb-[50px] max-w-[1000px]">
+          <div className="md:col-span-3  p-9 rounded-3xl flex flex-col md:flex-row md:justify-center md:justify-self-center gap-5 md:gap-[90px] items-center mb-[50px] max-w-[1000px]">
             <div>
               <p className="uppercase text-center font-helvetica font-thin text-[16px]">
                 Podcast Chat
               </p>
-              <img src={PodcastChat} alt="Podcast Chat Sketches" />
+              <img
+                className="max-w-[250px]"
+                src={PodcastChat}
+                alt="Podcast Chat Sketches"
+              />
             </div>
             <div>
               <p className="uppercase text-center font-helvetica font-thin text-[16px]">
@@ -673,7 +600,7 @@ const Cafe = () => {
           </div>
         </div>
       </Section>
-      <Section>
+      {/* <Section>
         <div className="flex flex-col items-center gap-[10px]">
           <h4 className="font-helvetica text-xl font-medium text-center md:text-2xl">
             Let’s wrap this up...
@@ -692,10 +619,165 @@ const Cafe = () => {
             />
           </svg>
         </div>
+      </Section> */}
+      <Section>
+        <div
+          id="ourSolution"
+          className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]"
+        >
+          <h6 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">
+            Our Solution
+          </h6>
+          <div className="mb-[30px] col-span-2">
+            <h4 className="mb-[10px] text-xl md:text-2xl font-medium font-helvetica">
+              The Connection Café
+            </h4>
+            <p className="font-thin text-[16px] md:text-lg">
+              Connection Café is a community initiative designed to connect
+              people who share an interest in podcasts. Its goal is to improve
+              community mental health by facilitating in-person interactions in
+              today’s technology-focused world.
+            </p>
+          </div>
+          <div className="col-span-3 flex flex-col md:flex-row md:justify-evenly items-center gap-[10px] mb-[30px]">
+            <img className="max-w-[250px]" src={MatchProfile} alt="" />
+            <ClickableCarousel />
+          </div>
+          <div></div>
+          <div className="mb-[30px] col-span-2">
+            <h4 className="mb-[10px] text-xl md:text-2xl font-medium font-helvetica">
+              With the Connection Café, users can...
+            </h4>
+
+            <ul className="list-none list-inside text-[16px] md:text-lg">
+              <li className="">
+                <span className="font-medium font-helvetica">Build:</span>{" "}
+                <span>
+                  They can cultivate and build meaningful friendships with
+                  people in their community through messaging on the app and
+                  meeting in person
+                </span>
+              </li>
+              <li className="">
+                <span className="font-medium font-helvetica">Trust:</span>{" "}
+                <span>
+                  They can feel confident that they'll be able to have engaging
+                  discussions surrounding podcasts with people they know will be
+                  interested in the same topics
+                </span>
+              </li>
+              <li className="">
+                <span className="font-medium font-helvetica">Disconnect:</span>{" "}
+                <span>
+                  They'll have a place to unwind after work while remaining
+                  stimulated and entertained
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div></div>
+          <div className="mb-[30px] col-span-2">
+            <h4 className="mb-[10px] text-xl md:text-2xl font-medium font-helvetica">
+              The physical space and the mobile app
+            </h4>
+
+            <p className="font-thin text-[16px] md:text-lg">
+              A versatile space where{" "}
+              <span className="font-semibold">
+                digital interaction meets in-person interaction.
+              </span>
+            </p>
+          </div>
+          <div className="md:col-span-3 md:flex-row md:justify-center flex flex-col gap-[10px] mb-[30px] md:max-w-[1000px] w-full justify-self-center">
+            <img
+              className="object-cover md:max-w-[325px] md:min-w-[100px] h-auto"
+              src={Mockup1}
+              alt=""
+            />
+            {/* <img
+              className="object-cover md:max-w-[325px] md:min-w-[100px] h-auto"
+              src={Mockup2}
+              alt=""
+            />
+            <img
+              className="object-cover md:max-w-[325px] md:min-w-[100px] h-auto"
+              src={Mockup3}
+              alt=""
+            /> */}
+          </div>
+          <div></div>
+          <div className="mb-[30px] col-span-2">
+            <h4 className="text-[16px] md:text-lg font-helvetica">
+              Visitors can...
+            </h4>
+            <ul className="list-disc list-inside pl-3 text-[16px] md:text-lg">
+              <li className="leading-7">
+                <span className="font-semibold">
+                  Check in to the café using the QR code
+                </span>{" "}
+                on the wall where they can get in contact with other visitors at
+                the café (more on this below)
+              </li>
+              <li className="leading-7">
+                Grab <span className="font-semibold">food and drink</span> at
+                the counter
+              </li>
+              <li className="leading-7">
+                Check out the{" "}
+                <span className="font-semibold">daily top 5 podcasts</span>{" "}
+                posted next to the menu
+              </li>
+              <li className="leading-7">
+                <span className="font-semibold">Record their own podcasts</span>{" "}
+                in soundproof booths with rented equipment
+              </li>
+              <li className="leading-7">
+                Watch <span className="font-semibold">live podcast shows</span>{" "}
+                on weekend evenings
+              </li>
+            </ul>
+          </div>
+          {/* <div></div> */}
+          {/* <h4 className="mb-[10px] text-xl md:text-2xl font-medium font-helvetica col-span-2">
+            The mobile app
+          </h4> */}
+        </div>
+
+        <div className="flex flex-col gap-10 items-center">
+          <ScreenDescription
+            imageSrc1={Connect}
+            imageSrc2={Populate}
+            cap1="Connect to listening platforms"
+            cap2="Unique population of podcasts"
+            p1="Users can select their top 5 podcasts to appear on their profile for other users to view."
+            p2=""
+            heading="Link their profile to their favorite listening platforms"
+          />
+          <ScreenDescription
+            imageSrc1={FoundMatch}
+            imageSrc2={MatchExample}
+            cap1="Your match confirmation"
+            cap2="Your match"
+            p1="After choosing their top 5 podcasts, the app uses the list to match the user with others in the café that share similar interests."
+            p2=""
+            reverse={true}
+            heading="Match with other current visitors at the café"
+          />
+          <ScreenDescription
+            imageSrc1={MatchProfile}
+            imageSrc2={Meeting}
+            cap1="Your match profile"
+            cap2="Meeting confirmation"
+            p1="Upon selecting to learn more, users access their match's profile featuring a brief bio, favorite podcast genres, and their top 5 podcasts. Users can then decide if they want to meet their match at a table at the café or if they'd prefer to message them first."
+            p2=""
+            reverse={false}
+            heading="View their match's profile"
+          />
+        </div>
       </Section>
       <Section>
         <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">
+          {/* <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">
             The End
           </h4>
           <div className="mb-[30px] md:col-span-2">
@@ -711,17 +793,40 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
-
-          {/* Carousel */}
-          <div className="col-span-3 mb-11 md:mb-[50px] bg-white">
-            <AutoplayCarousel />
-          </div>
           <div className="col-span-3 mb-11 md:mb-[50px]">
             <ClickableCarousel />
-          </div>
+          </div> */}
 
+          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">
+            Wishes
+          </h4>
+          <div className=" md:col-span-2 mb-[50px]">
+            <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
+              Test with more users
+            </h6>
+            <ul className="flex flex-col gap-[15px] mb-[30px]">
+              <li className="text-[16px] md:text-lg font-thin">
+                Due to the timeline of this project, we were unable to conduct
+                more user testing after our final mockup. It would have been
+                helpful to know what could be improved upon not only in the app,
+                but with the overall business model as well.
+              </li>
+            </ul>
+            <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
+              More time for low and mid-fidelity mockups
+            </h6>
+            <ul className="flex flex-col gap-[15px]">
+              <li className="text-[16px] md:text-lg font-thin">
+                If we had been given more time with this project, creating low
+                and even mid-fidelity mockups prior to the final high-fidelity
+                mockup would have been helpful in refining our final design. I
+                believe this was also a crucial step that we missed out on in
+                the design process.
+              </li>
+            </ul>
+          </div>
           <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">
-            What did I learn?
+            Learnings
           </h4>
           <div className="mb-[50px] md:col-span-2">
             <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[20px]">
@@ -741,31 +846,9 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">
-            What’s next?
-          </h4>
-          <div className=" md:col-span-2">
-            <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
-              User Testing and Implementation
-            </h6>
-            <ul className="list-disc list-inside pl-3 text-[16px] md:text-lg font-thin">
-              <li className="leading-7">
-                Does our physical space prototype provide the best options to
-                facilitate in-person interaction?
-              </li>
-              <li className="leading-7">
-                What can be improved upon in our app? What accessibility
-                features can we take into account?
-              </li>
-              <li className="leading-7">
-                What would the income generating model entail for a solution
-                like this?
-              </li>
-            </ul>
-          </div>
         </div>
       </Section>
-      <Section>
+      {/* <Section>
         <div className="flex flex-col items-center gap-[10px]">
           <h4 className="font-helvetica md:text-2xl font-medium text-center text-[20px]">
             Thank you for diving in!
@@ -795,7 +878,7 @@ const Cafe = () => {
             />
           </svg>
         </div>
-      </Section>
+      </Section> */}
     </div>
   );
 };
