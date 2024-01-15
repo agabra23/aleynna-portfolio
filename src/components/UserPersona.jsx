@@ -11,7 +11,7 @@ const UserPersona = ({
   goals,
 }) => {
   return (
-    <div className="bg-white rounded-3xl p-[35px] text-[16px] md:grid md:grid-cols-[1.5fr_1fr] gap-x-11 md:max-w-screen-md w-full">
+    <div className="bg-white rounded-3xl p-[35px] text-[16px] md:grid md:grid-cols-[1.5fr_1fr] gap-x-11 md:max-w-screen-md">
       <div className="md:grid md:grid-cols-[1fr_1.5fr] gap-x-9 mb-[45px] md:mb-0">
         <div className="max-w-[375px] mb-[30px] h-auto mx-auto">
           <img src={avatar} alt={name} />

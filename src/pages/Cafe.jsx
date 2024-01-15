@@ -29,6 +29,12 @@ import AutoplayCarousel from "../components/AutoplayCarousel";
 import ClickableCarousel from "../components/ClickableCarousel";
 import Section from "../components/Section";
 import HeroSectionWrapper from "../components/HeroSectionWrapper";
+import Carousel1 from "../assets/carousel/Carousel1.png";
+import {
+  cardArray,
+  mockupArray,
+  personaArray,
+} from "../components/carousel-config.jsx";
 
 const Cafe = () => {
   useLayoutEffect(() => {
@@ -420,8 +426,10 @@ const Cafe = () => {
             </p>
           </div>
         </div>
-        <ClickableCarousel />
-        <div className="flex flex-col gap-12 md:gap-10 items-center">
+        <div className="mb-[60px]">
+          <ClickableCarousel slides={personaArray} desiredWidth="1000px" />
+        </div>
+        {/* <div className="flex flex-col gap-12 md:gap-10 items-center">
           <UserPersona
             avatar={MattAvatar}
             name={"Matt"}
@@ -452,7 +460,7 @@ const Cafe = () => {
             age={"32"}
             description={katDescriptionElement}
           />
-        </div>
+        </div> */}
       </Section>
       <Section>
         <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
@@ -639,9 +647,9 @@ const Cafe = () => {
               today’s technology-focused world.
             </p>
           </div>
-          <div className="col-span-3 flex flex-col md:flex-row md:justify-evenly items-center gap-[10px] mb-[30px]">
-            <img className="max-w-[250px]" src={MatchProfile} alt="" />
-            <ClickableCarousel />
+          <div className="col-span-3 flex flex-col md:flex-row md:justify-evenly items-center gap-[10px] mb-[60px] max-w-full">
+            <img className="w-full max-w-[250px]" src={Carousel1} alt="" />
+            <ClickableCarousel desiredWidth="250px" slides={cardArray} />
           </div>
           <div></div>
           <div className="mb-[30px] col-span-2">
@@ -688,12 +696,8 @@ const Cafe = () => {
               </span>
             </p>
           </div>
-          <div className="md:col-span-3 md:flex-row md:justify-center flex flex-col gap-[10px] mb-[30px] md:max-w-[1000px] w-full justify-self-center">
-            <img
-              className="object-cover md:max-w-[325px] md:min-w-[100px] h-auto"
-              src={Mockup1}
-              alt=""
-            />
+          <div className="md:col-span-3 md:flex-row md:justify-center flex flex-col gap-[10px] mb-[60px] md:max-w-[1000px] w-full justify-self-center">
+            <ClickableCarousel slides={mockupArray} desiredWidth="325px" />
             {/* <img
               className="object-cover md:max-w-[325px] md:min-w-[100px] h-auto"
               src={Mockup2}
@@ -706,7 +710,7 @@ const Cafe = () => {
             /> */}
           </div>
           <div></div>
-          <div className="mb-[30px] col-span-2">
+          <div className="mb-[50px] col-span-2">
             <h4 className="text-[16px] md:text-lg font-helvetica">
               Visitors can...
             </h4>

@@ -1,5 +1,5 @@
 import React from "react";
-import { autoCardDetails } from "./carousel-config";
+import { autoCardDetails } from "./carousel-config.jsx";
 import CarouselItem from "./CarouselItem";
 
 export default function AutoplayCarousel() {
