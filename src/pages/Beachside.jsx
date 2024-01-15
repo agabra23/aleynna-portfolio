@@ -51,6 +51,9 @@ import InitialWireframe2 from "../assets/InitialWireframe2.png";
 import InitialWireframe3 from "../assets/InitialWireframe3.png";
 import InitialWireframe4 from "../assets/InitialWireframe4.png";
 import InitialWireframe5 from "../assets/InitialWireframe5.png";
+import AfterWireframe1 from "../assets/AfterWireframe1.png";
+import AfterWireframe2 from "../assets/AfterWireframe2.png";
+import AfterWireframe3 from "../assets/AfterWireframe3.png";
 
 const Beachside = () => {
   useLayoutEffect(() => {
@@ -388,7 +391,7 @@ const Beachside = () => {
               the hassle of preparing meals themselves.
             </p>
             <button className="text-[16px] hover:bg-black hover:text-offwhite transition-colors duration-200  font-helvetica font-normal px-6 py-3 mt-[30px] mb-[30px] rounded-full border-2 border-solid border-black">
-              <a href="#ourSolutionBeachside">Jump to solution</a>
+              <a href="#mySolutionBeachside">Jump to solution</a>
             </button>
           </div>
         </div>
@@ -685,7 +688,7 @@ const Beachside = () => {
           <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[30px] md:col-span-2">
             Paper and digital wireframes
           </h6>
-          <div className="flex flex-col gap-[10px] md:gap-0 items-center md:flex-row md:justify-evenly col-span-3 mb-[30px]">
+          <div className="flex flex-col gap-[10px] items-center md:flex-row md:justify-center col-span-3 mb-[30px]">
             <img
               className="max-w-[300px] md:max-w-[200px]"
               src={PaperWireframe1}
@@ -707,29 +710,29 @@ const Beachside = () => {
               alt=""
             />
           </div>
-          <div className="flex flex-col gap-[10px] md:gap-0 items-center md:flex-row md:justify-evenly col-span-3 mb-[30px]">
+          <div className="flex flex-col gap-[10px] items-center md:flex-row md:justify-center col-span-3 mb-[50px]">
             <img
-              className="max-w-[250px] md:max-w-[150px]"
+              className="border border-black/20 max-w-[250px] md:max-w-[100px]"
               src={InitialWireframe1}
               alt=""
             />
             <img
-              className="max-w-[250px] md:max-w-[150px]"
+              className="border border-black/20 max-w-[250px] md:max-w-[100px]"
               src={InitialWireframe2}
               alt=""
             />
             <img
-              className="max-w-[250px] md:max-w-[150px]"
+              className="border border-black/20 max-w-[250px] md:max-w-[100px]"
               src={InitialWireframe3}
               alt=""
             />
             <img
-              className="max-w-[250px] md:max-w-[150px]"
+              className="border border-black/20 max-w-[250px] md:max-w-[100px]"
               src={InitialWireframe4}
               alt=""
             />
             <img
-              className="max-w-[250px] md:max-w-[150px]"
+              className="border border-black/20 max-w-[250px] md:max-w-[100px]"
               src={InitialWireframe5}
               alt=""
             />
@@ -740,7 +743,7 @@ const Beachside = () => {
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             Usability study
           </h4>
-          <div className="md:col-span-2 mb-[10px]">
+          <div className="md:col-span-2 mb-[30px]">
             <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
               Refining my wireframes utilizing user feedback
             </h6>
@@ -801,8 +804,8 @@ const Beachside = () => {
         </div>
         <div className="flex flex-col items-center mx-auto gap-[10px] md:gap-[30px] max-w-[1000px]">
           <BeachsideScreenDescription
-            imageSrc1={LofiHome1}
-            imageSrc2={LofiHome2}
+            imageSrc1={InitialWireframe5}
+            imageSrc2={AfterWireframe1}
             cap1="Before"
             cap2="After"
             heading="People were finding it difficult to add items to their cart."
@@ -814,8 +817,8 @@ const Beachside = () => {
             reverse={false}
           />
           <BeachsideScreenDescription
-            imageSrc1={LofiCheckout}
-            imageSrc2={LofiConfirmation}
+            imageSrc1={InitialWireframe2}
+            imageSrc2={AfterWireframe2}
             cap1="Before"
             cap2="After"
             heading="People want to know that their order went through after checking out."
@@ -826,8 +829,8 @@ const Beachside = () => {
             reverse={true}
           />
           <BeachsideScreenDescription
-            imageSrc1={LofiTracking}
-            imageSrc2={LofiDriver}
+            imageSrc1={InitialWireframe3}
+            imageSrc2={AfterWireframe3}
             cap1="Before"
             cap2="After"
             heading="People want to be able to contact their delivery driver."
@@ -902,8 +905,12 @@ const Beachside = () => {
             blueImages={blueImages2}
           />
         </div>
+        <div className="flex justify-center gap-[30px]">
+          <img className="max-w-[200]" src={PinkLogin} alt="" />
+          <img className="max-w-[200]" src={BlueLogin} alt="" />
+        </div>
       </Section>
-      <Section>
+      {/* <Section>
         <div className="flex flex-col items-center gap-[10px]">
           <h4 className="font-helvetica text-xl md:text-2xl font-medium text-center">
             Let’s wrap this up...
@@ -922,11 +929,14 @@ const Beachside = () => {
             />
           </svg>
         </div>
-      </Section>
+      </Section> */}
       <Section>
-        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
+        <div
+          id="mySolutionBeachside"
+          className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]"
+        >
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
-            The End
+            The Solution
           </h4>
           <div className=" mb-[30px] md:col-span-2">
             <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
@@ -972,29 +982,36 @@ const Beachside = () => {
               />
             </div>
           </div>
-
-          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
-            What did I learn?
-          </h4>
-          <div className="mb-[50px] md:col-span-2">
-            <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
-              Screens are scrollable and consistency in design elements is key
-            </h6>
+          <div className="col-span-2 col-start-2">
             <ul className="flex flex-col gap-[10px]">
               <li className="text-[16px] md:text-lg font-thin">
-                When I designed my first high-fidelity mockup, I was unfamiliar
-                with auto layout. After experimenting with it, I learned how
-                helpful it was in creating consistent and well spaced out
-                layouts. I also realized that I can design screens that are
-                scrollable, meaning there was no need for me to cram every
-                element into a fixed size screen.
+                <span className="font-semibold">Real-time tracking</span> and
+                easy driver contacting allows users to feel confident that their
+                order will arrive on time.
+              </li>
+              <li className="text-[16px] md:text-lg font-thin">
+                <span className="font-semibold">
+                  An intuitive layout and design
+                </span>{" "}
+                provides users with an easy and straightforward way to place
+                their orders.
+              </li>
+              <li className="text-[16px] md:text-lg font-thin">
+                Users can{" "}
+                <span className="font-semibold">reclaim their free time</span>{" "}
+                by directing their attention away from prepping home-cooked
+                meals.
               </li>
             </ul>
           </div>
+        </div>
+      </Section>
+      <Section>
+        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:col-span-1 mb-[10px] md:mb-0">
-            What’s next?
+            Wishes
           </h4>
-          <div className="md:col-span-2">
+          <div className="mb-[50px] md:col-span-2">
             <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
               Accessibility considerations and refining the UI
             </h6>
@@ -1012,9 +1029,27 @@ const Beachside = () => {
               </li>
             </ul>
           </div>
+          <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
+            Learnings
+          </h4>
+          <div className="md:col-span-2">
+            <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
+              Screens are scrollable and consistency in design elements is key
+            </h6>
+            <ul className="flex flex-col gap-[10px]">
+              <li className="text-[16px] md:text-lg font-thin">
+                When I designed my first high-fidelity mockup, I was unfamiliar
+                with auto layout. After experimenting with it, I learned how
+                helpful it was in creating consistent and well spaced out
+                layouts. I also realized that I can design screens that are
+                scrollable, meaning there was no need for me to cram every
+                element into a fixed size screen.
+              </li>
+            </ul>
+          </div>
         </div>
       </Section>
-      <Section>
+      {/* <Section>
         <div className="flex flex-col items-center gap-[10px]">
           <h4 className="font-helvetica text-xl md:text-2xl font-medium text-center">
             Thank you for sticking around!
@@ -1044,7 +1079,7 @@ const Beachside = () => {
             />
           </svg>
         </div>
-      </Section>
+      </Section> */}
     </div>
   );
 };
