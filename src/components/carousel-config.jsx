@@ -37,6 +37,48 @@ import BlueConfirmation2 from "../assets/BlueConfirmation2.png";
 import BlueDriver from "../assets/BlueDriver.png";
 import BlueTracking from "../assets/BlueTracking.png";
 
+import DS_1 from "../assets/DS1.png";
+import DS_2 from "../assets/DS2.png";
+import FO from "../assets/FO.png";
+import GC from "../assets/GC.png";
+import MG from "../assets/MG.png";
+import PDT from "../assets/PDT.png";
+import WII from "../assets/WII.png";
+import IMH from "../assets/IMH.png";
+import IC from "../assets/IC.png";
+import ArtPiece from "./ArtPiece";
+
+const artCards = [
+  <ArtPiece
+    imgSrc={DS_1}
+    medium="Acrylic on canvas"
+    title="Dear Somebody #1"
+    maxWidth="800px"
+  />,
+  <ArtPiece
+    imgSrc={DS_2}
+    medium="Acrylic on canvas"
+    title="Dear Somebody #2"
+    maxWidth="800px"
+  />,
+  <ArtPiece
+    imgSrc={GC}
+    medium="Acrylic on canvas"
+    title="Guilty Conscience"
+    maxWidth="400px"
+  />,
+  <ArtPiece imgSrc={MG} medium="Acrylic on panel" title="The Male Gaze" />,
+  <ArtPiece imgSrc={FO} medium="Graphite on paper" title="Frank Ocean" />,
+  <ArtPiece
+    imgSrc={PDT}
+    medium="Digital on Procreate"
+    title="Please Don't Touch The Artwork"
+  />,
+  <ArtPiece imgSrc={WII} medium="Digital on Procreate" title="What Is It?" />,
+  <ArtPiece imgSrc={IMH} medium="Digital on Procreate" title="In My Head" />,
+  <ArtPiece imgSrc={IC} medium="Digital on Procreate" title="My Inner Child" />,
+];
+
 const autoCardDetails = {
   0: {
     imgUrl: Carousel1,
@@ -92,57 +134,57 @@ const autoBeachsideCards = {
 
   1: {
     imgUrl: BlueMenu,
-    title: "Top 5 Screen",
+    title: "Menu",
   },
 
   2: {
     imgUrl: BlueDetails,
-    title: "Found a Match Screen",
+    title: "Item Details",
   },
 
   3: {
     imgUrl: BlueDetails3,
-    title: "Match Profile Screen",
+    title: "Add to cart confirmation",
   },
 
   4: {
     imgUrl: BlueDetails2,
-    title: "Match Screen",
+    title: "Item added",
   },
 
   5: {
     imgUrl: BlueCart,
-    title: "Table Screen",
+    title: "Cart screen",
   },
 
   6: {
     imgUrl: BlueCheckout,
-    title: "New User Screen",
+    title: "Checkout screen",
   },
 
   7: {
     imgUrl: BlueCheckout2,
-    title: "Message Screen",
+    title: "Checkout Confirmation",
   },
 
   8: {
     imgUrl: BlueConfirmation,
-    title: "Edit Profile Screen",
+    title: "Order confirmation",
   },
 
   9: {
     imgUrl: BlueDriver,
-    title: "Thanks For Checking In Screen",
+    title: "Driver information",
   },
 
   10: {
     imgUrl: BlueTracking,
-    title: "Thanks For Checking In Screen",
+    title: "Driver tracking screen",
   },
 
   11: {
     imgUrl: BlueConfirmation2,
-    title: "Thanks For Checking In Screen",
+    title: "Enjoy your food screen",
   },
 };
 
@@ -475,4 +517,5 @@ export {
   beachsideComparisonsArray,
   autoBeachsideCards,
   beachsideCards,
+  artCards,
 };
