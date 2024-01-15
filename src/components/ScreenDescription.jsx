@@ -37,8 +37,8 @@ const ScreenDescription = ({
       } gap-[30px] items-center justify-center w-full md:max-w-[1000px] `}
     >
       <div
-        className={`flex ${
-          reverse ? "justify-start" : "justify-end"
+        className={`flex justify-center ${
+          reverse ? "md:justify-start" : "md:justify-end"
         } gap-[10px] mb-[30px] md:mb-0`}
       >
         <div className="min-w-[200px] max-w-[150px]">
@@ -49,7 +49,7 @@ const ScreenDescription = ({
           <img className="h-auto object-cover" src={imageSrc2} alt={cap2} />
         </div>
       </div>
-      <div className=" max-w-[40%]">
+      <div className="flex flex-col items-center md:max-w-[40%]">
         <h6 className="font-helvetica text-2xl md:text-xl mb-[10px]">
           {heading}
         </h6>

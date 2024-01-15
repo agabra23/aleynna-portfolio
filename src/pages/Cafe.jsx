@@ -828,7 +828,7 @@ const Cafe = () => {
           <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">
             Learnings
           </h4>
-          <div className="mb-[50px] md:col-span-2">
+          <div className="md:col-span-2">
             <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[20px]">
               UX Research is cool and people yearn for in-person interaction
             </h6>

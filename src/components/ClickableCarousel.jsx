@@ -37,8 +37,11 @@ const ClickableCarousel = ({ desiredWidth = "250px" }) => {
   return (
     <div className="flex justify-center">
       {/* Left Arrow */}
-      <div className="self-center text-xl rounded-full border-2 border-black p-2 bg-transparent text-black cursor-pointer transition-all duration-500 hover:bg-black hover:text-offwhite">
-        <BsChevronLeft onClick={prevSlide} size={20} />
+      <div
+        onClick={prevSlide}
+        className="self-center text-xl rounded-full border-2 border-black p-2 bg-transparent text-black cursor-pointer transition-all duration-500 hover:bg-black hover:text-offwhite"
+      >
+        <BsChevronLeft size={20} />
       </div>
       <div
         // style={{ backgroundImage: `url(${cardArray[curr].imgUrl})` }}
@@ -66,12 +69,11 @@ const ClickableCarousel = ({ desiredWidth = "250px" }) => {
       </div>
 
       {/* Right Arrow */}
-      <div className="self-center text-xl rounded-full border-2 border-black p-2 bg-transparent text-black cursor-pointer transition-all duration-500 hover:bg-black hover:text-offwhite">
-        <BsChevronRight
-          onClick={nextSlide}
-          className="translate-x-0"
-          size={20}
-        />
+      <div
+        onClick={nextSlide}
+        className="self-center text-xl rounded-full border-2 border-black p-2 bg-transparent text-black cursor-pointer transition-all duration-500 hover:bg-black hover:text-offwhite"
+      >
+        <BsChevronRight className="translate-x-0" size={20} />
       </div>
     </div>
   );
