@@ -503,11 +503,19 @@ const Cafe = () => {
             </ul>
           </div>
         </div>
-        <div className="flex justify-center rounded-3xl">
-          <img className="max-w-[200px]" src={Ideas1} alt="Ideation" />
-          <img className="max-w-[200px]" src={Ideas2} alt="Ideation" />
-          <img className="max-w-[200px]" src={Ideas3} alt="Ideation" />
-          <img className="max-w-[200px]" src={Ideas4} alt="Ideation" />
+        <div className="flex justify-center gap-[10px] rounded-3xl mt-[30px]">
+          <div>
+            <img className="max-w-[200px] w-full" src={Ideas1} alt="Ideation" />
+          </div>
+          <div>
+            <img className="max-w-[200px] w-full" src={Ideas2} alt="Ideation" />
+          </div>
+          <div>
+            <img className="max-w-[200px] w-full" src={Ideas3} alt="Ideation" />
+          </div>
+          <div>
+            <img className="max-w-[200px] w-full" src={Ideas4} alt="Ideation" />
+          </div>
         </div>
         {/* <div className="grid grid-cols-2 mt-4 md:mt-8 gap-y-3 md:gap-y-7 gap-x-5 md:gap-x-36 mb-[50px] max-w-[1000px] self-center">
           <svg
