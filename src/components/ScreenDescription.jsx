@@ -49,7 +49,7 @@ const ScreenDescription = ({
           <img className="h-auto object-cover" src={imageSrc2} alt={cap2} />
         </div>
       </div>
-      <div className="flex flex-col items-center md:max-w-[40%]">
+      <div className="flex flex-col items-center md:items-start md:max-w-[40%]">
         <h6 className="font-helvetica text-2xl md:text-xl mb-[10px]">
           {heading}
         </h6>
