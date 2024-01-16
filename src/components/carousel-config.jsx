@@ -442,68 +442,68 @@ const beachsideComparisonsArray = [
 ];
 
 const beachsideCards = [
-  <img className={`w-full max-w-[250px]`} src={BlueLogin} alt="Login screen" />,
+  <img className={`w-full max-w-[225px]`} src={BlueLogin} alt="Login screen" />,
 
   <img
-    className={`w-full max-w-[250px]`}
+    className={`w-full max-w-[225px]`}
     src={BlueLogin2}
     alt="Login screen"
   />,
 
-  <img className={`w-full max-w-[250px]`} src={BlueMenu} alt="Menu screen" />,
+  <img className={`w-full max-w-[225px]`} src={BlueMenu} alt="Menu screen" />,
 
   <img
-    className={`w-full max-w-[250px]`}
+    className={`w-full max-w-[225px]`}
     src={BlueDetails}
     alt="Item details screen"
   />,
 
   <img
-    className={`w-full max-w-[250px]`}
+    className={`w-full max-w-[225px]`}
     src={BlueDetails3}
     alt="Add items pop-up"
   />,
 
   <img
-    className={`w-full max-w-[250px]`}
+    className={`w-full max-w-[225px]`}
     src={BlueDetails2}
     alt="Items in cart"
   />,
 
-  <img className={`w-full max-w-[250px]`} src={BlueCart} alt="Cart screen" />,
+  <img className={`w-full max-w-[225px]`} src={BlueCart} alt="Cart screen" />,
 
   <img
-    className={`w-full max-w-[250px]`}
+    className={`w-full max-w-[225px]`}
     src={BlueCheckout}
     alt="Checkout screen"
   />,
 
   <img
-    className={`w-full max-w-[250px]`}
+    className={`w-full max-w-[225px]`}
     src={BlueCheckout2}
     alt="Checkout confirmation"
   />,
 
   <img
-    className={`w-full max-w-[250px]`}
+    className={`w-full max-w-[225px]`}
     src={BlueConfirmation}
     alt="Order confirmation"
   />,
 
   <img
-    className={`w-full max-w-[250px]`}
+    className={`w-full max-w-[225px]`}
     src={BlueDriver}
     alt="Driver information"
   />,
 
   <img
-    className={`w-full max-w-[250px]`}
+    className={`w-full max-w-[225px]`}
     src={BlueTracking}
     alt="Driver tracking screen"
   />,
 
   <img
-    className={`w-full max-w-[250px]`}
+    className={`w-full max-w-[225px]`}
     src={BlueConfirmation2}
     alt="Enjoy your food screen"
   />,

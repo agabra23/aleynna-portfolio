@@ -903,9 +903,9 @@ const Beachside = () => {
           />
         </div>
 
-        <div>
+        {/* <div className="flex justify-center">
           <VideoCard videoSrc={BeachsideVideo} />
-        </div>
+        </div> */}
       </Section>
       {/* <Section>
         <div className="flex flex-col items-center gap-[10px]">
@@ -954,11 +954,11 @@ const Beachside = () => {
 
           <div className="col-span-3 flex flex-col md:flex-row gap-5 md:gap-[60px] justify-center items-center mb-10 md:mb-[60px]">
             {/* Video */}
-            <div className="max-w-80 flex flex-col justify-center self-center">
-              <img src={Beach1} alt="Beachside Snackshop Login Screen" />
+            <div className="flex justify-center">
+              <VideoCard videoSrc={BeachsideVideo} />
             </div>
 
-            <ClickableCarousel slides={beachsideCards} desiredWidth="200px" />
+            <ClickableCarousel slides={beachsideCards} desiredWidth="225px" />
 
             {/* <div className="grid grid-cols-3 gap-x-[10px] gap-y-[15px] md:gap-y-0 max-w-[350px] self-center">
               <img src={BeachsideMenu} alt="Snackshop Menu" />

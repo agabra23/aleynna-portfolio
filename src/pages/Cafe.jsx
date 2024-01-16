@@ -31,6 +31,9 @@ import ClickableCarousel from "../components/ClickableCarousel";
 import Section from "../components/Section";
 import HeroSectionWrapper from "../components/HeroSectionWrapper";
 import Carousel1 from "../assets/carousel/Carousel1.png";
+import BeachsideVideo from "../assets/BeachsideVideo.mp4";
+import ConnectionVideo from "../assets/ConnectionVideo.mp4";
+import VideoCard from "../components/VideoCard.jsx";
 import {
   cardArray,
   mockupArray,
@@ -657,7 +660,9 @@ const Cafe = () => {
             </p>
           </div>
           <div className="col-span-3 flex flex-col md:flex-row md:justify-evenly items-center gap-[10px] mb-[60px] max-w-full">
-            <img className="w-full max-w-[250px]" src={Carousel1} alt="" />
+            <div className="flex justify-center">
+              <VideoCard videoSrc={ConnectionVideo} />
+            </div>
             <ClickableCarousel desiredWidth="250px" slides={cardArray} />
           </div>
           <div></div>
