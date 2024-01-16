@@ -563,7 +563,7 @@ const Beachside = () => {
             </ul>
           </div>
 
-          <div className="flex gap-[10px] justify-evenly col-span-3 mb-[30px] max-w-full">
+          <div className="flex gap-[50px] justify-center col-span-3 mb-[30px] max-w-full">
             <img
               className="max-w-[200px] min-w-[90px]"
               src={UberEatsScreenshot}
