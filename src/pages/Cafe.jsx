@@ -318,8 +318,11 @@ const Cafe = () => {
             </h6>
             <ul className="flex flex-col gap-[15px]">
               <li className="text-[16px] md:text-lg font-thin">
-                After a taxing day at work, adult podcast listeners are seeking
-                a hassle-free and relaxed way to engage with fellow listeners
+                After a taxing day at work,{" "}
+                <span className="font-semibold">
+                  adult podcast listeners are seeking a hassle-free and relaxed
+                  way to engage with fellow listeners
+                </span>{" "}
                 beyond their phone screens, in hopes of diverting their minds
                 from work stress.
               </li>
@@ -497,9 +500,13 @@ const Cafe = () => {
             </h6>
             <ul className="flex flex-col gap-[15px]">
               <li className="text-[16px] md:text-lg font-thin">
-                We brainstormed over 100 solutions using brainwriting and mashup
-                techniques. After honing in on two that we thought best
-                addressed our user's needs, we created gallery sketches to
+                We brainstormed over 100 solutions using{" "}
+                <span className="font-semibold">
+                  brainwriting and mashup techniques
+                </span>
+                . After honing in on two that we thought best addressed our
+                user's needs, we created{" "}
+                <span className="font-semibold">gallery sketches</span> to
                 provide a visual representation of what our solutions might
                 entail and to facilitate the collection of user feedback.
               </li>
@@ -653,10 +660,17 @@ const Cafe = () => {
               The Connection Café
             </h4>
             <p className="font-thin text-[16px] md:text-lg">
-              Connection Café is a community initiative designed to connect
-              people who share an interest in podcasts. Its goal is to improve
-              community mental health by facilitating in-person interactions in
-              today’s technology-focused world.
+              Connection Café is a{" "}
+              <span className="font-semibold">
+                community initiative designed to connect people who share an
+                interest in podcasts
+              </span>
+              . Its goal is to{" "}
+              <span className="font-semibold">
+                improve community mental health by facilitating in-person
+                interactions
+              </span>{" "}
+              in today’s technology-focused world.
             </p>
           </div>
           <div className="col-span-3 flex flex-col md:flex-row md:justify-evenly items-center gap-[10px] mb-[60px] max-w-full">
@@ -675,24 +689,32 @@ const Cafe = () => {
               <li className="">
                 <span className="font-medium font-helvetica">Build:</span>{" "}
                 <span>
-                  They can cultivate and build meaningful friendships with
-                  people in their community through messaging on the app and
-                  meeting in person
+                  They can{" "}
+                  <span className="font-semibold">
+                    cultivate and build meaningful friendships
+                  </span>{" "}
+                  with people in their community through messaging on the app
+                  and meeting in person
                 </span>
               </li>
               <li className="">
                 <span className="font-medium font-helvetica">Trust:</span>{" "}
                 <span>
-                  They can feel confident that they'll be able to have engaging
-                  discussions surrounding podcasts with people they know will be
-                  interested in the same topics
+                  They can feel{" "}
+                  <span className="font-semibold">
+                    confident that they'll be able to have engaging discussions
+                    surrounding podcasts
+                  </span>{" "}
+                  with people they know will be interested in the same topics
                 </span>
               </li>
               <li className="">
                 <span className="font-medium font-helvetica">Disconnect:</span>{" "}
                 <span>
-                  They'll have a place to unwind after work while remaining
-                  stimulated and entertained
+                  They'll have a place to{" "}
+                  <span className="font-semibold">
+                    unwind after work while remaining stimulated and entertained
+                  </span>
                 </span>
               </li>
             </ul>
@@ -825,9 +847,12 @@ const Cafe = () => {
             <ul className="flex flex-col gap-[15px] mb-[30px]">
               <li className="text-[16px] md:text-lg font-thin">
                 Due to the timeline of this project, we were unable to conduct
-                more user testing after our final mockup. It would have been
-                helpful to know what could be improved upon not only in the app,
-                but with the overall business model as well.
+                more user testing after our final mockup.{" "}
+                <span className="font-semibold">
+                  It would have been helpful to know what could be improved upon
+                  not only in the app, but with the overall business model as
+                  well.
+                </span>
               </li>
             </ul>
             <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
@@ -835,11 +860,14 @@ const Cafe = () => {
             </h6>
             <ul className="flex flex-col gap-[15px]">
               <li className="text-[16px] md:text-lg font-thin">
-                If we had been given more time with this project, creating low
-                and even mid-fidelity mockups prior to the final high-fidelity
-                mockup would have been helpful in refining our final design. I
-                believe this was also a crucial step that we missed out on in
-                the design process.
+                If we had been given more time with this project,{" "}
+                <span className="font-semibold">
+                  creating low and even mid-fidelity mockups prior to the final
+                  high-fidelity mockup would have been helpful in refining our
+                  final design
+                </span>
+                . I believe this was also a crucial step that we missed out on
+                in the design process.
               </li>
             </ul>
           </div>
@@ -854,8 +882,11 @@ const Cafe = () => {
               <li className="text-[16px] md:text-lg font-thin">
                 Although we live in a social media driven world, people don’t
                 necessarily feel the desire to foster more digital interactions
-                and relationships. People appreciate and yearn for in-person
-                interaction.{" "}
+                and relationships.{" "}
+                <span className="font-semibold">
+                  People appreciate and yearn for in-person interaction
+                </span>
+                .{" "}
                 <span className="font-semibold">
                   I believe utilizing that fact, along with the technology we
                   are so lucky to have access to, can help to provide many more

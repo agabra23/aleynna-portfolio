@@ -328,9 +328,12 @@ const Beachside = () => {
             </h4>
             <p className="text-[16px] font-thin md:text-lg">
               As part of my Google UX Design Certificate course, I undertook a
-              project to enhance the customer’s experience by designing a food
-              delivery tracking app for a local oceanside restaurant named
-              BeachSide SnackShop.
+              project to{" "}
+              <span className="font-semibold">
+                enhance the customer’s experience by designing a food delivery
+                tracking app
+              </span>{" "}
+              for a local oceanside restaurant named BeachSide SnackShop.
             </p>
           </div>
           <h6 className="md:justify-self-end uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[10px] md:mb-0">
@@ -342,11 +345,17 @@ const Beachside = () => {
               online food orders.
             </h4>
             <p className="text-[16px] font-thin md:text-lg">
-              I discovered that busy adults prioritize spending time on aspects
-              of their lives that are important to them, such as family, work,
-              and hobbies, and are often determined to find a quick and
-              efficient way to acquire healthy meals through online ordering and
-              delivery.
+              I discovered that{" "}
+              <span className="font-semibold">
+                busy adults prioritize spending time on aspects of their lives
+                that are important to them
+              </span>
+              , such as family, work, and hobbies, and are often{" "}
+              <span className="font-semibold">
+                determined to find a quick and efficient way to acquire healthy
+                meals through online ordering and delivery
+              </span>
+              .
             </p>
           </div>
           <h6 className="md:justify-self-end uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[10px] md:mb-0">
@@ -357,11 +366,17 @@ const Beachside = () => {
               BeachSide SnackShop mobile app
             </h4>
             <p className="text-[16px] font-thin md:text-lg">
-              The BeachSide SnackShop mobile app offers users a fast and
-              efficient online food ordering experience with real-time delivery
-              tracking. Its objective is to empower busy adults to reclaim their
-              free time by enabling them to skip in-store lines and eliminate
-              the hassle of preparing meals themselves.
+              <span className="font-semibold">
+                The BeachSide SnackShop mobile app offers users a fast and
+                efficient online food ordering experience with real-time
+                delivery tracking.
+              </span>{" "}
+              Its objective is to{" "}
+              <span className="font-semibold">
+                empower busy adults to reclaim their free time
+              </span>
+              by enabling them to skip in-store lines and eliminate the hassle
+              of preparing meals themselves.
             </p>
             <button className="text-[16px] hover:bg-black hover:text-offwhite transition-colors duration-200  font-helvetica font-normal px-6 py-3 mt-[30px] mb-[30px] rounded-full border-2 border-solid border-black">
               <a href="#mySolutionBeachside">Jump to solution</a>
@@ -492,9 +507,12 @@ const Beachside = () => {
               </h6>
               <ul className="flex flex-col gap-[15px]">
                 <li className="text-[16px] md:text-lg font-thin">
-                  To acquire the most accurate insights, I decided to target
-                  adults, ages 18 years or older, of any gender, who are working
-                  professionals, college students, retirees, or busy parents.
+                  To acquire the most accurate insights, I decided to target{" "}
+                  <span className="font-semibold">
+                    adults, ages 18 years or older, of any gender, who are
+                    working professionals, college students, retirees, or busy
+                    parents.
+                  </span>
                 </li>
               </ul>
             </div>
@@ -504,10 +522,12 @@ const Beachside = () => {
               </h6>
               <ul className="flex flex-col gap-[15px]">
                 <li className="text-[16px] md:text-lg font-thin">
-                  Understand user’s needs and frustrations when using a delivery
-                  tracking app, as well as their process and behaviors with
-                  tasks related to my product so that I can create the most
-                  effective mobile app.
+                  <span className="font-semibold">
+                    Understand user’s needs and frustrations
+                  </span>{" "}
+                  when using a delivery tracking app, as well as their process
+                  and behaviors with tasks related to my product so that I can
+                  create the most effective mobile app.
                 </li>
               </ul>
             </div>
@@ -517,8 +537,11 @@ const Beachside = () => {
               </h6>
               <ul className="flex flex-col gap-[15px]">
                 <li className="text-[16px] md:text-lg font-thin">
-                  Conduct a competitive audit and 1-on-1 interviews to gather
-                  insights, challenges, and pain-points for our potential users.
+                  <span className="font-semibold">
+                    Conduct a competitive audit and 1-on-1 interviews
+                  </span>{" "}
+                  to gather insights, challenges, and pain-points for our
+                  potential users.
                 </li>
               </ul>
             </div>
@@ -536,8 +559,11 @@ const Beachside = () => {
             </h6>
             <ul className="flex flex-col gap-[15px]">
               <li className="text-[16px] md:text-lg font-thin">
-                Busy adults often find themselves wasting time navigating
-                through overwhelming and confusing online food ordering systems,
+                Busy adults often find themselves{" "}
+                <span className="font-semibold">
+                  wasting time navigating through overwhelming and confusing
+                  online food ordering systems,
+                </span>
                 diverting their focus from aspects of life that hold greater
                 importance to them.
               </li>
@@ -554,11 +580,17 @@ const Beachside = () => {
               <li className="text-[16px] md:text-lg font-thin">
                 In examining Uber Eats and DoorDash, two major competitors in
                 the realm of online food ordering and real-time delivery
-                tracking, I observed that their interfaces can become
-                overwhelming due to the multitude of additional services they
-                provide. For first-time users, it can be challenging to pinpoint
-                exactly what they are looking for, whether it’s a specific
-                restaurant or menu item.
+                tracking,{" "}
+                <span className="font-semibold">
+                  I observed that their interfaces can become overwhelming due
+                  to the multitude of additional services they provide.
+                </span>{" "}
+                For first-time users,{" "}
+                <span className="font-semibold">
+                  it can be challenging to pinpoint exactly what they are
+                  looking for
+                </span>
+                , whether it’s a specific restaurant or menu item.
               </li>
             </ul>
           </div>
@@ -583,15 +615,26 @@ const Beachside = () => {
             </h6>
             <ul className="list-disc list-inside pl-3 text-[16px] md:text-lg font-thin">
               <li className="leading-7">
-                Users value spending time on aspects of their lives that are
-                important to them, like family and work
+                Users{" "}
+                <span className="font-semibold">
+                  value spending time on aspects of their lives that are
+                  important to them,
+                </span>{" "}
+                like family and work
               </li>
               <li className="leading-7">
-                Users don't want to waste time using confusing and overwhelming
-                interfaces
+                Users{" "}
+                <span className="font-semibold">
+                  don't want to waste time using confusing and overwhelming
+                  interfaces
+                </span>
               </li>
               <li className="leading-7">
-                Users want a quick and easy way to order and track food online
+                Users want a{" "}
+                <span className="font-semibold">
+                  quick and easy way to order and track
+                </span>{" "}
+                food online
               </li>
             </ul>
           </div>
@@ -872,15 +915,19 @@ const Beachside = () => {
               </p>
               <ol className="leading-7 list-decimal list-inside pl-3">
                 <li className="text-[16px] md:text-lg font-thin">
-                  Consistent sizing and placement of design elements using auto
-                  layout
+                  <span className="font-semibold">
+                    Consistent sizing and placement
+                  </span>{" "}
+                  of design elements using auto layout
                 </li>
                 <li className="text-[16px] md:text-lg font-thin">
-                  Choose a cohesive color palette that offers a sense of
-                  approachability
+                  Choose a{" "}
+                  <span className="font-semibold">cohesive color palette</span>{" "}
+                  that offers a sense of approachability
                 </li>
                 <li className="text-[16px] md:text-lg font-thin">
-                  Simplify typography with clean typeface choices
+                  <span className="font-semibold">Simplify typography</span>{" "}
+                  with clean typeface choices
                 </li>
               </ol>
             </div>
@@ -1016,15 +1063,22 @@ const Beachside = () => {
             </h6>
             <ul className="list-disc list-inside pl-3 text-[16px] md:text-lg font-thin">
               <li className="leading-7">
-                Prepare designs to meet WCAG guidelines
+                Prepare designs to{" "}
+                <span className="font-semibold">meet WCAG guidelines</span>
               </li>
               <li className="leading-7">
-                Consider different accessibility features: different language
-                options and how the design can be optimized for screen readers
+                <span className="font-semibold">
+                  Consider different accessibility features
+                </span>
+                : different language options and how the design can be optimized
+                for screen readers
               </li>
               <li className="leading-7">
-                Conduct a third usability test to pinpoint any features that may
-                be missing or existing features that could be improved upon
+                <span className="font-semibold">
+                  Conduct a third usability test
+                </span>{" "}
+                to pinpoint any features that may be missing or existing
+                features that could be improved upon
               </li>
             </ul>
           </div>
@@ -1038,11 +1092,17 @@ const Beachside = () => {
             <ul className="flex flex-col gap-[10px]">
               <li className="text-[16px] md:text-lg font-thin">
                 When I designed my first high-fidelity mockup, I was unfamiliar
-                with auto layout. After experimenting with it, I learned how
-                helpful it was in creating consistent and well spaced out
-                layouts. I also realized that I can design screens that are
-                scrollable, meaning there was no need for me to cram every
-                element into a fixed size screen.
+                with auto layout. After experimenting with it,{" "}
+                <span className="font-semibold">
+                  I learned how helpful it was in creating consistent and well
+                  spaced out layouts.
+                </span>{" "}
+                I also realized that{" "}
+                <span className="font-semibold">
+                  I can design screens that are scrollable,
+                </span>{" "}
+                meaning there was no need for me to cram every element into a
+                fixed size screen.
               </li>
             </ul>
           </div>
