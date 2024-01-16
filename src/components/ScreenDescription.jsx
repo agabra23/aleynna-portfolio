@@ -41,12 +41,20 @@ const ScreenDescription = ({
           reverse ? "md:justify-start" : "md:justify-end"
         } gap-[10px] mb-[30px] md:mb-0`}
       >
-        <div className="min-w-[200px] max-w-[150px]">
-          <img className="h-auto object-cover" src={imageSrc1} alt={cap1} />
+        <div className="max-w-[200px] flex-1">
+          <img
+            className="h-auto object-cover w-full"
+            src={imageSrc1}
+            alt={cap1}
+          />
         </div>
 
-        <div className="min-w-[200px] max-w-[150px]">
-          <img className="h-auto object-cover" src={imageSrc2} alt={cap2} />
+        <div className="max-w-[200px] flex-1">
+          <img
+            className="h-auto object-cover w-full"
+            src={imageSrc2}
+            alt={cap2}
+          />
         </div>
       </div>
       <div className="flex flex-col items-center md:items-start md:max-w-[40%]">
