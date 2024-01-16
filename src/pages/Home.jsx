@@ -62,7 +62,7 @@ const Home = () => {
         </div>
       </HeroSectionWrapper>
       <Section>
-        <div className="flex flex-col-reverse lg:flex-row-reverse justify-center items-center gap-[30px] lg:gap-[65px] mb-[75px] lg:mb-[145px]">
+        <div className="flex flex-col-reverse lg:flex-row-reverse justify-center items-center gap-[30px] lg:gap-[65px] mb-[50px]">
           <div className="flex items-center lg:items-start flex-col gap-[10px]">
             <h6 className="uppercase text-center md:text-left font-thin font-helvetica text-[16px] md:text-lg">
               GOOGLE UX CERTIFICATE Project

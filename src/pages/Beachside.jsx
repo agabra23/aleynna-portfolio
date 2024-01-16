@@ -55,6 +55,8 @@ import AfterWireframe1 from "../assets/AfterWireframe1.png";
 import AfterWireframe2 from "../assets/AfterWireframe2.png";
 import AfterWireframe3 from "../assets/AfterWireframe3.png";
 import ClickableCarousel from "../components/ClickableCarousel";
+import VideoCard from "../components/VideoCard";
+import BeachsideVideo from "../assets/BeachsideVideo.mp4";
 import {
   autoBeachsideCards,
   beachsideCards,
@@ -899,6 +901,10 @@ const Beachside = () => {
             slides={beachsideComparisonsArray}
             desiredWidth="200px"
           />
+        </div>
+
+        <div>
+          <VideoCard videoSrc={BeachsideVideo} />
         </div>
       </Section>
       {/* <Section>
