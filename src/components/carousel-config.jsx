@@ -312,131 +312,179 @@ const mockupArray = [
 
 const beachsideComparisonsArray = [
   <div className="flex justify-center gap-[10px] md:gap-[30px] w-full items-center">
-    <div className="flex-1">
+    <div className="flex-1 flex flex-col">
       <img
         className="w-full max-w-[200px]"
         src={PinkLogin}
         alt="Old Login Screen"
       />
+      <p className="uppercase font-helvetica font-thin text-[10px] sm:text-[16px] text-center mt-[10px]">
+        Before
+      </p>
     </div>
-    <div className="flex-1">
+    <div className="flex-1 flex flex-col">
       <img
         className="w-full max-w-[200px]"
         src={BlueLogin}
         alt="New Login Screen"
       />
+      <p className="uppercase font-helvetica font-thin text-[10px] sm:text-[16px] text-center mt-[10px]">
+        After
+      </p>
     </div>
   </div>,
   <div className="flex justify-center gap-[10px] md:gap-[30px] w-full items-center">
-    <div className="flex-1">
+    <div className="flex-1 flex flex-col">
       <img
         className="w-full max-w-[200px]"
         src={PinkMenu}
         alt="Old Menu Screen"
       />
+      <p className="uppercase font-helvetica font-thin text-[10px] sm:text-[16px] text-center mt-[10px]">
+        Before
+      </p>
     </div>
-    <div className="flex-1">
+    <div className="flex-1 flex flex-col">
       <img
         className="w-full max-w-[200px]"
         src={BlueMenu}
         alt="New Menu Screen"
       />
+      <p className="uppercase font-helvetica font-thin text-[10px] sm:text-[16px] text-center mt-[10px]">
+        After
+      </p>
     </div>
   </div>,
   <div className="flex justify-center gap-[10px] md:gap-[30px] w-full items-center">
-    <div className="flex-1">
+    <div className="flex-1 flex flex-col">
       <img
         className="w-full max-w-[200px]"
         src={PinkDetails}
         alt="Old Item Details Screen"
       />
+      <p className="uppercase font-helvetica font-thin text-[10px] sm:text-[16px] text-center mt-[10px]">
+        Before
+      </p>
     </div>
-    <div className="flex-1">
+    <div className="flex-1 flex flex-col">
       <img
         className="w-full max-w-[200px]"
         src={BlueDetails}
         alt="New Item Details Screen"
       />
+      <p className="uppercase font-helvetica font-thin text-[10px] sm:text-[16px] text-center mt-[10px]">
+        After
+      </p>
     </div>
   </div>,
   <div className="flex justify-center gap-[10px] md:gap-[30px] w-full items-center">
-    <div className="flex-1">
+    <div className="flex-1 flex flex-col">
       <img
         className="w-full max-w-[200px]"
         src={PinkCart}
         alt="Old Cart Screen"
       />
+      <p className="uppercase font-helvetica font-thin text-[10px] sm:text-[16px] text-center mt-[10px]">
+        Before
+      </p>
     </div>
-    <div className="flex-1">
+    <div className="flex-1 flex flex-col">
       <img
         className="w-full max-w-[200px]"
         src={BlueCart}
         alt="New Cart Screen"
       />
+      <p className="uppercase font-helvetica font-thin text-[10px] sm:text-[16px] text-center mt-[10px]">
+        After
+      </p>
     </div>
   </div>,
   <div className="flex justify-center gap-[10px] md:gap-[30px] w-full items-center">
-    <div className="flex-1">
+    <div className="flex-1 flex flex-col">
       <img
         className="w-full max-w-[200px]"
         src={PinkCheckout}
         alt="Old Checkout Screen"
       />
+      <p className="uppercase font-helvetica font-thin text-[10px] sm:text-[16px] text-center mt-[10px]">
+        Before
+      </p>
     </div>
-    <div className="flex-1">
+    <div className="flex-1 flex flex-col">
       <img
         className="w-full max-w-[200px]"
         src={BlueCheckout}
         alt="New Checkout Screen"
       />
+      <p className="uppercase font-helvetica font-thin text-[10px] sm:text-[16px] text-center mt-[10px]">
+        After
+      </p>
     </div>
   </div>,
   <div className="flex justify-center gap-[10px] md:gap-[30px] w-full items-center">
-    <div className="flex-1">
+    <div className="flex-1 flex flex-col">
       <img
         className="w-full max-w-[200px]"
         src={PinkConfirmation}
         alt="Old Confirmation Screen"
       />
+      <p className="uppercase font-helvetica font-thin text-[10px] sm:text-[16px] text-center mt-[10px]">
+        Before
+      </p>
     </div>
-    <div className="flex-1">
+    <div className="flex-1 flex flex-col">
       <img
         className="w-full max-w-[200px]"
         src={BlueConfirmation}
         alt="New Confirmation Screen"
       />
+      <p className="uppercase font-helvetica font-thin text-[10px] sm:text-[16px] text-center mt-[10px]">
+        After
+      </p>
     </div>
   </div>,
   <div className="flex justify-center gap-[10px] md:gap-[30px] w-full items-center">
-    <div className="flex-1">
+    <div className="flex-1 flex flex-col">
       <img
         className="w-full max-w-[200px]"
         src={PinkDriver}
         alt="Old Driver Screen"
       />
+      <p className="uppercase font-helvetica font-thin text-[10px] sm:text-[16px] text-center mt-[10px]">
+        Before
+      </p>
     </div>
-    <div className="flex-1">
+    <div className="flex-1 flex flex-col">
       <img
         className="w-full max-w-[200px]"
         src={BlueDriver}
         alt="New Driver Screen"
       />
+      <p className="uppercase font-helvetica font-thin text-[10px] sm:text-[16px] text-center mt-[10px]">
+        After
+      </p>
     </div>
   </div>,
   <div className="flex justify-center gap-[10px] md:gap-[30px] w-full items-center">
-    <div className="flex-1">
+    <div className="flex-1 flex flex-col">
       <img
         className="w-full max-w-[200px]"
         src={PinkTracking}
         alt="Old Tracking Screen"
       />
+      <p className="uppercase font-helvetica font-thin text-[10px] sm:text-[16px] text-center mt-[10px]">
+        Before
+      </p>
     </div>
-    <div className="flex-1">
+    <div className="flex-1 flex flex-col">
       <img
         className="w-full max-w-[200px]"
         src={BlueTracking}
         alt="New Tracking Screen"
       />
+      <p className="uppercase font-helvetica font-thin text-[10px] sm:text-[16px] text-center mt-[10px]">
+        After
+      </p>
     </div>
   </div>,
 ];
