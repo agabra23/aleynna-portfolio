@@ -1,14 +1,16 @@
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigator = useNavigate();
   return (
     <footer className="relative z-0 flex justify-between items-center gap-[10px] mx-[30px] md:max-xl:mx-[60px] lg:mx-[130px] font-helvetica py-[5vh]">
       <div className="flex flex-col gap-5">
         <h6 className="text-lg font-medium">Let's Connect!</h6>
         <ul className="flex justify-start items-center gap-[30px]">
-          <li className="border-b-2 border-transparent hover:border-black">
+          <li className="hover:rotate-[360deg] transition-all duration-500">
             <a
               href="https://www.linkedin.com/in/aleynna-quinones"
               target="_blank"
@@ -17,7 +19,7 @@ const Footer = () => {
               <FaLinkedin size={24} />
             </a>
           </li>
-          <li className="border-b-2 border-transparent hover:border-black">
+          <li className="hover:rotate-[360deg] transition-all duration-500">
             <a
               href="mailto:aleynnaquinones@gmail.com"
               className="text-inherit no-underline"
@@ -28,15 +30,31 @@ const Footer = () => {
         </ul>
       </div>
       <div className="md:flex flex-col items-center hidden">
-        <p className="font-helvetica font-thin text-sm text-center">
-          Portfolio developed by Andrew Gabra.
+        <p className="font-helvetica font-thin text-sm text-center flex items-center justify-center gap-1">
+          <span>Portfolio developed by Andrew Gabra </span>
+          <span className=" h-min w-min flex justify-center items-center hover:rotate-[360deg] cursor-pointer transition-all duration-500">
+            <a
+              href="https://www.linkedin.com/in/andrew-gabra"
+              target="_blank"
+              className="text-inherit no-underline"
+            >
+              <FaLinkedin
+                className="align-middle"
+                size={15}
+                style={{ display: "inline" }}
+              />
+            </a>
+          </span>
         </p>
         <p className="font-helvetica font-thin text-sm text-center">
           &#169;{` ${new Date().getFullYear()}`}
         </p>
       </div>
       <div className="flex flex-col">
-        <div className="text-3xl md:text-4xl flex gap-[10px] justify-end">
+        <div
+          onClick={() => navigator("/")}
+          className="cursor-pointer text-3xl md:text-4xl flex gap-[10px] justify-end"
+        >
           <h1 className="font-bold">AQ</h1>
           <div className="flex items-center">
             <svg
@@ -68,7 +86,16 @@ const Footer = () => {
           <p className="text-right font-helvetica font-thin text-sm">
             Portfolio developed by
             <br />
-            Andrew Gabra.
+            Andrew Gabra{" "}
+            <div className="w-min ml-auto hover:rotate-[360deg] cursor-pointer flex items-center justify-center transition-all duration-500">
+              <a
+                href="https://www.linkedin.com/in/andrew-gabra"
+                target="_blank"
+                className="text-inherit no-underline"
+              >
+                <FaLinkedin size={15} style={{ display: "inline" }} />
+              </a>
+            </div>
           </p>
           <p className="font-helvetica font-thin text-sm text-right">
             &#169;{` ${new Date().getFullYear()}`}
