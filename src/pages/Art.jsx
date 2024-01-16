@@ -27,9 +27,11 @@ const Art = () => {
               Some of my artwork
             </h2>
             <p className="text-[16px] md:text-lg font-thin">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              quidem molestias et asperiores. Libero ea aspernatur ullam, dicta
-              consequatur ipsam?
+              I fell in love with visual art as a senior in high school {"("}
+              with no prior knowledge or interest in art at all{")"}. I've
+              utilized it as a form of self-expression and therapy for myself.
+              Painting and graphite drawings will always have my heart, but
+              dabbling in digital art is fun too {":)"}
             </p>
           </div>
           <div className="mb-[30px]">
