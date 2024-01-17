@@ -47,7 +47,7 @@ const Home = () => {
                 CURRENTLY...
               </h5>
               <p className="text-[16px] lg:text-xl">
-                a senior at Lesley University seeking Summer 2024 internship
+                a junior at Lesley University seeking Summer 2024 internship
                 opportunities.{" "}
                 <a
                   href="https://www.linkedin.com/in/aleynna-quinones"
