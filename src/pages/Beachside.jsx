@@ -374,7 +374,7 @@ const Beachside = () => {
               Its objective is to{" "}
               <span className="font-semibold">
                 empower busy adults to reclaim their free time
-              </span>
+              </span>{" "}
               by enabling them to skip in-store lines and eliminate the hassle
               of preparing meals themselves.
             </p>
@@ -562,7 +562,7 @@ const Beachside = () => {
                 Busy adults often find themselves{" "}
                 <span className="font-semibold">
                   wasting time navigating through overwhelming and confusing
-                  online food ordering systems,
+                  online food ordering systems,{" "}
                 </span>
                 diverting their focus from aspects of life that hold greater
                 importance to them.
