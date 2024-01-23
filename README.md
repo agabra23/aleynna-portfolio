@@ -2,7 +2,7 @@
 
 Live Site: https://www.aleynnaquinones.com
 
-This personal website was built for my partner's portfolio in UX design. The tech stack is listed below along with some future updates and a place to report bugs/issues.
+This personal website was built for my partner's portfolio in UX design. Below are installation instructions along with a place to report bugs/issues.
 
 ## Installation
 
