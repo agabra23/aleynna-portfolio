@@ -87,19 +87,7 @@ const NavBar = () => {
           } ${isLinkActive("/connection-cafe") && "underline"}`}
         >
           <span>PROJECTS</span>
-          {/* <svg
-            className={`group-hover:rotate-0 transition-all ${
-              showProjectDetails ? "rotate-0" : "rotate-180"
-            }`}
-            xmlns="http://www.w3.org/2000/svg"
-            width=".8em"
-            height=".8em"
-            viewBox="0 0 17 13"
-            fill="none"
-            onClick={() => setShowProjectDetails(!showProjectDetails)}
-          >
-            <path d="M1 1.5L8.5 10.5L16 1.5" stroke="black" strokeWidth="2" />
-          </svg> */}
+
           <BsChevronUp
             className={`group-hover:rotate-180 transition-all ${
               showProjectDetails ? "rotate-180" : "rotate-0"

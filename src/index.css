@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-  @font-face {
-    font-family: "EB Garamond";
-    font-weight: 1 1000;
-    src: url("./fonts/EBGaramond-VariableFont_wght.ttf");
-  }
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +10,3 @@
   -webkit-appearance: none;
   appearance: none;
 }
-
-/* body {
-  overflow: hidden;
-} */

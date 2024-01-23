@@ -4,34 +4,24 @@ import HomeImg from "../assets/Home.png";
 import MatchImg from "../assets/Match.png";
 import FoundMatch from "../assets/FoundMatch.png";
 import MatchExample from "../assets/MatchExample.png";
-import Mockup1 from "../assets/Mockup1.png";
-import Mockup2 from "../assets/Mockup2.png";
-import Mockup3 from "../assets/Mockup3.png";
 import Connect from "../assets/Connect.png";
 import Populate from "../assets/Populate.png";
 import MatchProfile from "../assets/MatchProfile.png";
 import Meeting from "../assets/Meeting.png";
-import MattAvatar from "../assets/MattAvatar.png";
-import KatAvatar from "../assets/KatAvatar.png";
 import Ideas1 from "../assets/Ideas1.png";
 import Ideas2 from "../assets/Ideas2.png";
 import Ideas3 from "../assets/Ideas3.png";
 import Ideas4 from "../assets/Ideas4.png";
-import Sticky1 from "../assets/Sticky1.png";
-import Sticky2 from "../assets/Sticky2.png";
 import CafeSketch1 from "../assets/CafeSketch1.png";
 import CafeSketch2 from "../assets/CafeSketch2.png";
 import CafeSketch3 from "../assets/CafeSketch3.png";
 import PodcastChat from "../assets/PodcastChat.png";
 import ScreenDescription from "../components/ScreenDescription";
-import UserPersona from "../components/UserPersona";
 import AutoplayCarousel from "../components/AutoplayCarousel";
 import { autoCardDetails } from "../components/carousel-config.jsx";
 import ClickableCarousel from "../components/ClickableCarousel";
 import Section from "../components/Section";
 import HeroSectionWrapper from "../components/HeroSectionWrapper";
-import Carousel1 from "../assets/carousel/Carousel1.png";
-import BeachsideVideo from "../assets/BeachsideVideo.mp4";
 import ConnectionVideo from "../assets/ConnectionVideo.mp4";
 import VideoCard from "../components/VideoCard.jsx";
 import {
@@ -44,21 +34,6 @@ const Cafe = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
-
-  const mattDescriptionElement = (
-    <p className="col-span-2 text-[16px] md:text-lg">
-      Matt listens to motivational podcasts during his free time to refocus his
-      energy. He engages with podcast communities online, sharing his favorite
-      episodes and seeking recommendations from like-minded listeners.
-    </p>
-  );
-  const katDescriptionElement = (
-    <p className="col-span-2 text-[16px] md:text-lg">
-      A naturally curious individual with a passion for learning. Kat is always
-      eager to share any new findings she learns with the people in her life,
-      but sometimes they aren’t interested or don't care.
-    </p>
-  );
 
   return (
     <div className="relative -z-10 font-garamond max-w-full">
@@ -235,31 +210,6 @@ const Cafe = () => {
         </div>
         <AutoplayCarousel slides={autoCardDetails} />
       </Section>
-
-      {/* <Section>
-        <div className="flex flex-col items-center gap-[10px]">
-          <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-lg font-thin text-center self-center">
-            Want to learn more about our process?
-          </p>
-          <h4 className="font-helvetica md:text-2xl font-medium text-center text-xl self-center">
-            Let’s dig deeper...
-          </h4>
-          <svg
-            className="mx-auto"
-            width="20px"
-            height="100%"
-            viewBox="0 0 23 31"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              id="Arrow 1"
-              d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
-              fill="black"
-            />
-          </svg>
-        </div>
-      </Section> */}
       <Section>
         <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
           <h4 className="justify-self-center uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[10px] md:mb-0">
@@ -381,45 +331,6 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
-          {/* <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
-            Say What?
-          </h4>
-          <div className="mb-[50px] md:col-span-2">
-            <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
-              What our users have to say
-            </h6>
-            <ul className="flex flex-col gap-[30px]">
-              <li className=" md:text-lg font-thin leading-7">
-                “When people consume content independently but can discuss it
-                later, it{" "}
-                <span className="font-semibold">helps build community</span> in
-                a low-stakes, relaxed fashion.” Lindsay Harris Friel, The
-                Podcast Host
-              </li>
-              <li className="text-[16px] md:text-lg font-thin leading-7">
-                “I’m with other people who I know won’t be as interested,{" "}
-                <span className="font-semibold">
-                  I’ll choose a podcast more catered to general entertainment
-                </span>
-                .” Logan, 26 yrs old
-              </li>{" "}
-              <li className="text-[16px] md:text-lg font-thin leading-7">
-                “I like to discuss with people but{" "}
-                <span className="font-semibold">
-                  sometimes people don’t care.
-                </span>
-                ” Pam, 53 yr old
-              </li>
-              <li className="text-[16px] md:text-lg font-thin leading-7">
-                “...podcasts are a social experience... most listeners say they
-                recommend podcasts to someone else, [and]{" "}
-                <span className="font-semibold">
-                  discuss the content they hear with others
-                </span>
-                ...” Pew Research
-              </li>
-            </ul>
-          </div> */}
           <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1">
             User Personas
           </h4>
@@ -436,38 +347,6 @@ const Cafe = () => {
         <div className="mb-[60px]">
           <ClickableCarousel slides={personaArray} desiredWidth="1000px" />
         </div>
-        {/* <div className="flex flex-col gap-12 md:gap-10 items-center">
-          <UserPersona
-            avatar={MattAvatar}
-            name={"Matt"}
-            alias={"the motivated professional"}
-            occupation={"Engineer, remote"}
-            frustrations={[
-              "Feels like he doesn’t have time to connect with others because he is constantly focused on work",
-            ]}
-            goals={[
-              "Maintain work life balance",
-              "Excel in his career while also taking care of his mental and emotional well-being",
-            ]}
-            age={"44"}
-            description={mattDescriptionElement}
-          />
-          <UserPersona
-            avatar={KatAvatar}
-            name={"Kat"}
-            alias={"the curious sharer"}
-            occupation={"Business analyst"}
-            frustrations={[
-              "Wants to share what she learns through podcasts but people in her life don’t care",
-            ]}
-            goals={[
-              "Socialize with people who have the same interests as her",
-              "Discover new podcasts that constantly keep her engaged and stimulated",
-            ]}
-            age={"32"}
-            description={katDescriptionElement}
-          />
-        </div> */}
       </Section>
       <Section>
         <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
@@ -527,42 +406,6 @@ const Cafe = () => {
             <img className="max-w-[200px] w-full" src={Ideas4} alt="Ideation" />
           </div>
         </div>
-        {/* <div className="grid grid-cols-2 mt-4 md:mt-8 gap-y-3 md:gap-y-7 gap-x-5 md:gap-x-36 mb-[50px] max-w-[1000px] self-center">
-          <svg
-            className="md:w-8 place-self-center"
-            width="20px"
-            height="100%"
-            viewBox="0 0 23 31"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              id="Arrow 1"
-              d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
-              fill="black"
-            />
-          </svg>
-          <svg
-            className="md:w-8 place-self-center"
-            width="20px"
-            height="100%"
-            viewBox="0 0 23 31"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              id="Arrow 1"
-              d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
-              fill="black"
-            />
-          </svg>
-          <div className="max-w-[250px] justify-self-center place-self-start justify-center flex ">
-            <img src={Sticky1} alt="Sticky Note 1" />
-          </div>
-          <div className="max-w-[250px] justify-self-center place-self-start justify-center flex ">
-            <img src={Sticky2} alt="Sticky Note 2" />
-          </div>
-        </div> */}
         <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
           <div className="md:col-span-3  p-9 rounded-3xl flex flex-col md:flex-row md:justify-center md:justify-self-center gap-5 md:gap-[90px] items-center mb-[50px] max-w-[1000px]">
             <div>
@@ -627,26 +470,6 @@ const Cafe = () => {
           </div>
         </div>
       </Section>
-      {/* <Section>
-        <div className="flex flex-col items-center gap-[10px]">
-          <h4 className="font-helvetica text-xl font-medium text-center md:text-2xl">
-            Let’s wrap this up...
-          </h4>
-          <svg
-            width="20px"
-            height="100%"
-            viewBox="0 0 23 31"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              id="Arrow 1"
-              d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
-              fill="black"
-            />
-          </svg>
-        </div>
-      </Section> */}
       <Section>
         <div
           id="ourSolutionCafe"
@@ -734,16 +557,6 @@ const Cafe = () => {
           </div>
           <div className="md:col-span-3 md:flex-row md:justify-center flex flex-col gap-[10px] mb-[60px] md:max-w-[1000px] w-full justify-self-center">
             <ClickableCarousel slides={mockupArray} desiredWidth="325px" />
-            {/* <img
-              className="object-cover md:max-w-[325px] md:min-w-[100px] h-auto"
-              src={Mockup2}
-              alt=""
-            />
-            <img
-              className="object-cover md:max-w-[325px] md:min-w-[100px] h-auto"
-              src={Mockup3}
-              alt=""
-            /> */}
           </div>
           <div></div>
           <div className="mb-[50px] col-span-2">
@@ -777,10 +590,6 @@ const Cafe = () => {
               </li>
             </ul>
           </div>
-          {/* <div></div> */}
-          {/* <h4 className="mb-[10px] text-xl md:text-2xl font-medium font-helvetica col-span-2">
-            The mobile app
-          </h4> */}
         </div>
 
         <div className="flex flex-col gap-10 items-center">
@@ -817,26 +626,6 @@ const Cafe = () => {
       </Section>
       <Section>
         <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
-          {/* <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">
-            The End
-          </h4>
-          <div className="mb-[30px] md:col-span-2">
-            <h6 className="md:text-2xl text-xl font-medium font-helvetica mb-[10px]">
-              The Connection Café
-            </h6>
-            <ul className="flex flex-col gap-[15px]">
-              <li className="text-[16px] md:text-lg font-thin">
-                Connection Café is a community initiative designed to connect
-                people who share an interest in podcasts. Its goal is to improve
-                community mental health by facilitating in-person interactions
-                in today’s technology-focused world.
-              </li>
-            </ul>
-          </div>
-          <div className="col-span-3 mb-11 md:mb-[50px]">
-            <ClickableCarousel />
-          </div> */}
-
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px]">
             Wishes
           </h4>
@@ -897,37 +686,6 @@ const Cafe = () => {
           </div>
         </div>
       </Section>
-      {/* <Section>
-        <div className="flex flex-col items-center gap-[10px]">
-          <h4 className="font-helvetica md:text-2xl font-medium text-center text-[20px]">
-            Thank you for diving in!
-          </h4>
-          <svg
-            className="md:w-10"
-            xmlns="http://www.w3.org/2000/svg"
-            width="28"
-            height="100%"
-            viewBox="0 0 29 28"
-            fill="none"
-          >
-            <circle cx="10.3025" cy="10.2196" r="1.6425" fill="black" />
-            <circle cx="18.5151" cy="10.2196" r="1.6425" fill="black" />
-            <circle
-              cx="14.5"
-              cy="13.6875"
-              r="12.6875"
-              stroke="black"
-              strokeWidth="2"
-            />
-            <path
-              d="M7.93005 17.3369C10.8534 22.1057 18.3514 22.3005 21.0701 17.3369"
-              stroke="black"
-              strokeWidth="2"
-              strokeLinecap="square"
-            />
-          </svg>
-        </div>
-      </Section> */}
     </div>
   );
 };

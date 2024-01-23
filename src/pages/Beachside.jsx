@@ -1,43 +1,10 @@
 import React from "react";
 import { useLayoutEffect } from "react";
-import UserPersona from "../components/UserPersona";
 import AutoplayCarousel from "../components/AutoplayCarousel";
 
 import Beach2 from "../assets/Beach2.png";
 import Beach1 from "../assets/Beach1.png";
-import BeachsideMenu from "../assets/BeachsideMenu.png";
-import BeachsideDetails from "../assets/BeachsideDetails.png";
-import BeachsideCheckout from "../assets/BeachsideCheckout.png";
-import BeachsideConfirmation from "../assets/BeachsideConfirmation.png";
-import BeachsideTracking1 from "../assets/BeachsideTracking1.png";
-import BeachsideTracking2 from "../assets/BeachsideTracking2.png";
-import LisaAvatar from "../assets/LisaAvatar.png";
-import JoseAvatar from "../assets/JoseAvatar.png";
-import LofiFlow from "../assets/LofiFlow.png";
-import LofiHome1 from "../assets/LofiHome1.png";
-import LofiHome2 from "../assets/LofiHome2.png";
-import LofiCheckout from "../assets/LofiCheckout.png";
-import LofiConfirmation from "../assets/LofiConfirmation.png";
-import LofiTracking from "../assets/LofiTracking.png";
-import LofiDriver from "../assets/LofiDriver.png";
-import PinkLogin from "../assets/PinkLogin.png";
-import PinkMenu from "../assets/PinkMenu.png";
-import PinkDetails from "../assets/PinkDetails.png";
-import PinkCart from "../assets/PinkCart.png";
-import PinkCheckout from "../assets/PinkCheckout.png";
-import PinkConfirmation from "../assets/PinkConfirmation.png";
-import PinkDriver from "../assets/PinkDriver.png";
-import PinkTracking from "../assets/PinkTracking.png";
-import BlueLogin from "../assets/BlueLogin.png";
-import BlueMenu from "../assets/BlueMenu.png";
-import BlueDetails from "../assets/BlueDetails.png";
-import BlueCart from "../assets/BlueCart.png";
-import BlueCheckout from "../assets/BlueCheckout.png";
-import BlueConfirmation from "../assets/BlueConfirmation.png";
-import BlueDriver from "../assets/BlueDriver.png";
-import BlueTracking from "../assets/BlueTracking.png";
 import BeachsideScreenDescription from "../components/BeachsideScreenDescription";
-import BeachsideComparisons from "../components/BeachsideComparisons";
 import Section from "../components/Section";
 import HeroSectionWrapper from "../components/HeroSectionWrapper";
 import UberEatsScreenshot from "../assets/UberEats.jpg";
@@ -61,8 +28,6 @@ import {
   autoBeachsideCards,
   beachsideCards,
   beachsideComparisonsArray,
-  cardArray,
-  personaArray,
 } from "../components/carousel-config";
 
 const Beachside = () => {
@@ -94,82 +59,6 @@ const Beachside = () => {
       I don’t want to do all that.” - Jasmine
     </p>
   );
-
-  const pinkImages1 = [
-    {
-      src: PinkLogin,
-      alt: "Old Login Screen",
-    },
-    {
-      src: PinkMenu,
-      alt: "Old Menu Screen",
-    },
-    {
-      src: PinkDetails,
-      alt: "Old Details Screen",
-    },
-    {
-      src: PinkCart,
-      alt: "Old Cart Screen",
-    },
-  ];
-
-  const blueImages1 = [
-    {
-      src: BlueLogin,
-      alt: "New Login Screen",
-    },
-    {
-      src: BlueMenu,
-      alt: "New Menu Screen",
-    },
-    {
-      src: BlueDetails,
-      alt: "New Details Screen",
-    },
-    {
-      src: BlueCart,
-      alt: "New Cart Screen",
-    },
-  ];
-
-  const pinkImages2 = [
-    {
-      src: PinkCheckout,
-      alt: "Old Checkout Screen",
-    },
-    {
-      src: PinkConfirmation,
-      alt: "Old Confirmation Screen",
-    },
-    {
-      src: PinkDriver,
-      alt: "Old Driver Screen",
-    },
-    {
-      src: PinkTracking,
-      alt: "Old Tracking Screen",
-    },
-  ];
-
-  const blueImages2 = [
-    {
-      src: BlueCheckout,
-      alt: "New Checkout Screen",
-    },
-    {
-      src: BlueConfirmation,
-      alt: "New Confirmation Screen",
-    },
-    {
-      src: BlueDriver,
-      alt: "New Driver Screen",
-    },
-    {
-      src: BlueTracking,
-      alt: "New Tracking Screen",
-    },
-  ];
 
   return (
     <div className="relative -z-10 font-garamond max-w-full">
@@ -277,45 +166,7 @@ const Beachside = () => {
           </ul>
         </div>
       </HeroSectionWrapper>
-      {/* <Section>
-        <ul className="grid grid-cols-2 gap-y-[40px] md:flex md:justify-evenly md:gap-[50px]">
-          <li>
-            <h6 className="font-helvetica font-normal md:text-2xl text-[20px] mb-2">
-              Role
-            </h6>
-            <p className="text-[16px] md:text-lg font-garamond font-thin">
-              UX Researcher
-            </p>
-            <p className="text-[16px] md:text-lg font-garamond font-thin">
-              UX Designer
-            </p>
-          </li>
-          <li className="text-right md:text-left md:max-w-[300px] md:min-w-[150px]">
-            <h6 className="font-helvetica font-normal md:text-2xl text-[20px] mb-2">
-              Team
-            </h6>
-            <p className="text-[16px] md:text-lg font-garamond font-thin">
-              Aleynna Quiñones
-            </p>
-          </li>
-          <li>
-            <h6 className="font-helvetica font-normal md:text-2xl text-[20px] mb-2">
-              Timeline
-            </h6>
-            <p className="text-[16px] md:text-lg font-garamond font-thin">
-              6 months
-            </p>
-          </li>
-          <li className="text-right md:text-left">
-            <h6 className="font-helvetica font-normal md:text-2xl text-[20px] mb-2">
-              Tools
-            </h6>
-            <p className="text-[16px] md:text-lg font-garamond font-thin">
-              Figma
-            </p>
-          </li>
-        </ul>
-      </Section> */}
+
       <Section>
         <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
           <h6 className="md:justify-self-end uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:w-max mb-[10px] md:mb-0">
@@ -385,116 +236,6 @@ const Beachside = () => {
         </div>
         <AutoplayCarousel gap="10px" slides={autoBeachsideCards} />
       </Section>
-      {/* <Section>
-        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
-            Project Overview
-          </h4>
-          <div className="md:col-span-2 flex flex-col gap-[30px]">
-            <div>
-              <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
-                Design a food delivery tracking app for BeachSide SnackShop, a
-                local oceanside restaurant.
-              </h6>
-              <ul className="flex flex-col gap-[15px]">
-                <li className="text-[16px] md:text-lg font-thin">
-                  As part of my Google UX Design Certificate course, I undertook
-                  a project to enhance the customer’s experience by designing a
-                  food delivery tracking app for a local oceanside restaurant
-                  named BeachSide SnackShop.
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
-                Busy adults need a quick and efficient way to order and track
-                online food orders.
-              </h6>
-              <ul className="flex flex-col gap-[15px]">
-                <li className="text-[16px] md:text-lg font-thin">
-                  I discovered that busy adults prioritize spending time on
-                  aspects of their lives that are important to them, such as
-                  family, work, and hobbies, and are often determined to find a
-                  quick and efficient way to acquire healthy meals through
-                  online ordering and delivery.
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h6 className="text-xl md:text-2xl font-medium font-helvetica mb-[10px]">
-                BeachSide SnackShop mobile app
-              </h6>
-              <ul className="flex flex-col gap-[15px]">
-                <li className="text-[16px] md:text-lg font-thin">
-                  The BeachSide SnackShop mobile app offers users a fast and
-                  efficient online food ordering experience with real-time
-                  delivery tracking. Its objective is to empower busy adults to
-                  reclaim their free time by enabling them to skip in-store
-                  lines and eliminate the hassle of preparing meals themselves.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </Section> */}
-      {/* <Section>
-        <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px] mb-[10px]">
-          <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] mb-[10px] md:mb-0 md:text-lg md:col-span-1">
-            My solution
-          </h4>
-          <h6 className="text-xl md:text-2xl font-medium font-helvetica md:col-span-2">
-            BeachSide SnackShop mobile app final mock ups
-          </h6>
-        </div>
-        <div className="flex flex-col items-center md:items-start md:flex-row md:justify-center gap-[30px] md:gap-[60px]">
-          <div className="max-w-80 flex md:flex-col justify-center self-center">
-            <img src={Beach1} alt="Beachside Snackshop Login Screen" />
-          </div>
-          <div className="grid grid-cols-3 gap-x-[10px] gap-y-[15px] max-w-[350px] self-center">
-            <img src={BeachsideMenu} alt="Snackshop Menu" />
-            <img src={BeachsideDetails} alt="Snackshop Item Details" />
-            <img src={BeachsideCheckout} alt="Snackshop Checkout" />
-            <img
-              className="self-end"
-              src={BeachsideConfirmation}
-              alt="Order Confirmation"
-            />
-            <img
-              className="self-end"
-              src={BeachsideTracking1}
-              alt="Order Tracking 1"
-            />
-            <img
-              className="self-end"
-              src={BeachsideTracking2}
-              alt="Order Tracking 2"
-            />
-          </div>
-        </div>
-      </Section> */}
-      {/* <Section>
-        <div className="flex flex-col items-center gap-[10px]">
-          <p className="uppercase max-w-[75%] font-helvetica text-[16px] md:text-lg font-thin text-center">
-            Want to learn more about our process?
-          </p>
-          <h4 className="font-helvetica text-xl md:text-2xl font-medium text-center">
-            Let’s dig deeper...
-          </h4>
-          <svg
-            width="20px"
-            height="100%"
-            viewBox="0 0 23 31"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              id="Arrow 1"
-              d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
-              fill="black"
-            />
-          </svg>
-        </div>
-      </Section> */}
       <Section>
         <div className="md:grid md:grid-cols-[180px_1fr_1fr] md:gap-x-[50px]">
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg md:col-span-1 mb-[10px] md:mb-0">
@@ -638,43 +379,7 @@ const Beachside = () => {
               </li>
             </ul>
           </div>
-          {/* <h4 className="uppercase md:text-right justify-self-end font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:col-span-1 place-self-end">
-            User Personas
-          </h4>
-          <h6 className="text-xl md:text-2xl w-max font-medium font-helvetica mb-[10px] justify-self-start md:col-span-2">
-            Meet Lisa and José
-          </h6> */}
         </div>
-        {/* <div className="flex flex-col items-center gap-12 md:gap-[30px]">
-          <UserPersona
-            avatar={LisaAvatar}
-            name={"Lisa"}
-            alias={"the passionate mom"}
-            occupation={"Psychologist"}
-            frustrations={[
-              `“I am always so busy during the day with work that I just want to come home and not have to think about anything other than spending time with my family.”`,
-            ]}
-            goals={["Balance work life with personal life"]}
-            age={"34"}
-            description={lisaDescriptionElement}
-          />
-          <UserPersona
-            avatar={JoseAvatar}
-            name={"José"}
-            alias={"the go-getter"}
-            occupation={"Marketing"}
-            frustrations={[
-              `“The apps I use to order food are so inaccurate with timing so the food is either cold when it gets here or I have to wait an extra 20 minutes.”`,
-            ]}
-            goals={[
-              "Show his commitment to his job.",
-              "Complete everyday work tasks as efficiently as possible",
-              "Get promoted",
-            ]}
-            age={"23"}
-            description={joseDescriptionElement}
-          />
-        </div> */}
       </Section>
 
       <Section>
@@ -771,9 +476,7 @@ const Beachside = () => {
               />
             </div>
           </div>
-          {/* <div className="md:bg-white md:rounded-3xl md:p-9 mb-[50px] md:col-span-3 max-w-[1000px] justify-self-center">
-            <img src={LofiFlow} alt="Low Fidelity Flow" />
-          </div> */}
+
           <h4 className="uppercase md:text-right font-thin font-helvetica text-[16px] md:text-lg mb-[10px] md:mb-0 md:col-span-1">
             Usability study
           </h4>
@@ -933,47 +636,13 @@ const Beachside = () => {
             </div>
           </div>
         </div>
-        {/* <div className="flex flex-col gap-5 md:gap-[25px] md:flex-row">
-          <BeachsideComparisons
-            pinkImages={pinkImages1}
-            blueImages={blueImages1}
-          />
-          <BeachsideComparisons
-            pinkImages={pinkImages2}
-            blueImages={blueImages2}
-          />
-        </div> */}
         <div className="mb-[30px] max-w-full">
           <ClickableCarousel
             slides={beachsideComparisonsArray}
             desiredWidth="200px"
           />
         </div>
-
-        {/* <div className="flex justify-center">
-          <VideoCard videoSrc={BeachsideVideo} />
-        </div> */}
       </Section>
-      {/* <Section>
-        <div className="flex flex-col items-center gap-[10px]">
-          <h4 className="font-helvetica text-xl md:text-2xl font-medium text-center">
-            Let’s wrap this up...
-          </h4>
-          <svg
-            width="20px"
-            height="100%"
-            viewBox="0 0 23 31"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              id="Arrow 1"
-              d="M10.4393 30.0607C11.0251 30.6464 11.9749 30.6464 12.5607 30.0607L22.1066 20.5147C22.6924 19.9289 22.6924 18.9792 22.1066 18.3934C21.5208 17.8076 20.5711 17.8076 19.9853 18.3934L11.5 26.8787L3.01472 18.3934C2.42893 17.8076 1.47919 17.8076 0.893399 18.3934C0.307612 18.9792 0.307612 19.9289 0.893399 20.5147L10.4393 30.0607ZM10 6.55671e-08L10 29L13 29L13 -6.55671e-08L10 6.55671e-08Z"
-              fill="black"
-            />
-          </svg>
-        </div>
-      </Section> */}
       <Section>
         <div
           id="mySolutionBeachside"
@@ -1006,27 +675,6 @@ const Beachside = () => {
             </div>
 
             <ClickableCarousel slides={beachsideCards} desiredWidth="225px" />
-
-            {/* <div className="grid grid-cols-3 gap-x-[10px] gap-y-[15px] md:gap-y-0 max-w-[350px] self-center">
-              <img src={BeachsideMenu} alt="Snackshop Menu" />
-              <img src={BeachsideDetails} alt="Snackshop Item Details" />
-              <img src={BeachsideCheckout} alt="Snackshop Checkout" />
-              <img
-                className="self-end"
-                src={BeachsideConfirmation}
-                alt="Order Confirmation"
-              />
-              <img
-                className="self-end"
-                src={BeachsideTracking1}
-                alt="Order Tracking 1"
-              />
-              <img
-                className="self-end"
-                src={BeachsideTracking2}
-                alt="Order Tracking 2"
-              />
-            </div> */}
           </div>
           <div className="col-span-2 col-start-2">
             <ul className="flex flex-col gap-[10px]">
@@ -1108,37 +756,6 @@ const Beachside = () => {
           </div>
         </div>
       </Section>
-      {/* <Section>
-        <div className="flex flex-col items-center gap-[10px]">
-          <h4 className="font-helvetica text-xl md:text-2xl font-medium text-center">
-            Thank you for sticking around!
-          </h4>
-          <svg
-            className="md:w-10"
-            xmlns="http://www.w3.org/2000/svg"
-            width="28"
-            height="100%"
-            viewBox="0 0 29 28"
-            fill="none"
-          >
-            <circle cx="10.3025" cy="10.2196" r="1.6425" fill="black" />
-            <circle cx="18.5151" cy="10.2196" r="1.6425" fill="black" />
-            <circle
-              cx="14.5"
-              cy="13.6875"
-              r="12.6875"
-              stroke="black"
-              strokeWidth="2"
-            />
-            <path
-              d="M7.93005 17.3369C10.8534 22.1057 18.3514 22.3005 21.0701 17.3369"
-              stroke="black"
-              strokeWidth="2"
-              strokeLinecap="square"
-            />
-          </svg>
-        </div>
-      </Section> */}
     </div>
   );
 };
