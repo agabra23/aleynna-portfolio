@@ -65,7 +65,7 @@ const Home = () => {
         <div className="flex flex-col-reverse lg:flex-row-reverse justify-center items-center gap-[30px] lg:gap-[65px] mb-[50px]">
           <div className="flex items-center lg:items-start flex-col gap-[10px]">
             <h6 className="uppercase text-center md:text-left font-thin font-helvetica text-[16px] md:text-lg">
-              GOOGLE UX CERTIFICATE Project
+              Small Business App
             </h6>
             <h3 className="text-center md:text-left leading-none font-helvetica text-[30px] lg:text-4xl font-bold ">
               BeachSide SnackShop

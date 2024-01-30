@@ -78,7 +78,7 @@ const Beachside = () => {
           </div>
           <div className="text-center md:text-left flex items-center md:items-start flex-col">
             <h6 className="uppercase text-center md:text-left font-thin font-helvetica text-[16px] md:text-lg">
-              GOOGLE UX CERTIFICATE PROJECT
+              Small Business App
             </h6>
             <h3 className="text-center md:text-left leading-none font-helvetica text-[30px] md:text-4xl font-bold">
               Beachside Snackshop

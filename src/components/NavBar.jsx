@@ -80,6 +80,23 @@ const NavBar = () => {
         >
           HOME
         </li>
+
+        <li
+          className={`cursor-pointer font-thin hover:underline ${
+            isLinkActive("/about") && "underline"
+          }`}
+          onClick={() => navigator("/about")}
+        >
+          ABOUT
+        </li>
+        <li
+          className={`cursor-pointer font-thin hover:underline ${
+            isLinkActive("/art") && "underline"
+          }`}
+          onClick={() => navigator("/art")}
+        >
+          ART
+        </li>
         <li
           ref={popUpRef}
           onClick={() => setShowProjectDetails(!showProjectDetails)}
@@ -124,22 +141,6 @@ const NavBar = () => {
             </p>
           </div>
         </li>
-        <li
-          className={`cursor-pointer font-thin hover:underline ${
-            isLinkActive("/about") && "underline"
-          }`}
-          onClick={() => navigator("/about")}
-        >
-          ABOUT
-        </li>
-        <li
-          className={`cursor-pointer font-thin hover:underline ${
-            isLinkActive("/art") && "underline"
-          }`}
-          onClick={() => navigator("/art")}
-        >
-          ART
-        </li>
       </ul>
       <div
         onClick={() => setMobileOpened(!mobileOpened)}
@@ -178,6 +179,23 @@ const NavBar = () => {
           >
             HOME
           </li>
+
+          <li
+            onClick={() => mobileClickHandler("/about")}
+            className={`hover:underline cursor-pointer ${
+              isLinkActive("/about") && "underline"
+            }`}
+          >
+            ABOUT
+          </li>
+          <li
+            onClick={() => mobileClickHandler("/art")}
+            className={`hover:underline cursor-pointer ${
+              isLinkActive("/art") && "underline"
+            }`}
+          >
+            ART
+          </li>
           <li
             onClick={() => setMobileDropdown(!mobileDropdown)}
             className={`flex hover:underline items-center gap-2 cursor-pointer relative group ${
@@ -185,19 +203,6 @@ const NavBar = () => {
             } ${isLinkActive("/connection-cafe") && "underline"}`}
           >
             <span>PROJECTS</span>
-            {/* <svg
-              className={`${
-                mobileDropdown ? "rotate-0" : "rotate-180"
-              } absolute right-0 translate-x-7 transition-all`}
-              xmlns="http://www.w3.org/2000/svg"
-              width=".8em"
-              height=".8em"
-              viewBox="0 0 17 13"
-              fill="none"
-            >
-              <path d="M1 1.5L8.5 10.5L16 1.5" stroke="black" strokeWidth="2" />
-            </svg> */}
-
             <BsChevronUp
               className={`${
                 mobileDropdown ? "rotate-180" : "rotate-0"
@@ -231,22 +236,6 @@ const NavBar = () => {
             >
               Connection Café
             </p>
-          </li>
-          <li
-            onClick={() => mobileClickHandler("/about")}
-            className={`hover:underline cursor-pointer ${
-              isLinkActive("/about") && "underline"
-            }`}
-          >
-            ABOUT
-          </li>
-          <li
-            onClick={() => mobileClickHandler("/art")}
-            className={`hover:underline cursor-pointer ${
-              isLinkActive("/art") && "underline"
-            }`}
-          >
-            ART
           </li>
         </ul>
       </div>
