@@ -43,9 +43,10 @@ const NavBar = () => {
         onClick={() => navigator("/")}
         className="text-3xl md:text-4xl flex gap-[8px] md:gap-[12px] relative z-30 cursor-pointer"
       >
-        <h1 className="font-bold">AQ</h1>
+        <h1 className="font-bold flex items-center">AQ</h1>
         <div className="flex items-center">
           <svg
+            className="py-3 align-middle"
             width=".8em"
             height=".8em"
             viewBox="0 0 57 57"
