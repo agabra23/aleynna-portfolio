@@ -23,6 +23,7 @@ import PinkCheckout from "../assets/PinkCheckout.png";
 import PinkConfirmation from "../assets/PinkConfirmation.png";
 import PinkDriver from "../assets/PinkDriver.png";
 import PinkTracking from "../assets/PinkTracking.png";
+
 import BlueLogin from "../assets/BlueLogin.png";
 import BlueLogin2 from "../assets/BlueLogin2.png";
 import BlueMenu from "../assets/BlueMenu.png";
@@ -324,7 +325,7 @@ const beachsideComparisonsArray = [
     </div>
     <div className="flex-1 flex flex-col">
       <img
-        className="w-full max-w-[200px]"
+        className="w-full max-w-[250px]"
         src={BlueLogin}
         alt="New Login Screen"
       />
@@ -346,7 +347,7 @@ const beachsideComparisonsArray = [
     </div>
     <div className="flex-1 flex flex-col">
       <img
-        className="w-full max-w-[200px]"
+        className="w-full max-w-[250px]"
         src={BlueMenu}
         alt="New Menu Screen"
       />
@@ -368,7 +369,7 @@ const beachsideComparisonsArray = [
     </div>
     <div className="flex-1 flex flex-col">
       <img
-        className="w-full max-w-[200px]"
+        className="w-full max-w-[250px]"
         src={BlueDetails}
         alt="New Item Details Screen"
       />
@@ -390,7 +391,7 @@ const beachsideComparisonsArray = [
     </div>
     <div className="flex-1 flex flex-col">
       <img
-        className="w-full max-w-[200px]"
+        className="w-full max-w-[250px]"
         src={BlueCart}
         alt="New Cart Screen"
       />
@@ -412,7 +413,7 @@ const beachsideComparisonsArray = [
     </div>
     <div className="flex-1 flex flex-col">
       <img
-        className="w-full max-w-[200px]"
+        className="w-full max-w-[250px]"
         src={BlueCheckout}
         alt="New Checkout Screen"
       />
@@ -434,7 +435,7 @@ const beachsideComparisonsArray = [
     </div>
     <div className="flex-1 flex flex-col">
       <img
-        className="w-full max-w-[200px]"
+        className="w-full max-w-[250px]"
         src={BlueConfirmation}
         alt="New Confirmation Screen"
       />
@@ -456,7 +457,7 @@ const beachsideComparisonsArray = [
     </div>
     <div className="flex-1 flex flex-col">
       <img
-        className="w-full max-w-[200px]"
+        className="w-full max-w-[250px]"
         src={BlueDriver}
         alt="New Driver Screen"
       />
@@ -478,7 +479,7 @@ const beachsideComparisonsArray = [
     </div>
     <div className="flex-1 flex flex-col">
       <img
-        className="w-full max-w-[200px]"
+        className="w-full max-w-[250px]"
         src={BlueTracking}
         alt="New Tracking Screen"
       />
@@ -490,68 +491,68 @@ const beachsideComparisonsArray = [
 ];
 
 const beachsideCards = [
-  <img className={`w-full max-w-[225px]`} src={BlueLogin} alt="Login screen" />,
+  <img className={`w-full max-w-[260px]`} src={BlueLogin} alt="Login screen" />,
+
+  // <img
+  //   className={`w-full max-w-[260px]`}
+  //   src={BlueLogin2}
+  //   alt="Login screen"
+  // />,
+
+  <img className={`w-full max-w-[260px]`} src={BlueMenu} alt="Menu screen" />,
 
   <img
-    className={`w-full max-w-[225px]`}
-    src={BlueLogin2}
-    alt="Login screen"
-  />,
-
-  <img className={`w-full max-w-[225px]`} src={BlueMenu} alt="Menu screen" />,
-
-  <img
-    className={`w-full max-w-[225px]`}
+    className={`w-full max-w-[260px]`}
     src={BlueDetails}
     alt="Item details screen"
   />,
 
   <img
-    className={`w-full max-w-[225px]`}
+    className={`w-full max-w-[260px]`}
     src={BlueDetails3}
     alt="Add items pop-up"
   />,
 
   <img
-    className={`w-full max-w-[225px]`}
+    className={`w-full max-w-[260px]`}
     src={BlueDetails2}
     alt="Items in cart"
   />,
 
-  <img className={`w-full max-w-[225px]`} src={BlueCart} alt="Cart screen" />,
+  <img className={`w-full max-w-[260px]`} src={BlueCart} alt="Cart screen" />,
 
   <img
-    className={`w-full max-w-[225px]`}
+    className={`w-full max-w-[260px]`}
     src={BlueCheckout}
     alt="Checkout screen"
   />,
 
   <img
-    className={`w-full max-w-[225px]`}
+    className={`w-full max-w-[260px]`}
     src={BlueCheckout2}
     alt="Checkout confirmation"
   />,
 
   <img
-    className={`w-full max-w-[225px]`}
+    className={`w-full max-w-[260px]`}
     src={BlueConfirmation}
     alt="Order confirmation"
   />,
 
   <img
-    className={`w-full max-w-[225px]`}
+    className={`w-full max-w-[260px]`}
     src={BlueDriver}
     alt="Driver information"
   />,
 
   <img
-    className={`w-full max-w-[225px]`}
+    className={`w-full max-w-[260px]`}
     src={BlueTracking}
     alt="Driver tracking screen"
   />,
 
   <img
-    className={`w-full max-w-[225px]`}
+    className={`w-full max-w-[260px]`}
     src={BlueConfirmation2}
     alt="Enjoy your food screen"
   />,

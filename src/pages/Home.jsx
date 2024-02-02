@@ -1,6 +1,6 @@
 import React from "react";
-import Beach2 from "../assets/Beach2.png";
-import Beach1 from "../assets/Beach1.png";
+import Beach2 from "../assets/BlueDetails.png";
+import Beach1 from "../assets/BlueLogin.png";
 import HomeImg from "../assets/Home.png";
 import MatchImg from "../assets/Match.png";
 import { useNavigate } from "react-router-dom";

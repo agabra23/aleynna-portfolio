@@ -2,8 +2,8 @@ import React from "react";
 import { useLayoutEffect } from "react";
 import AutoplayCarousel from "../components/AutoplayCarousel";
 
-import Beach2 from "../assets/Beach2.png";
-import Beach1 from "../assets/Beach1.png";
+import Beach2 from "../assets/BlueDetails.png";
+import Beach1 from "../assets/BlueLogin.png";
 import BeachsideScreenDescription from "../components/BeachsideScreenDescription";
 import Section from "../components/Section";
 import HeroSectionWrapper from "../components/HeroSectionWrapper";
