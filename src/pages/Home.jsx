@@ -17,25 +17,16 @@ const Home = () => {
     <div className="relative -z-10 font-garamond max-w-full">
       <HeroSectionWrapper>
         <div className="max-w-max mx-auto">
-          <h2 className="font-helvetica [855px]:text-5xl text-4xl font-bold max-w-max">
+          <h2 className="font-helvetica [855px]:text-7xl text-7xl font-bold max-w-max">
             Hi! I’m Aleynna Quiñones.
           </h2>
-          <p className="text-xl md:text-2xl mt-[10px] max-w-[1000px]">
-            I'm a UX Designer{" "}
-            <span className="font-semibold  break-words">
-              dedicated to solving problems
-            </span>{" "}
-            through the creation of digital experiences that seamlessly
-            integrate{" "}
-            <span className="font-semibold  break-words">
-              innovation, empathy, and intuitive design
-            </span>
-            .
+          <p className="text-3xl md:text-3xl mt-[10px] max-w-[1000px]">
+            UX Designer and visual artist.
           </p>
           <div className="flex flex-col max-w-max gap-[15px] mt-12 lg:mt-16">
             <div className="text-xl lg:text-2xl font-thin mb-4">
               <h5 className="font-helvetica text-[16px] md:text-lg">
-                I ALSO LOVE...
+                I LOVE...
               </h5>
               <p className="text-[16px] lg:text-xl">
                 painting, lifting heavy weights, and hanging out with my two
